@@ -1,23 +1,25 @@
-<script setup>
-import Main from './Main.vue'
-</script>
-
 <template>
-  <Main></Main>
-  
+  <div class="main-container">
+  <Main></Main></div>
 </template>
 
+<script>
+import Main from '@/Main.vue';
+
+export default {
+  name: "App",
+  components: {
+    Main
+  }
+};
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
+
 </style>

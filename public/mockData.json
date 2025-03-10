@@ -1,0 +1,139 @@
+{
+  "functional_aspects": [
+      {
+          "id": "c4b911f5-3b19-4261-bd1e-745d81ef83ce",
+          "rds": "=SFA1",
+          "name": "Steel Melting System",
+          "description": "Controls and monitors steel melting processes.",
+          "aspectType": "Functional",
+          "children": [
+              {
+                  "id": "2665025e-0c19-47fc-aa64-4fc746bd8f90",
+                  "rds": "=SFA1-1",
+                  "name": "Temperature Control",
+                  "description": "Regulates furnace temperature for optimal steel melting.",
+                  "aspectType": "Functional",
+                  "children": []
+              },
+              {
+                  "id": "4a689a9a-8367-4a1f-a7e0-52da87dc95e8",
+                  "rds": "=SFA1-2",
+                  "name": "Chemical Composition Monitoring",
+                  "description": "Analyzes chemical properties to ensure quality.",
+                  "aspectType": "Functional",
+                  "children": []
+              },
+              {
+                  "id": "82876afe-5a37-4e87-b658-cbb74223dfc2",
+                  "rds": "=SFA1-3",
+                  "name": "Slag Management",
+                  "description": "Controls the removal and handling of slag byproducts.",
+                  "aspectType": "Functional",
+                  "children": []
+              }
+          ]
+      },
+      {
+          "id": "f7a881cb-cbb5-405c-845e-06fca60970c7",
+          "rds": "=SFA2",
+          "name": "Rolling Mill Control",
+          "description": "Manages the rolling of steel into sheets or bars.",
+          "aspectType": "Functional",
+          "children": [
+              {
+                  "id": "4d2b7600-e100-4ab0-83f7-cfad5c5d6790",
+                  "rds": "=SFA2-1",
+                  "name": "Roll Speed Regulation",
+                  "description": "Controls the speed of rollers to achieve desired dimensions.",
+                  "aspectType": "Functional",
+                  "children": []
+              },
+              {
+                  "id": "98d3d221-6ed9-4194-91b9-4af73c32ab2b",
+                  "rds": "=SFA2-2",
+                  "name": "Roll Pressure Control",
+                  "description": "Adjusts pressure for uniform thickness of steel products.",
+                  "aspectType": "Functional",
+                  "children": []
+              },
+              {
+                  "id": "36dd7362-529f-4764-86c2-714c694dcbd2",
+                  "rds": "=SFA2-3",
+                  "name": "Roll Cooling System",
+                  "description": "Ensures controlled cooling of rolled steel to prevent defects.",
+                  "aspectType": "Functional",
+                  "children": []
+              }
+          ]
+      }
+  ],
+  "product_aspects": [
+      {
+          "id": "36d32539-cea6-4639-a98a-6398d7510efe",
+          "rds": "-SP1",
+          "name": "Induction Furnace",
+          "description": "A furnace used for steel melting via induction heating.",
+          "aspectType": "Product",
+          "children": [
+              {
+                  "id": "0e2ebd49-29bc-4875-bc7d-72f823bc6cbf",
+                  "rds": "-SP1-1",
+                  "name": "Power Supply Unit",
+                  "description": "Provides electrical power for induction heating.",
+                  "aspectType": "Product",
+                  "children": []
+              },
+              {
+                  "id": "03bcb7dd-b779-4e0a-8d7f-2d4fac24f674",
+                  "rds": "-SP1-2",
+                  "name": "Cooling Coil",
+                  "description": "Regulates heat dissipation during melting.",
+                  "aspectType": "Product",
+                  "children": []
+              }
+          ]
+      },
+      {
+          "id": "f34bdcd4-0ae7-4a27-b86d-56ff8109fdf6",
+          "rds": "-SP2",
+          "name": "Temperature Sensor",
+          "description": "Monitors and reports temperature levels in real-time.",
+          "aspectType": "Product",
+          "children": []
+      },
+      {
+          "id": "33344379-d0b2-4212-9c1b-bf12e367fa34",
+          "rds": "-SP3",
+          "name": "Rolling Mill",
+          "description": "Equipment used to roll steel into desired shapes.",
+          "aspectType": "Product",
+          "children": []
+      }
+  ],
+  "location_aspects": [
+      {
+          "id": "8850b910-2223-4381-aa59-fc856114e1f7",
+          "rds": "++LOC1",
+          "name": "Furnace Area",
+          "description": "Location where the steel melting furnace is installed.",
+          "aspectType": "Location",
+          "children": []
+      },
+      {
+          "id": "10dbd0e6-458b-4896-983c-7874e3373a3a",
+          "rds": "++LOC2",
+          "name": "Cooling Zone",
+          "description": "Location dedicated to cooling and solidification processes.",
+          "aspectType": "Location",
+          "children": []
+      },
+      {
+          "id": "588542b8-e9b5-4ec1-bb01-97acd81e5991",
+          "rds": "++LOC3",
+          "name": "Rolling Mill Section",
+          "description": "Area where steel rolling operations take place.",
+          "aspectType": "Location",
+          "children": []
+      }
+  ]
+}
