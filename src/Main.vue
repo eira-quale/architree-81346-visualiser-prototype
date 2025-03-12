@@ -1,11 +1,23 @@
 <template>
 
-<div>Det har faktiskt hänt jättemycket "behind the scenes"</div>
+<div class="main-trees-container">
+
+<Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects"></Tree>
+
+
+<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects"></Tree>
+
+<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects"></Tree>
+
+</div>
+
 </template>
 
 <script>
+import Tree from '@/components/tree/Tree.vue'
 import Aspect from '@/services/models/aspect.js'
 import {fetchMockData} from '@/services/treeService.js'
+
 
 export default {
   
@@ -26,6 +38,8 @@ export default {
 },
   components:
   {
+
+    Tree
     
     
   },
@@ -63,11 +77,5 @@ export default {
 
 <style scoped>
 
-.main-container{
-  width: 100vh;
-  height: 100vh;
-  background-color: red;
-
-}
 
 </style>

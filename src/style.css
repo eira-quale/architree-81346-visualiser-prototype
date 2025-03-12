@@ -24,15 +24,16 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: cadetblue;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 button {
@@ -59,10 +60,11 @@ button:focus-visible {
 }
 
 #app {
+  display: flex;
+  flex-direction: row;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
@@ -76,4 +78,63 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Centering the main-tree-container */
+.main-trees-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #747bff;
+  padding: 20px;
+  margin: 50px;
+  
+  /* Centering it */
+  position: relative;
+  width: fit-content; /* Only takes as much space as needed */
+  height: fit-content; /* Same as above */
+}
+
+/* Ensuring tree-container divs stay side by side */
+
+.tree-container {
+  width: fit-content;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red; /* Debugging border, remove later */
+  background-color: lightgray; /* Just to see the layout */
+}
+
+
+
+.node_container {
+  display: inline-block; /* Ensures the container only takes up as much space as needed */
+  width: auto; /* Automatically adjusts to content */
+  max-width: 100%; /* Prevents overflowing its parent */
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgb(167, 167, 167);
+  padding: 5px 10px; /* Adds some padding around text */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  cursor: pointer;
+}
+
+.node_container:hover {
+  background-color: #535bf2;
+  cursor: pointer;
+
+}
+
+
+
+
+span {
+  text-wrap: nowrap; /* Ensures text stays in one line */
+  white-space: nowrap; /* Prevents breaking text into multiple lines */
 }

@@ -14,12 +14,3 @@ export default {
 };
 </script>
 
-<style scoped>
-
-body {
-  min-height: 100vh;
-  min-width: 100vh;
-}
-
-
-</style>

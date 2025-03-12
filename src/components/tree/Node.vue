@@ -1,22 +1,31 @@
 <template>
     <div class="node_container">
-       
+
       
+        <span >{{ aspect.rds }}</span>
+        <span> {{ aspect.name }}</span>
+      
+    </div>
+    
+    <div class="node-container sub-node-container" v-for="(subnode, index) in aspect.children">
+     <span>{{ subnode.rds }} </span> 
+     <span>{{ subnode.name }} </span> 
     </div>
   </template>
   
   <script>
+import Aspect from '../../services/models/aspect';
+
   export default {
     name: "Node",
     props: {
-        nodeData: {
-            rds: "",
-            
-        }
+        aspect: Aspect
 
     },
     data() {
       return {
+
+        expanded: false
       
 
         
@@ -39,11 +48,6 @@
   </script>
   
   <style scoped>
- .node_container {
-    width: 100px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: red;
- }
+
   </style>
   
