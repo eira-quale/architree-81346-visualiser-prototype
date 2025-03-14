@@ -85,6 +85,11 @@ class Aspect {
       child.showChildren = !child.showChildren;
     });
   }
+  hasChildren() {
+    return Array.isArray(this.children) && this.children.length > 0;
+  }
 }
+
+
 
 export default Aspect;

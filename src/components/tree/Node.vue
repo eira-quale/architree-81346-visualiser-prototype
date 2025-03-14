@@ -1,7 +1,10 @@
 <template>
+  
     <div @click="toggleShowChildren" class="node_container">
-
+      <svg-icon type="mdi" :path="getChevron()"></svg-icon>
       
+
+     
         <span >{{ aspect.rds }}</span>
         <span> {{ aspect.name }}</span>
       
@@ -18,6 +21,8 @@
   <script>
 import Aspect from '../../services/models/aspect';
 
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
   export default {
     name: "Node",
     props: {
@@ -27,12 +32,19 @@ import Aspect from '../../services/models/aspect';
     data() {
       return {
 
+        chevronRight: mdilChevronRight,
+        chevronDown: mdilChevronDown
+
   
 
         
       };
+     
       
     },
+    components: {
+        SvgIcon
+      },
     computed: {
       visibleNodes() {
         return this.aspect.showChildren ? [...this.aspect.children] : [];
@@ -44,13 +56,20 @@ import Aspect from '../../services/models/aspect';
     
         
       },
-      hasChildren(){
-        if(this.aspect.children.length > 0){
-          return true;
+      getChevron(){
+        if(!this.aspect.hasChildren()){
+          return null;
         } else {
-          return false;
+          if(this.aspect.showChildren){
+            return mdilChevronDown;
+          } else {
+            return mdilChevronRight;
+          }
         }
-      }
+        
+
+      },
+      
     },
     watch: {
       // Your watchers
