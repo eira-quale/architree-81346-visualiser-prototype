@@ -2,10 +2,13 @@
 
     <div class="tree">
     <div class="tree-title-container">
+
       <h1>{{ treeTitle }}</h1>
+      <svg-icon class="tree-icon" type="mdi" :path="icon"></svg-icon>
+
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node"       @toggle-aspect="forwardToggleAspect">
+      <Node v-for="(node, index) in tree" :aspect="node"  @toggle-aspect="forwardNodeClick">
       </Node>
     </div>
   </div>
@@ -13,10 +16,13 @@
 
 <script>
 import Node from './Node.vue';
+import SvgIcon from '@jamescoyle/vue-icon';
+
 export default {
   name: "Tree",
 
   props: {
+    icon: Object,
     treeTitle: String,
     tree: {
       type: Array,
@@ -30,7 +36,7 @@ export default {
   },
   data() {
     return {
-      aspect: "Functional",
+
 
 
     };
@@ -38,14 +44,17 @@ export default {
   },
   components: {
 
-    Node
+    Node,
+    SvgIcon
+    
+ 
 
   },
   computed: {
     // Your computed properties
   },
   methods: {
-    forwardToggleAspect(id, aspectType) {
+    forwardNodeClick(id, aspectType) {
       this.$emit("toggle-aspect", id, aspectType); // Forward event to Main
     },
   },

@@ -1,14 +1,19 @@
 <template>
 
+<div class="main-container">
+
 <div class="main-trees-container">
 
 <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects"
-@toggle-aspect="onToggleShowChildren"></Tree>
+@toggle-aspect="onNodeClick" :icon="this.functionalPath"></Tree>
 
-<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @toggle-aspect="onToggleShowChildren"></Tree>
+<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @toggle-aspect="onNodeClick" :icon="this.productPath"></Tree>
 
-<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @toggle-aspect="onToggleShowChildren"></Tree>
+<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @toggle-aspect="onNodeClick" :icon="this.locationPath"></Tree>
 
+
+</div>
+<SidePanel :selectedAspect="this.selectedAspect"></SidePanel>
 </div>
 
 </template>
@@ -18,6 +23,11 @@
 import Tree from '@/components/tree/Tree.vue'
 import Aspect from '@/services/models/aspect.js'
 import {fetchMockData} from '@/services/treeService.js'
+import SidePanel from './components/side-panel/SidePanel.vue';
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiMapMarkerPath } from '@mdi/js';
+import { mdiCube } from '@mdi/js';
+import { mdiHammerWrench } from '@mdi/js';
 
 
 export default {
@@ -32,7 +42,11 @@ export default {
     mockData: null,
     functionalAspects: null,
     productAspects: null,
-    locationAspects: null
+    locationAspects: null,
+    selectedAspect: null,
+    functionalPath: mdiHammerWrench,
+    locationPath: mdiMapMarkerPath,
+    productPath: mdiCube
 
 
   }
@@ -41,7 +55,9 @@ export default {
   {
 
     Tree,
-    
+    SidePanel,
+    SvgIcon,
+   
     
     
   },
@@ -69,7 +85,8 @@ export default {
         data.children ? data.children.map(child => this.createAspect(child, aspectType)) : []
       );
     },
-    onToggleShowChildren(id, aspectType) {
+    onNodeClick(id, aspectType) {
+      this.selectedAspectId = id;
       let aspect;
       switch (aspectType) {
         case "Functional":
@@ -85,6 +102,8 @@ export default {
           console.warn(`Unknown aspect type: ${aspectType}`);
           return;
       }
+
+      this.selectedAspect = aspect; 
 
       if (aspect) {
         aspect.toggleShowChildren();

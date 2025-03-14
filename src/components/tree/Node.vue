@@ -1,19 +1,21 @@
 <template>
   
-    <div @click="toggleShowChildren" class="node_container">
+    <div @click="handleNodeClick" class="node-container">
       <svg-icon type="mdi" :path="getChevron()"></svg-icon>
       
 
      
-        <span >{{ aspect.rds }}</span>
-        <span> {{ aspect.name }}</span>
+        <span class="node-text rds">{{ aspect.rds }}</span>
+        <span class="node-text name"> {{ aspect.name }}</span>
       
     </div>
     
-    <div class="node-container sub-node-container" v-for="(subnode, index) in aspect.children">
+    <div :class="node-container" v-for="(subnode, index) in aspect.children">
       <div v-show="aspect.showChildren">
+        <div class="node-container subnode">
      <span>{{ subnode.rds }} </span> 
      <span>{{ subnode.name }} </span> 
+    </div>
     </div>
   </div>
   </template>
@@ -35,6 +37,7 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
         chevronRight: mdilChevronRight,
         chevronDown: mdilChevronDown
 
+
   
 
         
@@ -51,7 +54,7 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
   }
     },
     methods: {
-      toggleShowChildren() {
+      handleNodeClick() {
       this.$emit("toggle-aspect", this.aspect.id, this.aspect.aspectType);
     
         
