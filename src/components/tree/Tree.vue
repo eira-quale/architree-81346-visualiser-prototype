@@ -5,7 +5,7 @@
       <h1>{{ treeTitle }}</h1>
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node">
+      <Node v-for="(node, index) in tree" :aspect="node"       @toggle-aspect="forwardToggleAspect">
       </Node>
     </div>
   </div>
@@ -45,7 +45,9 @@ export default {
     // Your computed properties
   },
   methods: {
-    // Your methods
+    forwardToggleAspect(id, aspectType) {
+      this.$emit("toggle-aspect", id, aspectType); // Forward event to Main
+    },
   },
   watch: {
     // Your watchers

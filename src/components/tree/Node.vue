@@ -1,5 +1,5 @@
 <template>
-    <div class="node_container">
+    <div @click="toggleShowChildren" class="node_container">
 
       
         <span >{{ aspect.rds }}</span>
@@ -8,9 +8,11 @@
     </div>
     
     <div class="node-container sub-node-container" v-for="(subnode, index) in aspect.children">
+      <div v-show="aspect.showChildren">
      <span>{{ subnode.rds }} </span> 
      <span>{{ subnode.name }} </span> 
     </div>
+  </div>
   </template>
   
   <script>
@@ -25,18 +27,30 @@ import Aspect from '../../services/models/aspect';
     data() {
       return {
 
-        expanded: false
-      
+  
 
         
       };
       
     },
     computed: {
-      // Your computed properties
+      visibleNodes() {
+        return this.aspect.showChildren ? [...this.aspect.children] : [];
+  }
     },
     methods: {
-      // Your methods
+      toggleShowChildren() {
+      this.$emit("toggle-aspect", this.aspect.id, this.aspect.aspectType);
+    
+        
+      },
+      hasChildren(){
+        if(this.aspect.children.length > 0){
+          return true;
+        } else {
+          return false;
+        }
+      }
     },
     watch: {
       // Your watchers

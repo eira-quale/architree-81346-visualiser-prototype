@@ -76,9 +76,14 @@ class Aspect {
     this.showChildren = showChildren;
   }
 
-  // Method to toggle the showChildren property
   toggleShowChildren() {
     this.showChildren = !this.showChildren;
+  
+    this.children = [...this.children];
+    // Recursively toggle showChildren for all children
+    this.children.forEach(child => {
+      child.showChildren = !child.showChildren;
+    });
   }
 }
 
