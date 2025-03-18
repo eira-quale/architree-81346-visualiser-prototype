@@ -8,7 +8,7 @@
 
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node"  @toggle-aspect="forwardNodeClick">
+      <Node v-for="(node, index) in tree" :aspect="node"  @toggle-aspect="forwardNodeClick" :selectedAspect="selectedAspect">
       </Node>
     </div>
   </div>
@@ -17,11 +17,13 @@
 <script>
 import Node from './Node.vue';
 import SvgIcon from '@jamescoyle/vue-icon';
+import Aspect from '../../services/models/aspect';
 
 export default {
   name: "Tree",
 
   props: {
+    selectedAspect: Aspect,
     icon: Object,
     treeTitle: String,
     tree: {

@@ -5,11 +5,11 @@
 <div class="main-trees-container">
 
 <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects"
-@toggle-aspect="onNodeClick" :icon="this.functionalPath"></Tree>
+@toggle-aspect="onNodeClick" :icon="this.functionalPath" :selectedAspect="selectedAspect"></Tree>
 
-<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @toggle-aspect="onNodeClick" :icon="this.productPath"></Tree>
+<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @toggle-aspect="onNodeClick" :icon="this.productPath" :selectedAspect="selectedAspect"></Tree>
 
-<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @toggle-aspect="onNodeClick" :icon="this.locationPath"></Tree>
+<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @toggle-aspect="onNodeClick" :icon="this.locationPath" :selectedAspect="selectedAspect"></Tree>
 
 
 </div>

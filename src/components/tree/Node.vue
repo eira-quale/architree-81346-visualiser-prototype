@@ -4,13 +4,14 @@
       <svg-icon type="mdi" :path="getChevron()"></svg-icon>
       
 
+      
      
         <span class="node-text rds">{{ aspect.rds }}</span>
         <span class="node-text name"> {{ aspect.name }}</span>
       
     </div>
     
-    <div :class="node-container" v-for="(subnode, index) in aspect.children">
+    <div :class="node-container" v-for="(subnode, index) in aspect.children"  >
       <div v-show="aspect.showChildren">
         <div class="node-container subnode">
      <span>{{ subnode.rds }} </span> 
@@ -28,7 +29,8 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
   export default {
     name: "Node",
     props: {
-        aspect: Aspect
+        aspect: Aspect,
+      
 
     },
     data() {
