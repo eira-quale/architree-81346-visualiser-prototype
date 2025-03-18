@@ -3,17 +3,14 @@
     <div @click="handleNodeClick" class="node-container">
       <svg-icon type="mdi" :path="getChevron()"></svg-icon>
       
-
-      
-     
         <span class="node-text rds">{{ aspect.rds }}</span>
         <span class="node-text name"> {{ aspect.name }}</span>
       
     </div>
     
     <div :class="node-container" v-for="(subnode, index) in aspect.children"  >
-      <div v-show="aspect.showChildren">
-        <div class="node-container subnode">
+      <div v-show="subnode.isVisible">
+        <div class="node-container subnode" @click="handleSubNodeClick(subnode)">
      <span>{{ subnode.rds }} </span> 
      <span>{{ subnode.name }} </span> 
     </div>
@@ -39,10 +36,6 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
         chevronRight: mdilChevronRight,
         chevronDown: mdilChevronDown
 
-
-  
-
-        
       };
      
       
@@ -50,16 +43,19 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
     components: {
         SvgIcon
       },
-    computed: {
-      visibleNodes() {
-        return this.aspect.showChildren ? [...this.aspect.children] : [];
-  }
-    },
+  
+    
     methods: {
       handleNodeClick() {
-      this.$emit("toggle-aspect", this.aspect.id, this.aspect.aspectType);
+      this.$emit("handle-node-click", this.aspect);
     
         
+      },
+      
+      handleSubNodeClick(subnode){
+
+        this.$emit("handle-node-click", subnode)
+
       },
       getChevron(){
         if(!this.aspect.hasChildren()){

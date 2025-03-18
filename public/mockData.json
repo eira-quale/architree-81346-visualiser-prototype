@@ -1,139 +1,205 @@
 {
-  "functional_aspects": [
-      {
-          "id": "c4b911f5-3b19-4261-bd1e-745d81ef83ce",
-          "rds": "=SFA1",
-          "name": "Steel Melting System",
-          "description": "Controls and monitors steel melting processes.",
-          "aspectType": "Functional",
-          "children": [
-              {
-                  "id": "2665025e-0c19-47fc-aa64-4fc746bd8f90",
-                  "rds": "=SFA1-1",
-                  "name": "Temperature Control",
-                  "description": "Regulates furnace temperature for optimal steel melting.",
-                  "aspectType": "Functional",
-                  "children": []
-              },
-              {
-                  "id": "4a689a9a-8367-4a1f-a7e0-52da87dc95e8",
-                  "rds": "=SFA1-2",
-                  "name": "Chemical Composition Monitoring",
-                  "description": "Analyzes chemical properties to ensure quality.",
-                  "aspectType": "Functional",
-                  "children": []
-              },
-              {
-                  "id": "82876afe-5a37-4e87-b658-cbb74223dfc2",
-                  "rds": "=SFA1-3",
-                  "name": "Slag Management",
-                  "description": "Controls the removal and handling of slag byproducts.",
-                  "aspectType": "Functional",
-                  "children": []
-              }
-          ]
-      },
-      {
-          "id": "f7a881cb-cbb5-405c-845e-06fca60970c7",
-          "rds": "=SFA2",
-          "name": "Rolling Mill Control",
-          "description": "Manages the rolling of steel into sheets or bars.",
-          "aspectType": "Functional",
-          "children": [
-              {
-                  "id": "4d2b7600-e100-4ab0-83f7-cfad5c5d6790",
-                  "rds": "=SFA2-1",
-                  "name": "Roll Speed Regulation",
-                  "description": "Controls the speed of rollers to achieve desired dimensions.",
-                  "aspectType": "Functional",
-                  "children": []
-              },
-              {
-                  "id": "98d3d221-6ed9-4194-91b9-4af73c32ab2b",
-                  "rds": "=SFA2-2",
-                  "name": "Roll Pressure Control",
-                  "description": "Adjusts pressure for uniform thickness of steel products.",
-                  "aspectType": "Functional",
-                  "children": []
-              },
-              {
-                  "id": "36dd7362-529f-4764-86c2-714c694dcbd2",
-                  "rds": "=SFA2-3",
-                  "name": "Roll Cooling System",
-                  "description": "Ensures controlled cooling of rolled steel to prevent defects.",
-                  "aspectType": "Functional",
-                  "children": []
-              }
-          ]
-      }
-  ],
-  "product_aspects": [
-      {
-          "id": "36d32539-cea6-4639-a98a-6398d7510efe",
-          "rds": "-SP1",
-          "name": "Induction Furnace",
-          "description": "A furnace used for steel melting via induction heating.",
-          "aspectType": "Product",
-          "children": [
-              {
-                  "id": "0e2ebd49-29bc-4875-bc7d-72f823bc6cbf",
-                  "rds": "-SP1-1",
-                  "name": "Power Supply Unit",
-                  "description": "Provides electrical power for induction heating.",
-                  "aspectType": "Product",
-                  "children": []
-              },
-              {
-                  "id": "03bcb7dd-b779-4e0a-8d7f-2d4fac24f674",
-                  "rds": "-SP1-2",
-                  "name": "Cooling Coil",
-                  "description": "Regulates heat dissipation during melting.",
-                  "aspectType": "Product",
-                  "children": []
-              }
-          ]
-      },
-      {
-          "id": "f34bdcd4-0ae7-4a27-b86d-56ff8109fdf6",
-          "rds": "-SP2",
-          "name": "Temperature Sensor",
-          "description": "Monitors and reports temperature levels in real-time.",
-          "aspectType": "Product",
-          "children": []
-      },
-      {
-          "id": "33344379-d0b2-4212-9c1b-bf12e367fa34",
-          "rds": "-SP3",
-          "name": "Rolling Mill",
-          "description": "Equipment used to roll steel into desired shapes.",
-          "aspectType": "Product",
-          "children": []
-      }
-  ],
-  "location_aspects": [
-      {
-          "id": "8850b910-2223-4381-aa59-fc856114e1f7",
-          "rds": "++LOC1",
-          "name": "Furnace Area",
-          "description": "Location where the steel melting furnace is installed.",
-          "aspectType": "Location",
-          "children": []
-      },
-      {
-          "id": "10dbd0e6-458b-4896-983c-7874e3373a3a",
-          "rds": "++LOC2",
-          "name": "Cooling Zone",
-          "description": "Location dedicated to cooling and solidification processes.",
-          "aspectType": "Location",
-          "children": []
-      },
-      {
-          "id": "588542b8-e9b5-4ec1-bb01-97acd81e5991",
-          "rds": "++LOC3",
-          "name": "Rolling Mill Section",
-          "description": "Area where steel rolling operations take place.",
-          "aspectType": "Location",
-          "children": []
-      }
-  ]
+    "functional_aspects": [
+        {
+            "id": "82f51aa6-6445-4c5a-88ba-b563b8788a25",
+            "rds": "=SFA1",
+            "name": "Steel Melting System",
+            "description": "Controls and monitors steel melting processes.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": [
+                {
+                    "id": "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e",
+                    "rds": "=SFA1-1",
+                    "name": "Temperature Control",
+                    "description": "Regulates furnace temperature for optimal steel melting.",
+                    "aspectType": "Functional",
+                    "parentId": "=SFA1",
+                    "isVisible": false,
+                    "children": []
+                },
+                {
+                    "id": "1b3bdfa1-6903-4f05-9d8b-f8bae61c6ccb",
+                    "rds": "=SFA1-2",
+                    "name": "Chemical Composition Monitoring",
+                    "description": "Analyzes chemical properties to ensure quality.",
+                    "aspectType": "Functional",
+                    "parentId": "=SFA1",
+                    "isVisible": false,
+                    "children": []
+                },
+                {
+                    "id": "023de759-3eaf-4601-9364-8509ed13fe79",
+                    "rds": "=SFA1-3",
+                    "name": "Slag Management",
+                    "description": "Controls the removal and handling of slag byproducts.",
+                    "aspectType": "Functional",
+                    "parentId": "=SFA1",
+                    "isVisible": false,
+                    "children": []
+                }
+                
+        
+            ]
+        },
+        {
+            "id": "733b1b61-10b7-4aaf-a6bc-c85afe098859",
+            "rds": "=SFA6",
+            "name": "Steel Casting System",
+            "description": "Manages the casting of molten steel into molds.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "37937a30-1582-4a66-8854-7996e3fd6dee",
+            "rds": "=SFA7",
+            "name": "Heat Treatment System",
+            "description": "Controls the heating and cooling of steel to alter its properties.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "98b3c303-9e13-4a97-99af-7c6a0dc0cc77",
+            "rds": "=SFA8",
+            "name": "Steel Recycling Unit",
+            "description": "Handles the reprocessing and reuse of steel materials.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "9125eb2b-833e-4977-a3f9-900ea8d7bd0a",
+            "rds": "=SFA9",
+            "name": "Surface Treatment System",
+            "description": "Applies coatings and finishes to steel surfaces.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "44a7bd10-9b2a-42f6-9b61-5e1abfd3094a",
+            "rds": "=SFA10",
+            "name": "Gas Control System",
+            "description": "Regulates gas flow for steel production processes.",
+            "aspectType": "Functional",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        }
+    ],
+    "product_aspects": [
+        {
+            "id": "8ca19498-2763-43c3-80a2-b6750a7e882a",
+            "rds": "-SP1",
+            "name": "Induction Furnace",
+            "description": "A furnace used for steel melting via induction heating.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": [
+                {
+                    "id": "758cc1c5-7d82-4696-b920-a37ad64c88d4",
+                    "rds": "-SP1-1",
+                    "name": "Power Supply Unit",
+                    "description": "Provides electrical power for induction heating.",
+                    "aspectType": "Product",
+                    "parentId": "-SP1",
+                    "isVisible": false,
+                    "children": []
+                },
+                {
+                    "id": "cf588288-ea29-416c-907a-034734d8a08e",
+                    "rds": "-SP1-2",
+                    "name": "Cooling Coil",
+                    "description": "Regulates heat dissipation during melting.",
+                    "aspectType": "Product",
+                    "parentId": "-SP1",
+                    "isVisible": false,
+                    "children": []
+                }
+            ]
+
+        }
+        
+    ],
+    "location_aspects": [
+        {
+            "id": "bfaf1122-2551-48f7-8250-9a8833996d10",
+            "rds": "++LOC1",
+            "name": "Furnace Area",
+            "description": "Location where the steel melting furnace is installed.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "49ad8c89-a227-4e0b-8dbf-bca45db6f188",
+            "rds": "++LOC2",
+            "name": "Cooling Zone",
+            "description": "Location dedicated to cooling and solidification processes.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "3ed02849-b1e5-480d-8d2d-9f8ba26a18a6",
+            "rds": "++LOC6",
+            "name": "Casting Zone",
+            "description": "Dedicated area for steel casting operations.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "45180158-16fc-4048-b55f-642dcddb49e1",
+            "rds": "++LOC7",
+            "name": "Heat Treatment Section",
+            "description": "Facility for controlled heating and cooling processes.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "a8717a92-53a1-4a4c-af95-f29745af1f51",
+            "rds": "++LOC8",
+            "name": "Recycling Yard",
+            "description": "Area designated for steel recycling operations.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "abac944d-3b8e-4b01-ae72-42b46ba3a7d8",
+            "rds": "++LOC9",
+            "name": "Surface Treatment Hall",
+            "description": "Space for applying protective coatings and finishes.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "0349eb3d-d715-43b8-9952-e9b1812e5525",
+            "rds": "++LOC10",
+            "name": "Gas Supply Station",
+            "description": "Facility for managing industrial gas distribution.",
+            "aspectType": "Location",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        }
+      
+    ]
 }

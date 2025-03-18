@@ -5,11 +5,11 @@
 <div class="main-trees-container">
 
 <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects"
-@toggle-aspect="onNodeClick" :icon="this.functionalPath" :selectedAspect="selectedAspect"></Tree>
+@handle-node-click="onNodeClick" :icon="this.functionalPath" :selectedAspect="selectedAspect"></Tree>
 
-<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @toggle-aspect="onNodeClick" :icon="this.productPath" :selectedAspect="selectedAspect"></Tree>
+<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @handle-node-click="onNodeClick" :icon="this.productPath" :selectedAspect="selectedAspect"></Tree>
 
-<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @toggle-aspect="onNodeClick" :icon="this.locationPath" :selectedAspect="selectedAspect"></Tree>
+<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @handle-node-click="onNodeClick" :icon="this.locationPath" :selectedAspect="selectedAspect"></Tree>
 
 
 </div>
@@ -75,41 +75,29 @@ export default {
 
   },
   methods: {
-    createAspect(data, aspectType) {
-      return new Aspect(
-        data.id,
-        data.rds,
-        data.name,
-        data.description,
-        aspectType,
-        data.children ? data.children.map(child => this.createAspect(child, aspectType)) : []
-      );
-    },
-    onNodeClick(id, aspectType) {
-      this.selectedAspectId = id;
-      let aspect;
-      switch (aspectType) {
-        case "Functional":
-          aspect = this.functionalAspects.find(aspect => aspect.id === id);
-          break;
-        case "Product":
-          aspect = this.productAspects.find(aspect => aspect.id === id);
-          break;
-        case "Location":
-          aspect = this.locationAspects.find(aspect => aspect.id === id);
-          break;
-        default:
-          console.warn(`Unknown aspect type: ${aspectType}`);
-          return;
-      }
+  createAspect(data, aspectType, parentId = null) {
+    return new Aspect(
+      data.id,
+      data.rds,
+      data.name,
+      data.description,
+      aspectType,
+      data.children ? data.children.map(child => this.createAspect(child, aspectType, data.id)) : [],
+      parentId
+    );
+  },
 
-      this.selectedAspect = aspect; 
 
-      if (aspect) {
+    onNodeClick(aspect) {
+
+      this.selectedAspect = aspect;
+      
+      
+
         aspect.toggleShowChildren();
-      } else {
-        console.warn(`Aspect with ID ${id} not found in ${aspectType} aspects`);
-      }
+     
+    
+      
     },
 
   }

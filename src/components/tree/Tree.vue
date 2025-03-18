@@ -8,7 +8,7 @@
 
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node"  @toggle-aspect="forwardNodeClick" :selectedAspect="selectedAspect">
+      <Node v-for="(node, index) in tree" :aspect="node"  @handle-node-click="forwardNodeClick" :selectedAspect="selectedAspect">
       </Node>
     </div>
   </div>
@@ -56,8 +56,8 @@ export default {
     // Your computed properties
   },
   methods: {
-    forwardNodeClick(id, aspectType) {
-      this.$emit("toggle-aspect", id, aspectType); // Forward event to Main
+    forwardNodeClick(aspect) {
+      this.$emit("handle-node-click", aspect); // Forward event to Main
     },
   },
   watch: {
