@@ -157,6 +157,15 @@ button:focus-visible {
 }
 
 
+
+.node-container.hovered { /* <-- Lagt till */
+  background-color: #217dbb; 
+}
+
+.node-container.selected {  /* <-- Lagt till */
+  background-color: #1b5a8a;
+}
+
 /* Ensure the chevron icon stays on the left */
 svg-icon {
   margin-right: 5px; /* Adds spacing between icon and text */
@@ -174,6 +183,14 @@ svg-icon {
   min-width: fit-content; /* Prevents it from shrinking too much */
 }
 
+
+
+.node_container:hover {
+  background-color: #535bf2;
+  cursor: pointer;
+
+}
+
 .subnode {
   margin-left: 10px;
   margin-top: 4px;
@@ -181,12 +198,6 @@ svg-icon {
   border-radius: 5px;
 
   
-}
-
-.node_container:hover {
-  background-color: #535bf2;
-  cursor: pointer;
-
 }
 
 
@@ -226,3 +237,4 @@ svg-icon {
   padding: 4px;
   margin-left: 4px;
 }
+

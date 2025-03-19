@@ -5,11 +5,14 @@
 <div class="main-trees-container">
 
 <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects"
-@handle-node-click="onNodeClick" :icon="this.functionalPath" :selectedAspect="selectedAspect"></Tree>
+@handle-node-click="onNodeClick" :icon="this.functionalPath" :selectedAspect="selectedAspect" :selectedNode="selectedNode"
+@update-selected-node="setSelectedNode"></Tree>
 
-<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @handle-node-click="onNodeClick" :icon="this.productPath" :selectedAspect="selectedAspect"></Tree>
+<Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @handle-node-click="onNodeClick" :icon="this.productPath" :selectedAspect="selectedAspect" :selectedNode="selectedNode" 
+@update-selected-node="setSelectedNode"></Tree>
 
-<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @handle-node-click="onNodeClick" :icon="this.locationPath" :selectedAspect="selectedAspect"></Tree>
+<Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @handle-node-click="onNodeClick" :icon="this.locationPath" :selectedAspect="selectedAspect" :selectedNode="selectedNode" 
+@update-selected-node="setSelectedNode" ></Tree>
 
 
 </div>
@@ -44,6 +47,7 @@ export default {
     productAspects: null,
     locationAspects: null,
     selectedAspect: null,
+    selectedNode: null,
     functionalPath: mdiHammerWrench,
     locationPath: mdiMapMarkerPath,
     productPath: mdiCube
@@ -83,7 +87,8 @@ export default {
       data.description,
       aspectType,
       data.children ? data.children.map(child => this.createAspect(child, aspectType, data.id)) : [],
-      parentId
+      parentId,
+      false
     );
   },
 
@@ -99,6 +104,12 @@ export default {
     
       
     },
+
+    setSelectedNode(aspect) {
+      this.selectedNode = aspect;
+      this.selectedAspect = aspect;
+    
+    }
 
   }
  

@@ -8,7 +8,13 @@
 
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node"  @handle-node-click="forwardNodeClick" :selectedAspect="selectedAspect">
+      <Node
+        v-for="(node, index) in tree"
+        :key="index"
+        :aspect="node"
+        :selectedNode="selectedNode"
+         @handle-node-click="setSelectedNode" 
+         :selectedAspect="selectedAspect">
       </Node>
     </div>
   </div>
@@ -35,11 +41,12 @@ export default {
         );
       },
     },
+    selectedNode: Object,
   },
   data() {
     return {
 
-
+      
 
     };
 
@@ -56,8 +63,8 @@ export default {
     // Your computed properties
   },
   methods: {
-    forwardNodeClick(aspect) {
-      this.$emit("handle-node-click", aspect); // Forward event to Main
+    setSelectedNode(aspect) {
+      this.$emit("update-selected-node", aspect) // Forward event to Main
     },
   },
   watch: {
