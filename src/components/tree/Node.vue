@@ -4,12 +4,20 @@
       class="node-container"
       @mouseover="isHovered = true"
       @mouseleave="isHovered = false"
-      :class="{ 'hovered': isHovered, 'selected': selectedNode?.id === aspect.id }"
-  >
+      :class="['node-container', { 
+            subnode: isSubNode, 
+            hovered: isHovered, 
+            selected: selectedNode?.id === aspect.id 
+        }]"
+      >
       <svg-icon type="mdi" :path="getChevron()" @click.stop="toggleChildren"></svg-icon>
-      <span class="node-text rds">{{ aspect.rds }}</span>
-      <span class="node-text name">{{ aspect.name }}</span>
-  </div>
+
+      <div class="node-text-container">
+        <span class="node-text rds">{{ aspect.rds }}</span>
+        <span class="node-text name">{{ aspect.name }}</span>
+      </div>
+    
+    </div>
   
   <div v-show="aspect.showChildren" class="subnodes-container">
       <Node 

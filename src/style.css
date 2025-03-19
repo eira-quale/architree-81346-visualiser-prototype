@@ -156,14 +156,22 @@ button:focus-visible {
   text-align: left;
 }
 
-
+.subnodes-container .node-container { 
+  background-color: #bdc3c7;
+  margin-left: 20px;
+  border-left: 3px solid #7f8c8d;
+}
 
 .node-container.hovered { /* <-- Lagt till */
-  background-color: #217dbb; 
+  background-color: #217dbb !important; 
 }
 
 .node-container.selected {  /* <-- Lagt till */
-  background-color: #1b5a8a;
+  background-color: #1b5a8a !important;
+}
+
+.subnodes-container .node-container.selected {
+  background-color: #1b5a8a !important;
 }
 
 /* Ensure the chevron icon stays on the left */
@@ -171,16 +179,31 @@ svg-icon {
   margin-right: 5px; /* Adds spacing between icon and text */
 }
 
+
+.node-text-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+}
+
 /* Left-align the 'name' span */
 .node-text.name {
-  flex-grow: 1; /* Takes up available space */
+  
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Right-align the 'rds' span */
 .node-text.rds {
   text-align: right;
   min-width: fit-content; /* Prevents it from shrinking too much */
+  white-space: nowrap;
 }
 
 
@@ -228,12 +251,13 @@ svg-icon {
   height: 100px;
   width: 100%;
   background-color: #1a1a1a;
-  opacity: 0.5;
+  
   border-radius: 5px;
+  
 }
 
 .side-panel-other-denominations-box.span {
-  color: red;
+  color: white;
   padding: 4px;
   margin-left: 4px;
 }
