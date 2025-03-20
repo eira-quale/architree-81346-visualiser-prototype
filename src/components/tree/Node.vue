@@ -1,22 +1,36 @@
 <template>
-  
-    <div @click="handleNodeClick" class="node-container">
-      <svg-icon type="mdi" :path="getChevron()"></svg-icon>
-      
+  <div 
+      @click="handleNodeClick"
+      class="node-container"
+      @mouseover="isHovered = true"
+      @mouseleave="isHovered = false"
+      :class="['node-container', { 
+            subnode: isSubNode, 
+            hovered: isHovered, 
+            selected: selectedNode?.id === aspect.id 
+        }]"
+      >
+      <svg-icon type="mdi" :path="getChevron()" @click.stop="toggleChildren"></svg-icon>
+
+      <div class="node-text-container">
         <span class="node-text rds">{{ aspect.rds }}</span>
-        <span class="node-text name"> {{ aspect.name }}</span>
-      
-    </div>
+        <span class="node-text name">{{ aspect.name }}</span>
+      </div>
     
-    <div :class="node-container" v-for="(subnode, index) in aspect.children"  >
-      <div v-show="subnode.isVisible">
-        <div class="node-container subnode" @click="handleSubNodeClick(subnode)">
-     <span>{{ subnode.rds }} </span> 
-     <span>{{ subnode.name }} </span> 
     </div>
-    </div>
+  
+  <div v-show="aspect.showChildren" class="subnodes-container">
+      <Node 
+          v-for="subnode in aspect.children"
+          :key="subnode.id"
+          :aspect="subnode"
+          :selectedNode="selectedNode"
+          @handle-node-click="$emit('handle-node-click', subnode)"
+          :isSubnode="true"
+      />
   </div>
-  </template>
+</template>
+
   
   <script>
 import Aspect from '../../services/models/aspect';
@@ -26,13 +40,22 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
   export default {
     name: "Node",
     props: {
-        aspect: Aspect,
+        aspect: Object,
+        selectedNode: Object,
+        
+        isSubNode: {
+            type: Boolean,
+            default: false
+        }
       
 
     },
     data() {
       return {
 
+        isHovered: false,
+        hoverStates: {},
+      
         chevronRight: mdilChevronRight,
         chevronDown: mdilChevronDown
 
@@ -47,13 +70,17 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
     
     methods: {
       handleNodeClick() {
+
+      //this.selectedNode = this.aspect;
       this.$emit("handle-node-click", this.aspect);
+      this.toggleChildren();
     
         
       },
       
       handleSubNodeClick(subnode){
 
+        //this.selectedNode = subnode;
         this.$emit("handle-node-click", subnode)
 
       },
@@ -70,14 +97,20 @@ import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
         
 
       },
+
+      toggleChildren(){
+        this.aspect.showChildren = !this.aspect.showChildren;
+      }
       
     },
     watch: {
       // Your watchers
     },
     mounted() {
-      // Lifecycle hook - runs when the component is mounted
-    },
+      if (this.aspect.showChildren === undefined) {
+        this.$set(this.aspect, 'showChildren', false);
+        // Lifecycle hook - runs when the component is mounted
+    }},
   };
   </script>
   
