@@ -124,8 +124,59 @@
                     "isVisible": false,
                     "children": []
                 }
+                
             ]
 
+        },
+        {
+            "id": "99b128c5-1ac2-4417-a34e-091f24a26f8c",
+            "rds": "-SP7",
+            "name": "Continuous Casting Machine",
+            "description": "Forms steel into semi-finished shapes continuously.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "8a1838c6-ac4c-454b-818e-2d8faffb25ed",
+            "rds": "-SP8",
+            "name": "Annealing Furnace",
+            "description": "Heats steel to remove internal stresses.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "c88d8bc2-7bb9-49f7-b579-c2eef0537ee4",
+            "rds": "-SP9",
+            "name": "Scrap Shredder",
+            "description": "Shreds scrap steel into smaller pieces for recycling.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "531d0801-e3dc-4105-bb97-891a57d5a59e",
+            "rds": "-SP10",
+            "name": "Electrostatic Coating System",
+            "description": "Applies coatings to steel surfaces using electrostatic charge.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
+        },
+        {
+            "id": "eb3fd5d4-ffc8-40c1-98e2-5f5fdadc5511",
+            "rds": "-SP11",
+            "name": "Gas Flow Regulator",
+            "description": "Controls the distribution of gases in steel production.",
+            "aspectType": "Product",
+            "parentId": null,
+            "isVisible": true,
+            "children": []
         }
         
     ],
@@ -202,4 +253,8 @@
         }
       
     ]
+
+  
+
+
 }
