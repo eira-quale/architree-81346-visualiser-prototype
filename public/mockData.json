@@ -18,7 +18,7 @@
                     "parentId": "=SFA1",
                     "isVisible": false,
                     "children": [],
-                    "linkedAspects": ["cf588288-ea29-416c-907a-034734d8a08e", "49ad8c89-a227-4e0b-8dbf-bca45db6f188", "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e"]
+                    "linkedAspects": ["cf588288-ea29-416c-907a-034734d8a08e", "49ad8c89-a227-4e0b-8dbf-bca45db6f188"]
                 },
                 {
                     "id": "1b3bdfa1-6903-4f05-9d8b-f8bae61c6ccb",
@@ -164,7 +164,7 @@
                     "parentId": "-SP1",
                     "isVisible": false,
                     "children": [],
-                    "linkedAspects": ["cf588288-ea29-416c-907a-034734d8a08e", "49ad8c89-a227-4e0b-8dbf-bca45db6f188", "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e"]
+                    "linkedAspects": [ "49ad8c89-a227-4e0b-8dbf-bca45db6f188", "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e"]
                 }
             ],
             "linkedAspects": [

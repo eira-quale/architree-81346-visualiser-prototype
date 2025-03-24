@@ -90,23 +90,40 @@ export default {
       );
     },
     getAspectById(aspectId) {
-      // Check if functional aspects contain the aspect with matching ID
-      let foundAspect = this.functionalAspects.find(item => item.id === aspectId);
-
-      // If not found in functional aspects, check in product aspects
-      if (!foundAspect) {
-        foundAspect = this.productAspects.find(item => item.id === aspectId);
+  // Helper function to check if an aspect or its children contains the given aspectId
+  const searchInChildren = (aspectList) => {
+    for (let aspect of aspectList) {
+      // First check if the aspect itself matches
+      if (aspect.id === aspectId) {
+        return aspect;
       }
 
-      // If still not found, check in location aspects
-      if (!foundAspect) {
-        foundAspect = this.locationAspects.find(item => item.id === aspectId);
+      // Then check if any of the children have the matching ID
+      if (aspect.children && aspect.children.length > 0) {
+        const childFound = aspect.children.find(child => child.id === aspectId);
+        if (childFound) {
+          return childFound;
+        }
       }
+    }
+    return null; // Return null if no match found
+  };
 
-      // Return the found aspect (or undefined if not found)
-      return foundAspect;
-    },
+  // Search in functional aspects
+  let foundAspect = searchInChildren(this.functionalAspects);
 
+  // If not found in functional aspects, check in product aspects
+  if (!foundAspect) {
+    foundAspect = searchInChildren(this.productAspects);
+  }
+
+  // If still not found, check in location aspects
+  if (!foundAspect) {
+    foundAspect = searchInChildren(this.locationAspects);
+  }
+
+  return foundAspect; // Return the found aspect or null if not found
+},
 
 
     onNodeClick(aspect) {
@@ -117,11 +134,26 @@ export default {
 
       this.selectedAspect.linkedAspects.forEach((id) => {
         
-        console.log(this.getAspectById(id))
-      });
+        const linkedAspect = this.getAspectById(id);
+
+       if(!linkedAspect?.isVisible){
+        if(linkedAspect.parentId != null){
+          const parentId = this.getAspectById(linkedAspect.parentId);
+
+          parentId.toggleShowChildren();
+
+        }
+       }
+
+   
+      })
 
 
-    },
+
+
+
+    }
+  
 
 
 
