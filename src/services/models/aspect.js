@@ -1,7 +1,7 @@
 class Aspect {
   static VALID_ASPECT_TYPES = ["Functional", "Location", "Product"];
 
-  constructor(id, rds, name, description, aspectType, children = [], parentId = null) {
+  constructor(id, rds, name, description, aspectType, children = [], parentId = null, linkedAspects) {
     if (!Aspect.VALID_ASPECT_TYPES.includes(aspectType)) {
       throw new Error(`Invalid aspectType: ${aspectType}. Must be one of ${Aspect.VALID_ASPECT_TYPES.join(", ")}`);
     }
@@ -15,6 +15,7 @@ class Aspect {
     this.parentId = parentId; // Reference to the parent aspect
     this.isVisible = this.isRoot(); // Root nodes default to true, children default to false
     this.showChildren = false;
+    this.linkedAspects = linkedAspects;
   }
 
   // Check if this node is a root node
@@ -63,6 +64,10 @@ class Aspect {
     return this.showChildren;
   }
 
+  getLinkedAspecta(){
+    return this.linkedAspects;
+  }
+
   // Setters
   setId(id) {
     this.id = id;
@@ -107,6 +112,8 @@ class Aspect {
   hasChildren() {
     return Array.isArray(this.children) && this.children.length > 0;
   }
+
+
 }
 
 

@@ -4,6 +4,7 @@
       <h2>{{ selectedAspect ? selectedAspect.rds : null}}</h2>
       <h1>{{  selectedAspect ? selectedAspect.name : null }}</h1>
       <span> {{  selectedAspect ? selectedAspect.description : null }}</span>
+      <span> {{  selectedAspect ? selectedAspect.id : null }}</span>
     </div>
 
     <div class="side-panel-other-denominations">

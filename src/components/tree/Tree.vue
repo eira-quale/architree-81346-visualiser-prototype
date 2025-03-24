@@ -1,15 +1,20 @@
 <template>
-
-    <div class="tree">
+  <div class="tree">
     <div class="tree-title-container">
-
       <h1>{{ treeTitle }}</h1>
       <svg-icon class="tree-icon" type="mdi" :path="icon"></svg-icon>
-
     </div>
     <div class="tree-container">
-      <Node v-for="(node, index) in tree" :aspect="node"  @handle-node-click="forwardNodeClick" :selectedAspect="selectedAspect">
-      </Node>
+      <!-- Scrollable area for nodes -->
+      <div class="tree-content">
+        <Node 
+          v-for="(node, index) in tree" 
+          :key="index"
+          :aspect="node" 
+          @handle-node-click="forwardNodeClick" 
+          :selectedAspect="selectedAspect"
+        />
+      </div>
     </div>
   </div>
 </template>
