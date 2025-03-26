@@ -1,7 +1,7 @@
 <template>
     <div class="filter-dropdown" ref="dropdown">
         <div class="filter-top-row" @click="toggleDropdown">
-            Filter
+            <span class="filter-text">Filter</span>
             <div class="selected-tags" @click.stop>
                 <span v-for="option in selectedOptions" :key="option.value" class="tag">
                     {{ option.label }}
@@ -96,6 +96,15 @@ export default {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 10px;
+    height: 30px;
+}
+
+.filter-text {
+    margin-right: 5px;
+    display: flex; /* Use flexbox for vertical alignment */
+    align-items: center; /* Center vertically */
+    color: white;
+    font-size: larger;
 }
 
 .selected-tags {
@@ -104,13 +113,10 @@ export default {
     flex-wrap: nowrap;
     /* Prevent line breaks */
     gap: 5px;
-    margin-bottom: 10px;
-    overflow-x: auto;
-    /* Allow horizontal scrolling if needed */
 }
 
 .tag {
-    display: flex;
+    display: inline-flex; /* Use inline-flex to keep tag and button inline */
     align-items: center;
     background-color: #535bf2;
     color: white;
@@ -118,14 +124,20 @@ export default {
     border-radius: 15px;
     white-space: nowrap;
     /* Prevent text wrapping */
+    margin-right: 5px; /* Add spacing between tags */
 }
 
 .remove-tag {
     background: none;
     border: none;
     color: white;
-    margin-left: 5px;
+    margin-left: 5px; /* Add spacing between tag content and button */
     cursor: pointer;
+    height: 100%; /* Match the height of the tag */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: flex-end; /* Align the "x" to the right inside the button */
+    padding: 0 5px; /* Add padding for better spacing */
 }
 
 .dropdown {
