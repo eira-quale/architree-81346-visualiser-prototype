@@ -103,7 +103,7 @@ button:focus-visible {
 
 .main-container {
   display: flex; 
-  flex-direction: row;
+  flex-direction: column;
 
   margin-right: 70px;
   margin-top: 50px;

@@ -1,7 +1,9 @@
 <template>
 
+<FilterDropdown></FilterDropdown>
   <div class="main-container">
 
+  
     <div class="main-trees-container">
 
       <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects" @handle-node-click="onNodeClick"
@@ -22,6 +24,7 @@
 
 <script>
 
+import FilterDropdown from './components/FilterDropdown.vue';
 import Tree from '@/components/tree/Tree.vue'
 import Aspect from '@/services/models/aspect.js'
 import { fetchMockData } from '@/services/treeService.js'
@@ -32,6 +35,7 @@ import { mdiCube } from '@mdi/js';
 import { mdiHammerWrench } from '@mdi/js';
 
 
+
 export default {
 
   props: {
@@ -40,7 +44,7 @@ export default {
   data() {
     return {
 
-
+     
       mockData: null,
       functionalAspects: null,
       productAspects: null,
@@ -59,7 +63,7 @@ export default {
     Tree,
     SidePanel,
     SvgIcon,
-
+    FilterDropdown
 
 
   },
