@@ -1,7 +1,10 @@
 <template>
     <div class="filter-dropdown" ref="dropdown">
         <div class="filter-top-row" @click="toggleDropdown">
-            <span class="filter-text">Filter</span>
+            <span class="filter-text">
+                Filter
+                <span class="chevron">{{ isDropdownVisible ? '▲' : '▼' }}</span>
+            </span>
             <div class="selected-tags" @click.stop>
                 <span v-for="option in selectedOptions" :key="option.value" class="tag">
                     {{ option.label }}
@@ -88,6 +91,7 @@ export default {
     flex-direction: column;
     margin: 10px 0;
     position: relative; /* Ensure positioning context for dropdown */
+    max-width: 90%; /* Reduce the width to make it shorter on the right side */
 }
 
 .filter-top-row {
@@ -97,22 +101,37 @@ export default {
     cursor: pointer;
     margin-bottom: 10px;
     height: 30px;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px; /* Add space below the border */
 }
 
 .filter-text {
-    margin-right: 5px;
-    display: flex; /* Use flexbox for vertical alignment */
+    margin-right: 10px;
+    display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center vertically */
     color: white;
     font-size: larger;
+    background-color: #4a90e2; /* Add a background color */
+    padding: 5px 10px; /* Add padding for button-like appearance */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+    
+    
+}
+
+.filter-text:hover {
+    background-color: #357ab8; /* Darken background on hover */
 }
 
 .selected-tags {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    /* Prevent line breaks */
+    flex-wrap: nowrap; /* Prevent wrapping of tags */
     gap: 5px;
+    
+    
 }
 
 .tag {
@@ -147,7 +166,7 @@ export default {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    width: 100px;
+    width: 120px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     top: 100%; /* Position below the filter-top-row */
     left: 0;
@@ -171,5 +190,10 @@ label {
 
 input[type="checkbox"] {
     cursor: pointer;
+}
+
+.chevron {
+    margin-left: 5px; /* Add spacing between text and chevron */
+    font-size: smaller; /* Adjust size of the chevron */
 }
 </style>
