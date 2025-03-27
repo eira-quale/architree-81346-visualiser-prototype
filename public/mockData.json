@@ -1,342 +1,133 @@
-{
-    "functional_aspects": [
+[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
         {
-            "id": "82f51aa6-6445-4c5a-88ba-b563b8788a25",
-            "rds": "=SFA1",
-            "name": "Steel Melting System",
-            "description": "Controls and monitors steel melting processes.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
                 {
-                    "id": "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e",
-                    "rds": "=SFA1-1",
-                    "name": "Temperature Control",
-                    "description": "Regulates furnace temperature for optimal steel melting.",
-                    "aspectType": "Functional",
-                    "parentId": "=SFA1",
-                    "isVisible": false,
-                    "children": [],
-                    "linkedAspects": ["cf588288-ea29-416c-907a-034734d8a08e", "49ad8c89-a227-4e0b-8dbf-bca45db6f188"]
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
                 },
                 {
-                    "id": "1b3bdfa1-6903-4f05-9d8b-f8bae61c6ccb",
-                    "rds": "=SFA1-2",
-                    "name": "Chemical Composition Monitoring",
-                    "description": "Analyzes chemical properties to ensure quality.",
-                    "aspectType": "Functional",
-                    "parentId": "=SFA1",
-                    "isVisible": false,
-                    "children": [],
-                    "linkedAspects": []
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
                 },
                 {
-                    "id": "023de759-3eaf-4601-9364-8509ed13fe79",
-                    "rds": "=SFA1-3",
-                    "name": "Slag Management",
-                    "description": "Controls the removal and handling of slag byproducts.",
-                    "aspectType": "Functional",
-                    "parentId": "=SFA1",
-                    "isVisible": false,
-                    "children": [],
-                    "linkedAspects": []
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
                 }
-            ],
-            "linkedAspects": []
+              ]
+            }
+          ]
         },
         {
-            "id": "733b1b61-10b7-4aaf-a6bc-c85afe098859",
-            "rds": "=SFA6",
-            "name": "Steel Casting System",
-            "description": "Manages the casting of molten steel into molds.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
         },
         {
-            "id": "37937a30-1582-4a66-8854-7996e3fd6dee",
-            "rds": "=SFA7",
-            "name": "Heat Treatment System",
-            "description": "Controls the heating and cooling of steel to alter its properties.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
         },
         {
-            "id": "98b3c303-9e13-4a97-99af-7c6a0dc0cc77",
-            "rds": "=SFA8",
-            "name": "Steel Recycling Unit",
-            "description": "Handles the reprocessing and reuse of steel materials.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
         },
         {
-            "id": "9125eb2b-833e-4977-a3f9-900ea8d7bd0a",
-            "rds": "=SFA9",
-            "name": "Surface Treatment System",
-            "description": "Applies coatings and finishes to steel surfaces.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "44a7bd10-9b2a-42f6-9b61-5e1abfd3094a",
-            "rds": "=SFA10",
-            "name": "Gas Control System",
-            "description": "Regulates gas flow for steel production processes.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "664879d6-281e-4719-8d0f-108f97cd2dca",
-            "rds": "=SFA11",
-            "name": "Ladle Treatment System",
-            "description": "Manages refining operations inside the ladle.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "f4ffe2df-7811-4f93-8e0f-7e8ee1ac75de",
-            "rds": "=SFA12",
-            "name": "Slag Handling System",
-            "description": "Oversees the processing and disposal of slag.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "46c2048a-3799-4818-9513-6a0075c7a678",
-            "rds": "=SFA13",
-            "name": "Alloy Addition System",
-            "description": "Controls the precise addition of alloying elements.",
-            "aspectType": "Functional",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
         }
-    ],
-    "product_aspects": [
-        {
-            "id": "8ca19498-2763-43c3-80a2-b6750a7e882a",
-            "rds": "-SP1",
-            "name": "Induction Furnace",
-            "description": "A furnace used for steel melting via induction heating.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [
-                {
-                    "id": "758cc1c5-7d82-4696-b920-a37ad64c88d4",
-                    "rds": "-SP1-1",
-                    "name": "Power Supply Unit",
-                    "description": "Provides electrical power for induction heating.",
-                    "aspectType": "Product",
-                    "parentId": "-SP1",
-                    "isVisible": false,
-                    "children": [],
-                    "linkedAspects": []
-                },
-                {
-                    "id": "cf588288-ea29-416c-907a-034734d8a08e",
-                    "rds": "-SP1-2",
-                    "name": "Cooling Coil",
-                    "description": "Regulates heat dissipation during melting.",
-                    "aspectType": "Product",
-                    "parentId": "-SP1",
-                    "isVisible": false,
-                    "children": [],
-                    "linkedAspects": [ "49ad8c89-a227-4e0b-8dbf-bca45db6f188", "868fb13d-f9d2-44e2-89b1-5621f1bdcd2e"]
-                }
-            ],
-            "linkedAspects": [
-               
-            ]
-        },
-        {
-            "id": "692a4b53-ce41-4da7-878d-c8492ef006d3",
-            "rds": "-SP15",
-            "name": "Ladle Furnace",
-            "description": "Used to refine and homogenize molten steel before casting.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "430b886a-dd25-4d3a-b288-8233a1dc5095",
-            "rds": "-SP16",
-            "name": "Desulfurization Unit",
-            "description": "Equipment used to reduce sulfur content in molten steel.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "310588cf-5515-4044-83ef-acf053f939c9",
-            "rds": "-SP17",
-            "name": "Alloy Feeder",
-            "description": "Feeds alloying elements into the molten steel.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "fdb1ac45-0364-4363-a7c7-176d2a42daf7",
-            "rds": "-SP18",
-            "name": "Tundish",
-            "description": "Intermediate vessel that distributes molten steel to molds.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "7b2385c8-b3be-4f52-aad2-79eaba268ec3",
-            "rds": "-SP19",
-            "name": "Casting Mold",
-            "description": "Mold used to shape steel as it cools and solidifies.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "86adde2e-989c-41fc-8522-bf991ab401af",
-            "rds": "-SP20",
-            "name": "Vacuum Degasser",
-            "description": "Removes dissolved gases from molten steel to improve quality.",
-            "aspectType": "Product",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        }
-    ],
-    "location_aspects": [
-        {
-            "id": "bfaf1122-2551-48f7-8250-9a8833996d10",
-            "rds": "++LOC1",
-            "name": "Furnace Area",
-            "description": "Location where the steel melting furnace is installed.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "49ad8c89-a227-4e0b-8dbf-bca45db6f188",
-            "rds": "++LOC2",
-            "name": "Cooling Zone",
-            "description": "Location dedicated to cooling and solidification processes.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": ["868fb13d-f9d2-44e2-89b1-5621f1bdcd2e","cf588288-ea29-416c-907a-034734d8a08e"]
-        },
-        {
-            "id": "a4d00a71-e01d-4d02-ad0d-5ab184ce0263",
-            "rds": "++LOC3",
-            "name": "Material Storage Area",
-            "description": "Storage location for raw materials used in steel production.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "e70e99f0-8a36-4f1e-92e0-5fa370337c83",
-            "rds": "++LOC4",
-            "name": "Inspection Zone",
-            "description": "Dedicated area for quality control and inspection of steel products.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "7b410efa-2a38-45b7-be8a-03367b5611e0",
-            "rds": "++LOC5",
-            "name": "Finished Goods Warehouse",
-            "description": "Storage facility for completed steel products before shipment.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "bb315e0a-21da-43f9-8568-fa15051534d6",
-            "rds": "++LOC11",
-            "name": "Slag Processing Area",
-            "description": "Facility for handling and processing steel slag.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "d8e6b017-9a50-4580-9bed-6d763b7df832",
-            "rds": "++LOC12",
-            "name": "Alloy Storage Zone",
-            "description": "Storage area for alloying materials used in steel production.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "b54cad19-b394-420a-a806-b3195513636d",
-            "rds": "++LOC13",
-            "name": "Desulfurization Plant",
-            "description": "Facility for removing sulfur content from molten steel.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        },
-        {
-            "id": "f00d6866-6efd-4c14-9a85-0039591d52f8",
-            "rds": "++LOC14",
-            "name": "Casting Preparation Area",
-            "description": "Prepares molds and casting equipment for steel pouring.",
-            "aspectType": "Location",
-            "parentId": null,
-            "isVisible": true,
-            "children": [],
-            "linkedAspects": []
-        }
-    ]
-}
+      ]
+    }
+  ]
