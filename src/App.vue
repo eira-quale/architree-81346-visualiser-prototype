@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
  
-    <div class="prototype-logo">Architree Prototype <svg-icon class="prototype-icon" type="mdi" :path="path"></svg-icon></div> 
+    <div class="prototype-logo">Architree Prototype </div> 
   
   <Main></Main></div>
 </template>

@@ -4,6 +4,7 @@
       <h2>{{ selectedAspect ? selectedAspect.rds : null}}</h2>
       <h1>{{  selectedAspect ? selectedAspect.name : null }}</h1>
       <span> {{  selectedAspect ? selectedAspect.description : null }}</span>
+   
     </div>
 
     <div class="side-panel-other-denominations">
@@ -11,6 +12,11 @@
       <div class="side-panel-other-denominations-box">
 
         <span class="side-panel-other-denominations-box span">###ABC</span>
+
+        
+        <img class="img-map" src='../../assets/map.png'
+         />
+       
         
       </div>
     </div>
