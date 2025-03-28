@@ -1,3 +1,5 @@
+import { TreeNode } from './treeNode';
+
 export class Tree {
 
     constructor(id, name, isVisible) {    
@@ -37,6 +39,14 @@ export class Tree {
 
     setIsVisible(isVisible) {
         this.isVisible = isVisible;
+    }
+
+    addNode(node) {
+        if (node instanceof TreeNode) {
+            this.nodes.push(node);
+        } else {
+            throw new Error('Only instances of Node can be added.');
+        }
     }
 }
 
