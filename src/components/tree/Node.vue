@@ -1,106 +1,31 @@
 <template>
-
-  <div @click="handleNodeClick" class="node-container" :class="getClass(aspect)">
-    <svg-icon type="mdi" :path="getChevron()"></svg-icon>
-
-    <span class="node-text rds">{{ aspect.rds }}</span>
-    <span class="node-text name"> {{ aspect.name }}</span>
-
+  <!-- Print parent node -->
+  <div class="node-container">
+    <span class="node-text rds">{{ node.data.name }}</span>
   </div>
 
-  <div v-for="(subnode, index) in aspect.children">
-    <div v-show="subnode.isVisible">
-      <div class="node-container subnode" :class="  getClass(subnode) "
-        @click="handleSubNodeClick(subnode)">
-        <span class="node-text rds">{{ subnode.rds }} </span>
-        <span class="node-text name">{{ subnode.name }} </span>
-      </div>
-    </div>
+  <div v-for="(childNode, index) in node.children" :key="index" class="node-children">
+    <span class="node-text">{{ childNode.data.name }}</span>
+    <!-- Check if the child node has children and recursively render them -->
+    <Node v-if="childNode.children && childNode.children.length" :node="childNode" />
   </div>
 </template>
 
 <script>
-import Aspect from '../../services/models/aspect';
+import { TreeNode } from '../../services/models/treeNode';
 
-import SvgIcon from '@jamescoyle/vue-icon';
-import { mdilChevronDown, mdilChevronRight } from '@mdi/light-js';
 export default {
-  name: "Node",
+  name: "Node", // The name property allows Vue to resolve recursive components
   props: {
-    aspect: Aspect,
-    selectedAspect: Aspect,
-
-
+    node: {
+      type: TreeNode
+    },
   },
   data() {
-    return {
-
-      chevronRight: mdilChevronRight,
-      chevronDown: mdilChevronDown
-
-    };
-
-
+    return {};
   },
-  components: {
-    SvgIcon
-  },
-
-
-  methods: {
-    handleNodeClick() {
-      this.$emit("handle-node-click", this.aspect);
-
-
-    },
-
-    getClass(aspect) {
-
-
-
-      if (this.isSelectedAspect(aspect)) {
-        return 'selectedAspect'
-      } 
-      
-      if (this.isLinkedAspect(aspect)) {
-
-        return 'linkedAspect'
-      } 
-
-      return 'node-container';
-
-    },
-
-
-    isSelectedAspect(aspect) {
-      return this.selectedAspect?.id === aspect.id;
-
-
-    },
-
-    isLinkedAspect(aspect) {
-      return this.selectedAspect?.linkedAspects?.includes(aspect.id) || false;
-    },
-    handleSubNodeClick(subnode) {
-
-      this.$emit("handle-node-click", subnode)
-
-    },
-    getChevron() {
-      if (!this.aspect.hasChildren()) {
-        return null;
-      } else {
-        if (this.aspect.showChildren) {
-          return mdilChevronDown;
-        } else {
-          return mdilChevronRight;
-        }
-      }
-
-
-    },
-
-  },
+  // Removed explicit import and registration of Node
+  methods: {},
   watch: {
     // Your watchers
   },

@@ -1,19 +1,21 @@
 <template>
   <div class="tree">
     <div class="tree-title-container">
-      <h1>{{ treeTitle }}</h1>
-      <svg-icon class="tree-icon" type="mdi" :path="icon"></svg-icon>
+      <h1>{{ tree.name }}</h1>
+     
     </div>
     <div class="tree-container">
       <!-- Scrollable area for nodes -->
       <div class="tree-content">
-        <Node 
-          v-for="(node, index) in tree" 
-          :key="index"
-          :aspect="node" 
-          @handle-node-click="forwardNodeClick" 
-          :selectedAspect="selectedAspect"
-        />
+        <Node
+        v-for="(node, index) in tree.nodes"
+        :key="index"
+        :node="node">
+
+
+        </Node>
+       
+      
       </div>
     </div>
   </div>
@@ -21,38 +23,37 @@
 
 <script>
 import Node from './Node.vue';
-import SvgIcon from '@jamescoyle/vue-icon';
-import Aspect from '../../services/models/aspect';
+import { mdilBook } from '@mdi/light-js';
+import { TreeRoot } from '../../services/models/treeRoot.js';
 
 export default {
   name: "Tree",
 
   props: {
-    selectedAspect: Aspect,
-    icon: Object,
-    treeTitle: String,
+  
+
+  
     tree: {
-      type: Array,
-      required: true,
-      validator(value) {
-        return value.every(
-          (item) => typeof item.id === "number" && typeof item.name === "string"
-        );
+      type: TreeRoot
+      
       },
     },
-  },
+  
   data() {
     return {
 
-
+      icon: mdilBook,
+  
 
     };
 
   },
   components: {
 
-    Node,
-    SvgIcon
+    Node
+
+
+
     
  
 

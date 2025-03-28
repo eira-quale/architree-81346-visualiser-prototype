@@ -1,19 +1,16 @@
 <template>
 
 <FilterDropdown></FilterDropdown>
+
   <div class="main-container">
 
   
     <div class="main-trees-container">
-
-      <Tree ref="tree-functional" treeTitle="Function" :tree="this.functionalAspects" @handle-node-click="onNodeClick"
-        :icon="this.functionalPath" :selectedAspect="selectedAspect"></Tree>
-
-      <Tree ref="tree-products" treeTitle="Product" :tree="this.productAspects" @handle-node-click="onNodeClick"
-        :icon="this.productPath" :selectedAspect="selectedAspect"></Tree>
-
-      <Tree ref="tree-locations" treeTitle="Location" :tree="this.locationAspects" @handle-node-click="onNodeClick"
-        :icon="this.locationPath" :selectedAspect="selectedAspect"></Tree>
+      
+      <Tree v-for="(tree, index) in trees" 
+        :key="index"
+        :tree="tree"
+        ></Tree>
 
 
     </div>
@@ -25,7 +22,7 @@
 <script>
 
 import FilterDropdown from './components/FilterDropdown.vue';
-import Tree from '@/components/tree/Tree.vue'
+
 import Aspect from '@/services/models/aspect.js'
 import { fetchMockData } from '@/services/treeService.js'
 import SidePanel from './components/side-panel/SidePanel.vue';
@@ -33,8 +30,9 @@ import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiMapMarkerPath } from '@mdi/js';
 import { mdiCube } from '@mdi/js';
 import { mdiHammerWrench } from '@mdi/js';
-
-
+import { TreeRoot } from '@/services/models/treeRoot.js'; // Updated import
+import { TreeNode } from '@/services/models/treeNode.js'; // Updated import
+import Tree from './components/tree/Tree.vue';
 
 export default {
 
@@ -46,10 +44,11 @@ export default {
 
      
       mockData: null,
-      functionalAspects: null,
-      productAspects: null,
-      locationAspects: null,
       selectedAspect: null,
+      trees: [],
+      
+      
+      // Icons
       functionalPath: mdiHammerWrench,
       locationPath: mdiMapMarkerPath,
       productPath: mdiCube
@@ -69,95 +68,41 @@ export default {
   },
   async mounted() {
 
-
     this.mockData = await fetchMockData();
+    this.initializeTrees();
+    
 
-    if (this.mockData != null) {
-      this.functionalAspects = this.mockData.functional_aspects.map(aspect => this.createAspect(aspect, "Functional"));
-      this.productAspects = this.mockData.product_aspects.map(aspect => this.createAspect(aspect, "Product"));
-      this.locationAspects = this.mockData.location_aspects.map(aspect => this.createAspect(aspect, "Location"));
-    }
 
 
   },
   methods: {
-    createAspect(data, aspectType, parentId = null) {
-      return new Aspect(
-        data.id,
-        data.rds,
-        data.name,
-        data.description,
-        aspectType,
-        data.children ? data.children.map(child => this.createAspect(child, aspectType, data.id)) : [],
-        parentId,
-        data.linkedAspects
-      );
-    },
-    getAspectById(aspectId) {
-  // Helper function to check if an aspect or its children contains the given aspectId
-  const searchInChildren = (aspectList) => {
-    for (let aspect of aspectList) {
-      // First check if the aspect itself matches
-      if (aspect.id === aspectId) {
-        return aspect;
-      }
 
-      // Then check if any of the children have the matching ID
-      if (aspect.children && aspect.children.length > 0) {
-        const childFound = aspect.children.find(child => child.id === aspectId);
-        if (childFound) {
-          return childFound;
+    initializeTrees() {
+      const randomId = Math.random().toString(36).substr(2, 9);
+      const newTree = new TreeRoot(randomId, "Lokalisering", true); // Updated reference
+
+      const createNodeFromData = (data) => {
+        const aspect = new Aspect(data.id, data.rds, data.name, data.previousName);
+        const nodeId = Math.random().toString(36).substr(2, 9);
+        const node = new TreeNode(aspect, nodeId); // Updated reference
+
+        if (data.children && data.children.length > 0) {
+          data.children.forEach((child) => {
+            const childNode = createNodeFromData(child);
+            node.children.push(childNode);
+          });
         }
-      }
+
+        return node;
+      };
+
+      this.mockData.forEach((mockItem) => {
+        const node = createNodeFromData(mockItem);
+        newTree.addNode(node);
+      });
+
+      this.trees.push(newTree);
     }
-    return null; // Return null if no match found
-  };
-
-  // Search in functional aspects
-  let foundAspect = searchInChildren(this.functionalAspects);
-
-  // If not found in functional aspects, check in product aspects
-  if (!foundAspect) {
-    foundAspect = searchInChildren(this.productAspects);
-  }
-
-  // If still not found, check in location aspects
-  if (!foundAspect) {
-    foundAspect = searchInChildren(this.locationAspects);
-  }
-
-  return foundAspect; // Return the found aspect or null if not found
-},
-
-
-    onNodeClick(aspect) {
-
-      this.selectedAspect = aspect;
-
-      aspect.toggleShowChildren();
-
-      this.selectedAspect.linkedAspects.forEach((id) => {
-        
-        const linkedAspect = this.getAspectById(id);
-
-       if(!linkedAspect?.isVisible){
-        if(linkedAspect.parentId != null){
-          const parentId = this.getAspectById(linkedAspect.parentId);
-
-          parentId.toggleShowChildren();
-
-        }
-       }
-
-   
-      })
-
-
-
-
-
-    }
-  
 
 
 
