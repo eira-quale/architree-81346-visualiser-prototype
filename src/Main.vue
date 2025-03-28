@@ -6,7 +6,11 @@
 
   
     <div class="main-trees-container">
-
+      
+      <Tree v-for="(tree, index) in trees" 
+        :key="index"
+        :tree="tree"
+        ></Tree>
 
 
     </div>
@@ -26,8 +30,9 @@ import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiMapMarkerPath } from '@mdi/js';
 import { mdiCube } from '@mdi/js';
 import { mdiHammerWrench } from '@mdi/js';
-import { Tree } from '@/services/models/tree.js';
+import { TreeRoot } from '@/services/models/treeRoot.js'; // Updated import
 import { TreeNode } from '@/services/models/treeNode.js'; // Updated import
+import Tree from './components/tree/Tree.vue';
 
 export default {
 
@@ -74,7 +79,7 @@ export default {
 
     initializeTrees() {
       const randomId = Math.random().toString(36).substr(2, 9);
-      const newTree = new Tree(randomId, "Lokalisering", true);
+      const newTree = new TreeRoot(randomId, "Lokalisering", true); // Updated reference
 
       const createNodeFromData = (data) => {
         const aspect = new Aspect(data.id, data.rds, data.name, data.previousName);

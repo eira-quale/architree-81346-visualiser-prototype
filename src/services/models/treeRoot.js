@@ -1,6 +1,6 @@
 import { TreeNode } from './treeNode';
 
-export class Tree {
+export class TreeRoot { // Renamed from Tree to TreeRoot
 
     constructor(id, name, isVisible) {    
         this.id = id;
@@ -45,9 +45,7 @@ export class Tree {
         if (node instanceof TreeNode) {
             this.nodes.push(node);
         } else {
-            throw new Error('Only instances of Node can be added.');
+            throw new Error('Only instances of TreeNode can be added.');
         }
     }
 }
-
-
