@@ -10,6 +10,7 @@
       <Tree v-for="(tree, index) in trees" 
         :key="index"
         :tree="tree"
+        @handle-node-click="handleNodeClick"
         ></Tree>
 
 
@@ -40,9 +41,7 @@ export default {
 
   },
   data() {
-    return {
-
-     
+    return {     
       mockData: null,
       selectedAspect: null,
       trees: [],
@@ -94,6 +93,8 @@ export default {
         }
 
         return node;
+
+        
       };
 
       this.mockData.forEach((mockItem) => {
@@ -102,7 +103,11 @@ export default {
       });
 
       this.trees.push(newTree);
-    }
+    },
+
+    handleNodeClick(aspect) {
+    this.selectedAspect = aspect;
+  },
 
 
 

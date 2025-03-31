@@ -1,13 +1,23 @@
 <template>
-  <!-- Print parent node -->
-  <div class="node-container">
-    <span class="node-text rds">{{ node.data.name }}</span>
+  <!-- Always display the parent node -->
+  <div class="node-container" @click="toggleExpand" :style="{ marginLeft: `${depth * 20}px` }">
+    <span class="node-text rds">
+      {{ node.data.name }}
+      <span v-if="node.children && node.children.length" class="toggle-icon">
+        {{ isExpanded ? '▼' : '▶' }}
+      </span>
+    </span>
   </div>
 
-  <div v-for="(childNode, index) in node.children" :key="index" class="node-children">
-    <span class="node-text">{{ childNode.data.name }}</span>
-    <!-- Check if the child node has children and recursively render them -->
-    <Node v-if="childNode.children && childNode.children.length" :node="childNode" />
+  <!-- Recursively render children if they exist and the node is expanded -->
+  <div v-if="isExpanded && node.children && node.children.length" class="node-children">
+    <Node
+      v-for="(childNode, index) in node.children"
+      :key="index"
+      :node="childNode"
+      :depth="depth + 1"
+      @node-click="$emit('node-click', $event)"
+    />
   </div>
 </template>
 
@@ -20,19 +30,31 @@ export default {
     node: {
       type: TreeNode
     },
+    depth: {
+      type: Number,
+      default: 0 // Start at depth 0 for the root node
+    }
   },
   data() {
-    return {};
+    return {
+      isExpanded: false, // Track whether the node is expanded
+    };
   },
-  // Removed explicit import and registration of Node
-  methods: {},
-  watch: {
-    // Your watchers
-  },
-  mounted() {
-    // Lifecycle hook - runs when the component is mounted
+  methods: {
+    toggleExpand() {
+      this.isExpanded = !this.isExpanded; // Toggle the expanded state
+      this.$emit('node-click', this.node.data);
+    },
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.node-container {
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.toggle-icon {
+  margin-left: 5px; /* Add spacing between the name and the toggle icon */
+}
+</style>
