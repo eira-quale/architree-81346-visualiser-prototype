@@ -84,20 +84,10 @@ export default {
         const nodeId = Math.random().toString(36).substr(2, 9);
         const node = new TreeNode(aspect, nodeId);
 
-          if (data.children && data.children.length > 0) {
-            data.children.forEach((child) => {
-              const childNode = createNodeFromData(child); // Recursively process children
-              node.children.push(childNode);
-            });
-          }
-
-          return node;
-        };
-
-        if (mockItem.nodes && mockItem.nodes.length > 0) {
-          mockItem.nodes.forEach((nodeData) => {
-            const node = createNodeFromData(nodeData); // Process top-level nodes
-            newTree.addNode(node);
+        if (data.children && data.children.length > 0) {
+          data.children.forEach((child) => {
+            const childNode = createNodeFromData(child);
+            node.children.push(childNode);
           });
         }
 
@@ -108,6 +98,8 @@ export default {
         const node = createNodeFromData(mockItem);
         newTree.addNode(node);
       });
+
+      this.trees.push(newTree);
     },
     handleNodeClick(aspect) {
       this.selectedAspect = aspect;
