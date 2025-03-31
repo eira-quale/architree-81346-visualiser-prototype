@@ -1,7 +1,6 @@
 <template>
   <div class="tree">
-    
-     
+        
     </div>
     <div class="tree-container">
       <!-- Scrollable area for nodes -->
@@ -11,11 +10,9 @@
         <Node
         v-for="(node, index) in tree.nodes"
         :key="index"
-        :node="node">
-
-
-        </Node>
-       
+        :node="node"
+        @node-click="forwardNodeClick"
+        ></Node>       
       
       </div>
     </div>
@@ -51,12 +48,7 @@ export default {
   },
   components: {
 
-    Node
-
-
-
-    
- 
+    Node 
 
   },
   computed: {

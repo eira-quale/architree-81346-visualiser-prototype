@@ -16,6 +16,7 @@
       :key="index"
       :node="childNode"
       :depth="depth + 1"
+      @node-click="$emit('node-click', $event)"
     />
   </div>
 </template>
@@ -42,6 +43,7 @@ export default {
   methods: {
     toggleExpand() {
       this.isExpanded = !this.isExpanded; // Toggle the expanded state
+      this.$emit('node-click', this.node.data);
     },
   },
 };
