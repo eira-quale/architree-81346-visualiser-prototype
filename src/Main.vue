@@ -1,89 +1,88 @@
 <template>
-
-<FilterDropdown></FilterDropdown>
+  
+      <FilterDropdown
+    :dynamicOptions="dynamicOptions"
+    @filter-changed="onFilterChanged"
+  />
+    
+  
 
   <div class="main-container">
-
-  
     <div class="main-trees-container">
-      
-      <Tree v-for="(tree, index) in trees" 
+      <Tree
+        v-for="(tree, index) in filteredTrees"
         :key="index"
         :tree="tree"
         @handle-node-click="handleNodeClick"
-        ></Tree>
-
-
+      />
     </div>
-    <SidePanel :selectedAspect="this.selectedAspect"></SidePanel>
+    <SidePanel :selectedAspect="this.selectedAspect" />
   </div>
-
 </template>
 
 <script>
-
 import FilterDropdown from './components/FilterDropdown.vue';
-
-import Aspect from '@/services/models/aspect.js'
-import { fetchMockData } from '@/services/treeService.js'
+import Aspect from '@/services/models/aspect.js';
+import { fetchMockData } from '@/services/treeService.js';
 import SidePanel from './components/side-panel/SidePanel.vue';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiMapMarkerPath } from '@mdi/js';
 import { mdiCube } from '@mdi/js';
 import { mdiHammerWrench } from '@mdi/js';
-import { TreeRoot } from '@/services/models/treeRoot.js'; // Updated import
-import { TreeNode } from '@/services/models/treeNode.js'; // Updated import
+import { TreeRoot } from '@/services/models/treeRoot.js';
+import { TreeNode } from '@/services/models/treeNode.js';
 import Tree from './components/tree/Tree.vue';
 
 export default {
-
-  props: {
-
-  },
   data() {
-    return {     
+    return {
       mockData: null,
       selectedAspect: null,
       trees: [],
-      
-      
-      // Icons
+      selectedFilters: [],
       functionalPath: mdiHammerWrench,
       locationPath: mdiMapMarkerPath,
       productPath: mdiCube
-
-
-    }
+    };
   },
-  components:
-  {
-
+  components: {
     Tree,
     SidePanel,
     SvgIcon,
     FilterDropdown
-
-
   },
   async mounted() {
-
     this.mockData = await fetchMockData();
     this.initializeTrees();
-    
-
-
-
+    this.$nextTick(() => {
+      this.selectedFilters = this.trees.map(tree => tree.name.toLowerCase());
+    });
+  },
+  computed: {
+    dynamicOptions() {
+      if (!this.trees.length) return [];
+      const uniqueNames = [...new Set(this.trees.map(tree => tree.name))];
+      return uniqueNames.map(name => ({
+        label: name,
+        value: name.toLowerCase()
+      }));
+    },
+    filteredTrees() {
+      if (!this.selectedFilters.length) return [];
+      return this.trees.filter(tree =>
+        this.selectedFilters.includes(tree.name.toLowerCase())
+      );
+    }
   },
   methods: {
-
     initializeTrees() {
       const randomId = Math.random().toString(36).substr(2, 9);
-      const newTree = new TreeRoot(randomId, "Lokalisering", true); // Updated reference
+      const newTree = new TreeRoot(randomId, "Lokalisering", true);
 
       const createNodeFromData = (data) => {
         const aspect = new Aspect(data.id, data.rds, data.name, data.previousName);
         const nodeId = Math.random().toString(36).substr(2, 9);
-        const node = new TreeNode(aspect, nodeId); // Updated reference
+        const node = new TreeNode(aspect, nodeId);
 
         if (data.children && data.children.length > 0) {
           data.children.forEach((child) => {
@@ -93,8 +92,6 @@ export default {
         }
 
         return node;
-
-        
       };
 
       this.mockData.forEach((mockItem) => {
@@ -104,19 +101,14 @@ export default {
 
       this.trees.push(newTree);
     },
-
     handleNodeClick(aspect) {
-    this.selectedAspect = aspect;
-  },
-
-
-
+      this.selectedAspect = aspect;
+    },
+    onFilterChanged(newFilters) {
+      this.selectedFilters = newFilters;
+    }
   }
-
-
-
 };
 </script>
-
 
 <style scoped></style>
