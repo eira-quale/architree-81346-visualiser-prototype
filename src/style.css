@@ -1,8 +1,9 @@
+/** ----------- THIS IS THE MAIN CSS USED FOR THE APP ---------- **/
+
 html {
   background-color: cadetblue; /* Ensure the background color stays */
   height: 100%;
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,6 +20,25 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: auto; /* Full viewport height */
+  background-color: cadetblue;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: cadetblue; /* Ensure the background color stays */
+}
+
+/** ----------- APP ---------- **/
 
 .prototype-logo {
   position: fixed; /* Ensures it stays in the top-left corner */
@@ -33,73 +53,21 @@ html {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/** ----------- MAIN ---------- **/
 
-body {
-  margin: 0;
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: auto; /* Full viewport height */
-  background-color: cadetblue;
-}
-
-h1 {
-  font-size: 1.2em;
-  line-height: 1;
- 
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-#app {
-  display: flex;
-  flex-direction: row;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: cadetblue; /* Ensure the background color stays */
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.filter-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #004d61;
+  padding: 15px 40px;
+  z-index: 1001;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-bottom: BLACK;
+  padding-right: 1000px;
 }
 
 .main-container {
@@ -121,18 +89,18 @@ button:focus-visible {
   width: fit-content;
   min-height: 100vh; /* Full height of the screen */
   overflow: visible; /* Allow scrolling if the content exceeds screen height */
-  background-color: cadetblue; /* Ensure the background color stays */
-  
+  background-color: cadetblue; /* Ensure the background color stays */ 
 }
 
+/** ----------- TREE ---------- **/
 
-.tree-container {
+/* Scrollable area for the nodes */
+.tree-content {
   display: flex;
   flex-direction: column;
-  height: 100%; /* eller auto – det viktiga är overflow-y */
-  overflow-y: auto; /* 👈 gör detta till scroll-container */
-  background-color: cadetblue;
-  padding: 10px 0;
+  flex-grow: 1; /* Allow the content to expand */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: auto; /* Keep space for the title and other elements */
 }
 
 .tree-title-container {
@@ -145,10 +113,21 @@ button:focus-visible {
   font-size: 1em;
 }
 
-.tree-icon {
-  margin-left: 10px;
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* eller auto – det viktiga är overflow-y */
+  overflow-y: auto; /* 👈 gör detta till scroll-container */
+  background-color: cadetblue;
+  padding: 10px 0;
 }
 
+h1 {
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+/** ----------- NODE ---------- **/
 
 .node-container {
   display: flex;
@@ -163,76 +142,32 @@ button:focus-visible {
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-
-
-
-
-
-/* Scrollable area for the nodes */
-.tree-content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Allow the content to expand */
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: auto; /* Keep space for the title and other elements */
-
- 
-}
-
-/* Ensure the chevron icon stays on the left */
-svg-icon {
-  margin-right: 5px; /* Adds spacing between icon and text */
-}
-
-/* Left-align the 'name' span */
-.node-text.name {
-  flex-grow: 1; /* Takes up available space */
-  text-align: left;
-}
-
-/* Right-align the 'rds' span */
-.node-text.rds {
-  text-align: right;
-  min-width: fit-content; /* Prevents it from shrinking too much */
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.subnode {
-  margin-left: 10px;
-  margin-top: 4px;
-  background-color: #dcdcdc;
-  border-radius: 5px;
-
-  
+.node-container.is-leaf {
+  background-color: #d3d3d3; /* Grå endast om noden är ett "leaf" */
 }
 
 .node-container:hover {
   background-color: #535bf2;
   cursor: pointer;
-
 }
 
-
-
-.linkedAspect {
-  background-color: rgb(255, 91, 91);
-
+.node-container.selected {
+  background-color: #00008B; /* mörkare blå vid klick */
+  color: white;
 }
 
-.selectedAspect {
-
-  background-color: rgb(255, 91, 91);
-
+.toggle-icon {
+  margin-left: 10px; /* Add spacing between the name and the toggle icon */
 }
 
-
-.img-map {
-  margin-top: 100px;
+.node-text.rds {
+  display: flex;
+  align-items: center; /* Centrerar innehållet vertikalt */
+  gap: 8px; 
 }
-
 
 
 
@@ -250,6 +185,7 @@ svg-icon {
   color: white;
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1002;
 }
 
 .side-panel-other-denominations {
@@ -271,4 +207,194 @@ svg-icon {
   color: rgb(255, 255, 255);
   padding: 4px;
   margin-left: 4px;
+}
+
+.img-map {
+  margin-top: 100px;
+}
+
+/** ----------- FILTER DROPDOWN---------- **/
+
+.filter-dropdown {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  position: relative; /* Ensure positioning context for dropdown */
+  max-width: calc(100% - 345px);/* Reduce the width to make it shorter on the right side */
+} 
+
+.filter-top-row {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.filter-text {
+  margin-right: 10px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  color: white;
+  font-size: larger;
+  background-color: #3838fd; /* Add a background color */
+  padding: 5px 10px; /* Add padding for button-like appearance */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */  
+} 
+
+.filter-text:hover {
+  background-color: #0400ff9a; /* Darken background on hover */
+} 
+
+.selected-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping of tags */
+  gap: 5px;  
+} 
+
+.tag {
+  display: inline-flex; /* Use inline-flex to keep tag and button inline */
+  align-items: center;
+  background-color: #010784;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  margin-right: 5px; /* Add spacing between tags */
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 5px; /* Add spacing between tag content and button */
+  cursor: pointer;
+  height: 100%; /* Match the height of the tag */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center content vertically */
+  justify-content: flex-end; /* Align the "x" to the right inside the button */
+  padding: 0 5px; /* Add padding for better spacing */
+}
+
+.dropdown {
+  position: absolute; /* Position on top of everything */
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 170px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  top: 100%; /* Position below the filter-top-row */
+  left: 0;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.chevron {
+  margin-left: 5px; /* Add spacing between text and chevron */
+  font-size: smaller; /* Adjust size of the chevron */
+}
+
+/**? ----------- THIS IS CURRENTLY NOT USED---------- **/
+
+/* Ensure the chevron icon stays on the left */
+svg-icon {
+  margin-right: 5px; /* Adds spacing between icon and text */
+}
+
+/* Left-align the 'name' span */
+.node-text.name {
+  flex-grow: 1; /* Takes up available space */
+  text-align: left;
+}
+
+/* Right-align the 'rds' span */
+
+
+.subnode {
+  margin-left: 10px;
+  margin-top: 4px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+.linkedAspect {
+  background-color: rgb(255, 91, 91);
+}
+
+.selectedAspect {
+
+  background-color: rgb(255, 91, 91);
+}
+
+.tree-icon {
+  margin-left: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }

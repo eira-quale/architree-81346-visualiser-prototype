@@ -1,12 +1,13 @@
-export class TreeNode { // Renamed from Node to TreeNode
-
-    constructor(aspect, id) { // Updated parameter name for clarity
-        this.id = id;
-        this.data = aspect; // Renamed to match the usage in Main.vue
-        this.children = [];
-        this.isVisible = true;
-        this.showChildren = false;
+export class TreeNode {
+    constructor(aspect, id) {
+      this.id = id;
+      this.data = aspect;        // Instance of Aspect
+      this.children = [];
+      this.isVisible = true;
+      this.showChildren = false;
+      this.locatedHere = [];     // RealObject IDs located at this node (only used in Lokalisering tree)
     }
+  
 
     getId() {
         return this.id;

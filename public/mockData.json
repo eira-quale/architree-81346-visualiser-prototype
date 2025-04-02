@@ -407,6 +407,706 @@
     "children": []
   }
 ]
+},
+
+
+
+
+{
+  
+  "name": "Lokalisering 1",
+  "nodes":[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
+        {
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
+                {
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
+        },
+        {
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
+        },
+        {
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
+        },
+        {
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
+        }
+      ]
+    }
+    
+  ]
+  
+},
+{
+  
+  "name": "Lokalisering 2",
+  "nodes":[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
+        {
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
+                {
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
+        },
+        {
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
+        },
+        {
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
+        },
+        {
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
+        }
+      ]
+    }
+    
+  ]
+  
+},
+{
+  
+  "name": "Lokalisering 3",
+  "nodes":[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
+        {
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
+                {
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
+        },
+        {
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
+        },
+        {
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
+        },
+        {
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
+        }
+      ]
+    }
+    
+  ]
+  
+},
+{
+  
+  "name": "Lokalisering 4",
+  "nodes":[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
+        {
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
+                {
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
+        },
+        {
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
+        },
+        {
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
+        },
+        {
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
+        }
+      ]
+    }
+    
+  ]
+  
+},
+{
+  
+  "name": "Lokalisering 5",
+  "nodes":[
+    {
+      "id": "e7dcae08-93d4-4c1f-bd57-c934cff261bc",
+      "name": "Hamnområde X",
+      "previousName": "",
+      "rds": "++U1",
+      "children": []
+    },
+    {
+      "id": "72c1b59f-5388-4071-9fd7-1a60087dd1a8",
+      "name": "Hamnområde Norvik",
+      "previousName": "",
+      "rds": "++U2",
+      "children": [
+        {
+          "id": "d3c4a562-459c-4549-8771-cbfd3e5c6034",
+          "name": "Anläggningsområde (P6)",
+          "previousName": "Pumphus 6, P6",
+          "rds": "++U2.W1",
+          "children": [
+            {
+              "id": "20fa6628-0762-40b6-912b-4d2b413d63c5",
+              "name": "Byggnadsverksområde (P6)",
+              "previousName": "Pumphus 6, P6",
+              "rds": "++U2.W1.X1",
+              "children": [
+                {
+                  "id": "51a3d3ac-4e31-47b6-8fc8-afe9b77a0746",
+                  "name": "Källarplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA1",
+                  "children": [
+                    {
+                      "id": "fd152a96-ce5b-4942-8df4-a8e15996aa87",
+                      "name": "Pumprum",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "a4c5d687-5fbf-467b-8250-3246883e3dd2",
+                      "name": "Cistern",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "6d1fb97d-7d65-4f66-b14a-b108f7592712",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA1.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "f96ac2da-de9a-4a39-8717-6add3a019aeb",
+                  "name": "Markplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA2",
+                  "children": [
+                    {
+                      "id": "9bd24c12-1ce8-4f2c-b73a-7fe133bccb21",
+                      "name": "Elutrymme",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA1",
+                      "children": []
+                    },
+                    {
+                      "id": "fc0fea1f-f403-45cf-9988-c0c5ea7be0c3",
+                      "name": "Trapphus",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA2",
+                      "children": []
+                    },
+                    {
+                      "id": "a60bbb97-d88f-4ab8-9b3e-7b7f7fefa048",
+                      "name": "Spiraltrapp",
+                      "previousName": "",
+                      "rds": "++U2.W1.X1.XA2.XAA3",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "51d60896-dabf-4e5a-8451-c474e6a9cfdb",
+                  "name": "\"Vindsplan\"",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA3",
+                  "children": []
+                },
+                {
+                  "id": "1bcb86ca-0faa-4f9e-b556-81fd454964cd",
+                  "name": "Takplan",
+                  "previousName": "",
+                  "rds": "++U2.W1.X1.XA4",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "21a80027-ca1d-4812-998d-b0cee355e632",
+          "name": "Anläggningsområde Kaj 5",
+          "previousName": "",
+          "rds": "++U2.W2",
+          "children": []
+        },
+        {
+          "id": "60278d9e-b310-4035-a99a-dcb68e23a944",
+          "name": "Anläggningsområde Kaj 6",
+          "previousName": "",
+          "rds": "++U2.W3",
+          "children": []
+        },
+        {
+          "id": "bafe635d-76e7-4f5c-b7ac-1f7af9582861",
+          "name": "Anläggningsområde Kaj 7",
+          "previousName": "",
+          "rds": "++U2.W4",
+          "children": []
+        },
+        {
+          "id": "79dc7847-d82a-4485-b642-23d1d98d71a5",
+          "name": "Anläggningsområde Kaj 8",
+          "previousName": "",
+          "rds": "++U2.W5",
+          "children": []
+        }
+      ]
+    }
+    
+  ]
+  
 }
+
 
 ]
