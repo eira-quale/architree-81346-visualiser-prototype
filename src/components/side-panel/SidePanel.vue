@@ -10,7 +10,7 @@
       <span>Other denominations: </span>
       <div class="side-panel-other-denominations-box">
 
-        <span class="side-panel-other-denominations-box span">###ABC</span>
+        <span class="side-panel-other-denominations-box span">{{ selectedAspect && selectedAspect.previousName ? selectedAspect.previousName : 'N/A' }}</span>
 
         
         <img class="img-map" src='../../assets/map.png'/>       

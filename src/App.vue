@@ -1,9 +1,9 @@
 <template>
-  <div class="main-container">
+  
  
     <div class="prototype-logo">Architree Prototype </div> 
   
-  <Main></Main></div>
+  <Main></Main>
 </template>
 
 <script>

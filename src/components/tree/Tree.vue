@@ -11,6 +11,7 @@
         v-for="(node, index) in tree.nodes"
         :key="index"
         :node="node"
+        :selected-node-id="selectedNodeId"
         @node-click="forwardNodeClick"
         ></Node>       
       
@@ -34,6 +35,11 @@ export default {
     tree: {
       type: TreeRoot
       
+      },
+
+      selectedNodeId: {
+        type: String,
+        default: null
       },
     },
   
