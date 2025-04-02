@@ -1,23 +1,23 @@
 <template>
-  <div class="filter-banner">
-      <FilterDropdown
-        :dynamicOptions="dynamicOptions"
-        @filter-changed="onFilterChanged"
-      />
-  </div>
+
+
+
 
   <div class="main-container">
-    <div class="main-trees-container">
-      <Tree
-        v-for="(tree, index) in filteredTrees"
-        :key="index"
-        :tree="tree"
-        :selected-node-id="selectedNodeId"
-        @handle-node-click="handleNodeClick"
-      />
+    <div class="main-content">
+
+      <div class="top-panel">
+      <FilterDropdown :dynamicOptions="dynamicOptions" @filter-changed="onFilterChanged" />
     </div>
-    <SidePanel :selectedAspect="this.selectedAspect" />
-  </div>
+
+      <div class="main-tree-container">
+        <Tree v-for="(tree, index) in filteredTrees" :selectedAspect="this.selectedAspect" :key="index" :tree="tree" @handle-node-click="handleNodeClick" />
+      </div>
+      </div>
+      <div class="side-panel-container">
+        <SidePanel :selectedAspect="this.selectedAspect" />
+      </div>
+    </div>
 </template>
 
 <script>
@@ -27,7 +27,6 @@ import { getParsedTreesFromBuffer } from '@/services/excel-parser/parser';
 
 import FilterDropdown from './components/FilterDropdown.vue';
 
-import { fetchMockData } from '@/services/treeService.js';
 import SidePanel from './components/side-panel/SidePanel.vue';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiMapMarkerPath } from '@mdi/js';
@@ -46,9 +45,7 @@ export default {
       selectedFilters: [],
       functionalPath: mdiHammerWrench,
       locationPath: mdiMapMarkerPath,
-      productPath: mdiCube,
-      selectedNodeId: null,
-
+      productPath: mdiCube
     };
   },
   components: {
@@ -62,6 +59,7 @@ export default {
     const buffer = await response.arrayBuffer();
 
     this.trees = getParsedTreesFromBuffer(buffer);
+
     this.$nextTick(() => {
       this.selectedFilters = this.trees.map(tree => tree.name.toLowerCase());
     });
@@ -85,14 +83,11 @@ export default {
   methods: {
 
 
-    
-   
-    
 
 
-    handleNodeClick(aspect) {
-      this.selectedAspect = aspect;
-      this.selectedNodeId = aspect.id;
+    handleNodeClick(node) {
+      console.log(node.data.name)
+      this.selectedAspect = node;
     },
     onFilterChanged(newFilters) {
       this.selectedFilters = newFilters;
@@ -101,5 +96,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

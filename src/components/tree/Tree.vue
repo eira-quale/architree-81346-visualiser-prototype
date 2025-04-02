@@ -1,28 +1,28 @@
 <template>
+
+
   <div class="tree">
-        
-    </div>
-    <div class="tree-container">
-      <!-- Scrollable area for nodes -->
-      <div class="tree-title-container">
-        <h1>{{ tree.name }}</h1>
-      <div class="tree-content">
+    <div class="tree-title">{{ tree.name }}</div>
+   
+    
         <Node
+       
         v-for="(node, index) in tree.nodes"
         :key="index"
         :node="node"
-        :selected-node-id="selectedNodeId"
-        @node-click="forwardNodeClick"
-        ></Node>       
+        @handle-node-click="forwardNodeClick" 
+        :selectedAspect="selectedAspect">
+       
+
+        </Node>
+       
       
-      </div>
-    </div>
+     
   </div>
 </template>
 
 <script>
 import Node from './Node.vue';
-import { mdilBook } from '@mdi/light-js';
 import { TreeRoot } from '../../services/models/treeRoot.js';
 
 export default {
@@ -30,23 +30,22 @@ export default {
 
   props: {
   
+    selectedAspect: {
+      type: Object,
+      default: null,
+    },
 
   
     tree: {
       type: TreeRoot
       
       },
-
-      selectedNodeId: {
-        type: String,
-        default: null
-      },
     },
   
   data() {
     return {
 
-      icon: mdilBook,
+   
   
 
     };
@@ -54,15 +53,20 @@ export default {
   },
   components: {
 
-    Node 
+    Node
+
+
+
+    
+ 
 
   },
   computed: {
     // Your computed properties
   },
   methods: {
-    forwardNodeClick(aspect) {
-      this.$emit("handle-node-click", aspect); // Forward event to Main
+    forwardNodeClick(node) {
+      this.$emit("handle-node-click", node); // Forward event to Main
     },
   },
   watch: {

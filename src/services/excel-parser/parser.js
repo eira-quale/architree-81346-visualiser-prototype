@@ -13,7 +13,7 @@ export function parseExcelToRealObjects(buffer) {
     "Verksamhetsfunktion (==)": "Verksamhetsfunktion",
     "Verksamhets-produkt (-)": "Verksamhetsprodukt",
     "Infrastrukturfunktion (=)": "Infrastrukturfunktion",
-    "Infrastruktur-produkt (--)": "Infrastrukturprodukt"
+    
   };
 
   const locationColumn = "Lokalisering (++)";

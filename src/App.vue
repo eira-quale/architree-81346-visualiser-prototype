@@ -1,7 +1,6 @@
 <template>
   
  
-    <div class="prototype-logo">Architree Prototype </div> 
   
   <Main></Main>
 </template>

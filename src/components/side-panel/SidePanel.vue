@@ -1,9 +1,9 @@
 <template>
-    <aside v-show="visible" class="side-panel">
+    <div v-show="true" class="side-panel">
         <div class="side-panel-title-container">
-      <h2>{{ selectedAspect ? selectedAspect.rds : null}}</h2>
-      <h1>{{  selectedAspect ? selectedAspect.name : null }}</h1>
-      <span> {{  selectedAspect ? selectedAspect.description : null }}</span>   
+      <h2 class="side-panel-rds">{{ selectedAspect ? selectedAspect.data.rds : null}}</h2>
+      <h1>{{  selectedAspect ? selectedAspect.data.name : null }}</h1>
+      <span> {{  selectedAspect ? selectedAspect.data.description : null }}</span>   
     </div>
 
     <div class="side-panel-other-denominations">
@@ -18,7 +18,7 @@
       </div>
     </div>
       
-    </aside>
+  </div>
   </template>
   
   <script>

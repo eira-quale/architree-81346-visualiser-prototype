@@ -1,46 +1,50 @@
 <template>
     <div class="filter-dropdown" ref="dropdown">
         <div class="filter-top-row" @click="toggleDropdown">
-        <span class="filter-text">
-            Filter
-            <span class="chevron">{{ isDropdownVisible ? '▲' : '▼' }}</span>
-        </span>
-        <div class="selected-tags" @click.stop>
-            <span v-for="option in selectedOptions" :key="option.value" class="tag">
-                {{ option.label }}
-            <button class="remove-tag" @click="removeOption(option.value)">x</button>
+            <span class="filter-text">
+                Filter
+                <span class="chevron">{{ isDropdownVisible ? '▲' : '▼' }}</span>
             </span>
+            <div class="selected-tags-container" @click.stop>
+                <div v-for="option in selectedOptions" :key="option.value" class="selected-tag"
+                    @click="removeOption(option.value)">
+                    <span class="selected-tag-name">{{ option.label }}</span> <svg-icon type="mdi" :path="icon"
+                        class="icon-small"></svg-icon>
+                </div>
+            </div>
         </div>
-        </div>
+    
 
-        <div v-if="isDropdownVisible" class="dropdown">
+    <div v-if="isDropdownVisible" class="dropdown">
         <ul>
             <li>
-            <input type="checkbox" id="select-all" v-model="selectAll" @change="toggleSelectAll" />
-            <label for="select-all">Select All</label>
+                <input type="checkbox" id="select-all" v-model="selectAll" @change="toggleSelectAll" />
+                <label for="select-all">Select All</label>
             </li>
             <li v-for="option in options" :key="option.value">
-            <input
-                type="checkbox"
-                :id="option.value"
-                :value="option.value"
-                v-model="selectedValues"
-                />
-            <label :for="option.value">{{ option.label }}</label>
+                <input type="checkbox" :id="option.value" :value="option.value" v-model="selectedValues" />
+                <label :for="option.value">{{ option.label }}</label>
             </li>
         </ul>
-        </div>
     </div>
+    </div>
+    
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiClose } from '@mdi/js';
+
 export default {
     name: "FilterDropdown",
     props: {
         dynamicOptions: {
-        type: Array,
-        required: true,
+            type: Array,
+            required: true,
         },
+    },
+    components: {
+        SvgIcon,
     },
     data() {
         return {
@@ -48,13 +52,15 @@ export default {
             selectedValues: [],
             selectAll: false,
             isDropdownVisible: false,
+
+            icon: mdiClose,
         };
     },
     computed: {
         selectedOptions() {
             return this.options.filter((option) =>
-            this.selectedValues.includes(option.value)
-        );
+                this.selectedValues.includes(option.value)
+            );
         },
     },
     watch: {
@@ -92,23 +98,19 @@ export default {
         },
         handleClickOutside(event) {
             if (
-            !this.$refs.dropdown.contains(event.target) &&
-            !event.target.closest(".selected-tags")
+                this.$refs.dropdown &&
+                !this.$refs.dropdown.contains(event.target) &&
+                !event.target.closest(".selected-tags-container")
             ) {
-            this.closeDropdown();
+                this.closeDropdown();
             }
         },
     },
-        mounted() {
-            document.addEventListener("click", this.handleClickOutside);
-        },
-        beforeDestroy() {
-            document.removeEventListener("click", this.handleClickOutside);
-        },
-    };
+    mounted() {
+        document.addEventListener("click", this.handleClickOutside);
+    },
+    beforeDestroy() {
+        document.removeEventListener("click", this.handleClickOutside);
+    },
+};
 </script>
-
-
-<style scoped>
-
-</style>
