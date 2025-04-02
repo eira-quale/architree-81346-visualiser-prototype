@@ -1,5 +1,8 @@
 import * as XLSX from 'xlsx';
 import { v4 as uuidv4 } from 'uuid';
+import { Aspect } from '@/services/models/aspect.js';
+import { TreeNode } from '@/services/models/treeNode.js';
+import { TreeRoot } from '@/services/models/treeRoot.js';
 
 export function parseExcelToRealObjects(buffer) {
   const workbook = XLSX.read(buffer, { type: 'buffer' });
@@ -14,59 +17,54 @@ export function parseExcelToRealObjects(buffer) {
   };
 
   const locationColumn = "Lokalisering (++)";
-
   const trees = {};
   const nodeMaps = {};
 
   for (const name of Object.values(aspectColumns)) {
-    trees[name] = { name, nodes: [] };
+    trees[name] = new TreeRoot(uuidv4(), name);
     nodeMaps[name] = {};
   }
 
-  // Add location tree
-  trees["Lokalisering"] = { name: "Lokalisering", nodes: [] };
+  trees["Lokalisering"] = new TreeRoot(uuidv4(), "Lokalisering");
   nodeMaps["Lokalisering"] = {};
 
   const realObjects = [];
 
   const insertNode = (treeName, rds, name, previousName, realObjectId) => {
-    const cleaned = rds.replace(/^[=+\-]+/, '').replace(/\.$/, ''); // remove trailing period for 'has location'
+    const cleaned = rds.replace(/^[=+\-]+/, '').replace(/\.$/, '');
     const parts = cleaned.split('.');
     let currentPath = '';
     let parent = null;
     const map = nodeMaps[treeName];
-    const root = trees[treeName].nodes;
+    const root = trees[treeName];
 
     for (let i = 0; i < parts.length; i++) {
       currentPath = i === 0 ? parts[i] : `${currentPath}.${parts[i]}`;
       if (!map[currentPath]) {
-        const node = {
-          id: uuidv4(),
+        const nodeId = uuidv4();
+        const prefix = treeName === 'Lokalisering' ? '++' : rds.match(/^[-=]+/)?.[0] || '';
+
+        const aspect = new Aspect({
+          id: nodeId,
+          rds: `${prefix}${currentPath}`,
           name: i === parts.length - 1 ? name : parts[i],
-          previousName: i === parts.length - 1 ? previousName : "",
-          rds: `${rds.startsWith('+') ? '++' : rds.match(/^[-=]+/)?.[0] || ''}${currentPath}`,
+          previousName: i === parts.length - 1 ? previousName : '',
+          aspectType: treeName,
           realObjectId: i === parts.length - 1 ? realObjectId : null,
-          children: [],
-        };
+        });
 
-        // If it's the location tree, initialize locatedHere
-        if (treeName === "Lokalisering") {
-          node.locatedHere = [];
-        }
-
+        const node = new TreeNode(aspect, nodeId);
         map[currentPath] = node;
-        (parent ? parent.children : root).push(node);
+        if (parent) {
+          parent.children.push(node);
+        } else {
+          root.nodes.push(node);
+        }
       }
       parent = map[currentPath];
     }
 
-    return {
-      id: parent.id,
-      rds: parent.rds,
-      name: parent.name,
-      previousName: parent.previousName,
-      realObjectId
-    };
+    return map[currentPath].data;
   };
 
   for (const row of data) {
@@ -81,7 +79,6 @@ export function parseExcelToRealObjects(buffer) {
       aspects: {}
     };
 
-    // Parse regular aspects
     for (const [colName, treeName] of Object.entries(aspectColumns)) {
       const rds = row[colName];
       if (typeof rds === 'string' && /^[=+\-]/.test(rds)) {
@@ -90,26 +87,21 @@ export function parseExcelToRealObjects(buffer) {
       }
     }
 
-    // Parse location logic
-const locRds = row[locationColumn];
-if (typeof locRds === 'string' && locRds.startsWith('++')) {
-  const cleaned = locRds.replace(/^\++/, '').replace(/\.$/, '');
+    const locRds = row[locationColumn];
+    if (typeof locRds === 'string' && locRds.startsWith('++')) {
+      const cleaned = locRds.replace(/^\++/, '').replace(/\.$/, '');
 
-  if (locRds.endsWith('.')) {
-    // Object is located at this location
-    const locNode = nodeMaps["Lokalisering"][cleaned];
-    if (locNode) {
-      locNode.locatedHere.push(id);
-      realObject.location = `++${cleaned}`;
-    } else {
-      console.warn(`⚠️ Location node missing for ${locRds} (ref only).`);
+      if (locRds.endsWith('.')) {
+        const locNode = nodeMaps["Lokalisering"][cleaned];
+        if (locNode) {
+          locNode.locatedHere.push(id);
+          realObject.location = `++${cleaned}`;
+        }
+      } else {
+        const aspect = insertNode("Lokalisering", locRds, name, prevName, id);
+        realObject.aspects["Lokalisering"] = aspect;
+      }
     }
-  } else {
-    // Object *is* this location → create node and assign aspect
-    const aspect = insertNode("Lokalisering", locRds, name, prevName, id);
-    realObject.aspects["Lokalisering"] = aspect;
-  }
-}
 
     realObjects.push(realObject);
   }
@@ -118,4 +110,9 @@ if (typeof locRds === 'string' && locRds.startsWith('++')) {
     realObjects,
     trees: Object.values(trees)
   };
+}
+
+export function getParsedTreesFromBuffer(buffer) {
+  const { trees } = parseExcelToRealObjects(buffer);
+  return trees;
 }
