@@ -1,0 +1,3801 @@
+[
+  {
+    "id": "5d536941-1a7b-4afd-ae56-86524070d01d",
+    "name": "Färskvattenförsörjning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0607d457-0733-4e24-927a-5d8cd2d5aa12",
+        "rds": "=A1",
+        "name": "Färskvattenförsörjning",
+        "previousName": "",
+        "realObjectId": "5d536941-1a7b-4afd-ae56-86524070d01d"
+      },
+      "Verksamhetsprodukt": {
+        "id": "5c1f6659-cf9a-4f57-88c3-a06b67e0f4f2",
+        "rds": "-A1",
+        "name": "Färskvattenförsörjning",
+        "previousName": "",
+        "realObjectId": "5d536941-1a7b-4afd-ae56-86524070d01d"
+      },
+      "Infrastrukturfunktion": {
+        "id": "22e1bba6-4d25-413e-b58a-29ee9852e2a5",
+        "rds": "==A1",
+        "name": "Färskvattenförsörjning",
+        "previousName": "",
+        "realObjectId": "5d536941-1a7b-4afd-ae56-86524070d01d"
+      }
+    }
+  },
+  {
+    "id": "31aaf352-c078-401a-9bac-2683cf386758",
+    "name": "Vattenreservoar (Pumphus 6)",
+    "previousName": "Pumphus 6, P6",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "310538b9-97b8-43a7-be22-4f09563aaeb0",
+        "rds": "=A1.E1",
+        "name": "Vattenreservoar (Pumphus 6)",
+        "previousName": "Pumphus 6, P6",
+        "realObjectId": "31aaf352-c078-401a-9bac-2683cf386758"
+      },
+      "Verksamhetsprodukt": {
+        "id": "cf9ab71d-03ab-47ff-9dd9-f301aa67fab1",
+        "rds": "-A1.E1",
+        "name": "Vattenreservoar (Pumphus 6)",
+        "previousName": "Pumphus 6, P6",
+        "realObjectId": "31aaf352-c078-401a-9bac-2683cf386758"
+      }
+    }
+  },
+  {
+    "id": "b2617e3c-2738-4217-8a96-f25fe38b5d4e",
+    "name": "Spiraltrappa",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0345eeb0-f50e-47b2-a75f-30a9aa6723c9",
+        "rds": "=A1.E1.AC1",
+        "name": "Spiraltrappa",
+        "previousName": "",
+        "realObjectId": "b2617e3c-2738-4217-8a96-f25fe38b5d4e"
+      }
+    }
+  },
+  {
+    "id": "f54e0f54-e43d-419c-b556-3453e85d25f4",
+    "name": "Kapsling för kontrollutrustning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e7b04b82-6627-4721-a469-9feac101a9ba",
+        "rds": "=A1.E1.AD2",
+        "name": "Kapsling för kontrollutrustning",
+        "previousName": "",
+        "realObjectId": "f54e0f54-e43d-419c-b556-3453e85d25f4"
+      }
+    }
+  },
+  {
+    "id": "35e40b61-c765-4052-995b-47fcd50c53d7",
+    "name": "Tvätt- och spol-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "24aae5b4-36f8-41b9-b371-991fb4d3ffdd",
+        "rds": "=A1.E1.EA1",
+        "name": "Tvätt- och spol-system",
+        "previousName": "",
+        "realObjectId": "35e40b61-c765-4052-995b-47fcd50c53d7"
+      }
+    }
+  },
+  {
+    "id": "5ed402ef-582f-41ae-bebb-f9b7a6f34fa8",
+    "name": "Spolstation",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d956d4ab-c634-40ab-99f5-a558550e5263",
+        "rds": "=A1.E1.EA1.WPC1",
+        "name": "Spolstation",
+        "previousName": "",
+        "realObjectId": "5ed402ef-582f-41ae-bebb-f9b7a6f34fa8"
+      }
+    }
+  },
+  {
+    "id": "d9fddc5c-5e33-470d-b895-502e0e81de51",
+    "name": "Slanghållare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "eb7e2582-c444-4854-8788-12555a6eb79f",
+        "rds": "=A1.E1.EA1.WPC1.UBB1",
+        "name": "Slanghållare",
+        "previousName": "",
+        "realObjectId": "d9fddc5c-5e33-470d-b895-502e0e81de51"
+      }
+    }
+  },
+  {
+    "id": "7404cf14-3032-40d3-8bc4-2b6bf4dc21d2",
+    "name": "Vattenlednings-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "de43964c-21d4-4fa0-b0d1-2323b711c602",
+        "rds": "=A1.E1.EA1.WPC1.WPA1",
+        "name": "Vattenlednings-system",
+        "previousName": "",
+        "realObjectId": "7404cf14-3032-40d3-8bc4-2b6bf4dc21d2"
+      }
+    }
+  },
+  {
+    "id": "4cbbef77-958d-411d-a1ba-9f147d9b1809",
+    "name": "Smutsfilter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a0b54f1b-75da-4fc3-8c10-fe8ca4af1905",
+        "rds": "=A1.E1.EA1.WPC1.WPA1.HQB1",
+        "name": "Smutsfilter",
+        "previousName": "",
+        "realObjectId": "4cbbef77-958d-411d-a1ba-9f147d9b1809"
+      }
+    }
+  },
+  {
+    "id": "dcbf33a5-24f5-4228-8745-b8e62ff9d3e8",
+    "name": "Ventil",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e1a64d9b-64d4-4daa-8bf0-491a8c300d45",
+        "rds": "=A1.E1.EA1.WPC1.WPA1.QMA1",
+        "name": "Ventil",
+        "previousName": "",
+        "realObjectId": "dcbf33a5-24f5-4228-8745-b8e62ff9d3e8"
+      }
+    }
+  },
+  {
+    "id": "43b777b2-65da-4693-8187-5daa99921a0a",
+    "name": "Återströmningsskydd",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ad789758-0e15-4fe8-931b-81b50f9dec16",
+        "rds": "=A1.E1.EA1.WPC1.WPA1.RMA1",
+        "name": "Återströmningsskydd",
+        "previousName": "",
+        "realObjectId": "43b777b2-65da-4693-8187-5daa99921a0a"
+      }
+    }
+  },
+  {
+    "id": "510de0d2-06a2-4660-9642-c486bb25ba72",
+    "name": "Spolslang",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "451cc026-9d32-474e-a122-385207ab0085",
+        "rds": "=A1.E1.EA1.WPC1.WPC1",
+        "name": "Spolslang",
+        "previousName": "",
+        "realObjectId": "510de0d2-06a2-4660-9642-c486bb25ba72"
+      }
+    }
+  },
+  {
+    "id": "79cbc385-717e-49b6-bd7f-3430bfe32b01",
+    "name": "Spolmunstycke",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "5e00b298-10d8-45aa-8c66-82a9e3404936",
+        "rds": "=A1.E1.EA1.WPC1.WPC1.QNA1",
+        "name": "Spolmunstycke",
+        "previousName": "",
+        "realObjectId": "79cbc385-717e-49b6-bd7f-3430bfe32b01"
+      }
+    }
+  },
+  {
+    "id": "b80a5368-6a4e-4c17-b266-4aaf8b20817f",
+    "name": "Slang",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "2d580285-105f-4094-a00c-d02994197672",
+        "rds": "=A1.E1.EA1.WPC1.WPC1.WPC1",
+        "name": "Slang",
+        "previousName": "",
+        "realObjectId": "b80a5368-6a4e-4c17-b266-4aaf8b20817f"
+      }
+    }
+  },
+  {
+    "id": "f4fdfb0f-c12e-4694-90ce-c71aa7dd4d5a",
+    "name": "Slangkoppling",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "5af3a133-25f7-4816-a904-161088bbe7ed",
+        "rds": "=A1.E1.EA1.WPC1.WPC1.XMA1",
+        "name": "Slangkoppling",
+        "previousName": "",
+        "realObjectId": "f4fdfb0f-c12e-4694-90ce-c71aa7dd4d5a"
+      }
+    }
+  },
+  {
+    "id": "e649f8f7-347c-4b06-8f9e-ee8e3dd3f98b",
+    "name": "Tvättstation",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "2e7ea81f-4d3b-4e5a-81a3-908708b8a482",
+        "rds": "=A1.E1.EA1.XKA1",
+        "name": "Tvättstation",
+        "previousName": "",
+        "realObjectId": "e649f8f7-347c-4b06-8f9e-ee8e3dd3f98b"
+      }
+    }
+  },
+  {
+    "id": "aebcd279-3362-446e-a493-9f74ec8aa079",
+    "name": "Varmvattenberedare VVB",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "fe910a9c-af10-4a9c-b870-235ebc6214cc",
+        "rds": "=A1.E1.EA1.XKA1.EBA1",
+        "name": "Varmvattenberedare VVB",
+        "previousName": "",
+        "realObjectId": "aebcd279-3362-446e-a493-9f74ec8aa079"
+      }
+    }
+  },
+  {
+    "id": "8b87b8f3-6f35-4808-9e4f-d0c4ebb4a2a3",
+    "name": "Blandare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "88ab3ec6-c174-4449-807f-1f2f6081c7e5",
+        "rds": "=A1.E1.EA1.XKA1.QNA1",
+        "name": "Blandare",
+        "previousName": "",
+        "realObjectId": "8b87b8f3-6f35-4808-9e4f-d0c4ebb4a2a3"
+      }
+    }
+  },
+  {
+    "id": "e9bf3c38-92d1-403a-a40e-2fcb4bb6ee0d",
+    "name": "Avlopp",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a15fb75f-3cd1-4841-ad7c-6b80a1e6ecf2",
+        "rds": "=A1.E1.EA1.XKA1.WPA1",
+        "name": "Avlopp",
+        "previousName": "",
+        "realObjectId": "e9bf3c38-92d1-403a-a40e-2fcb4bb6ee0d"
+      }
+    }
+  },
+  {
+    "id": "813691b6-d3e2-4c6e-836b-eac69e50bac8",
+    "name": "Vattenlednings-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "dd5711f4-f5a8-41e3-bb13-287252040e5c",
+        "rds": "=A1.E1.EA1.XKA1.WPA2",
+        "name": "Vattenlednings-system",
+        "previousName": "",
+        "realObjectId": "813691b6-d3e2-4c6e-836b-eac69e50bac8"
+      }
+    }
+  },
+  {
+    "id": "a88b62de-86bd-494b-8378-17c8814f88f6",
+    "name": "Handfat",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f5e90e39-8ba3-49c1-a197-4b27a9fd4f16",
+        "rds": "=A1.E1.EA1.XKA1.XKA1",
+        "name": "Handfat",
+        "previousName": "",
+        "realObjectId": "a88b62de-86bd-494b-8378-17c8814f88f6"
+      }
+    }
+  },
+  {
+    "id": "5212c328-7a66-45d9-ae8f-8d4e211fd5be",
+    "name": "UV-filter-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "acbf81c9-48ad-400e-84d1-108d56655d6f",
+        "rds": "=A1.E1.ED1",
+        "name": "UV-filter-system",
+        "previousName": "",
+        "realObjectId": "5212c328-7a66-45d9-ae8f-8d4e211fd5be"
+      },
+      "Verksamhetsprodukt": {
+        "id": "4c1a0eb4-3945-4e3f-84b5-e7d5ff4c38d0",
+        "rds": "-A1.E1.ED1",
+        "name": "UV-filter-system",
+        "previousName": "",
+        "realObjectId": "5212c328-7a66-45d9-ae8f-8d4e211fd5be"
+      }
+    }
+  },
+  {
+    "id": "6a0b7b52-1c33-4f6a-bf9d-9bfe71d6e8c8",
+    "name": "UV-filter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "df330cc1-6559-4ed6-91f4-bfd703ae76e2",
+        "rds": "=A1.E1.ED1.ED1",
+        "name": "UV-filter",
+        "previousName": "",
+        "realObjectId": "6a0b7b52-1c33-4f6a-bf9d-9bfe71d6e8c8"
+      },
+      "Verksamhetsprodukt": {
+        "id": "7d0113d6-b469-4c30-bb18-5aad9291c476",
+        "rds": "-A1.E1.ED1.ED1",
+        "name": "UV-filter",
+        "previousName": "",
+        "realObjectId": "6a0b7b52-1c33-4f6a-bf9d-9bfe71d6e8c8"
+      }
+    }
+  },
+  {
+    "id": "8e48cf44-ede8-4822-901a-f935487f034e",
+    "name": "Rörsystem 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "4bd1eb0d-8c01-4735-8649-5881a905b0f4",
+        "rds": "=A1.E1.ED1.JB1",
+        "name": "Rörsystem 1",
+        "previousName": "",
+        "realObjectId": "8e48cf44-ede8-4822-901a-f935487f034e"
+      }
+    }
+  },
+  {
+    "id": "49948d2f-0b01-4f1b-9d3b-4e33a89d6e80",
+    "name": "Filter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "73518c32-db1c-41be-909f-278e7e1886dc",
+        "rds": "=A1.E1.ED1.JB1.HQB1",
+        "name": "Filter",
+        "previousName": "",
+        "realObjectId": "49948d2f-0b01-4f1b-9d3b-4e33a89d6e80"
+      },
+      "Verksamhetsprodukt": {
+        "id": "871c533a-3f81-4ad9-93f1-1cae1c3ddfc3",
+        "rds": "-A1.E1.ED1.HQB1",
+        "name": "Filter",
+        "previousName": "",
+        "realObjectId": "49948d2f-0b01-4f1b-9d3b-4e33a89d6e80"
+      }
+    }
+  },
+  {
+    "id": "a2403f02-5604-40a0-bf6b-fecb0bbbaeb7",
+    "name": "Pumpsystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "db7aa702-ca6b-4a2a-8afa-4d21ed7f7c65",
+        "rds": "=A1.E1.ED1.JB1.KE1",
+        "name": "Pumpsystem",
+        "previousName": "",
+        "realObjectId": "a2403f02-5604-40a0-bf6b-fecb0bbbaeb7"
+      },
+      "Verksamhetsprodukt": {
+        "id": "b8fa8ab3-8ed7-4ff5-877d-0b99a23f1da6",
+        "rds": "-A1.E1.ED1.KE1",
+        "name": "Pumpsystem",
+        "previousName": "",
+        "realObjectId": "a2403f02-5604-40a0-bf6b-fecb0bbbaeb7"
+      }
+    }
+  },
+  {
+    "id": "bd1879a4-d06e-484a-973b-4b9e5cf723f6",
+    "name": "Cirkulationspump",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "28f7550a-93ef-4167-a1be-291bcd72c65b",
+        "rds": "=A1.E1.ED1.JB1.KE1.GPB1",
+        "name": "Cirkulationspump",
+        "previousName": "",
+        "realObjectId": "bd1879a4-d06e-484a-973b-4b9e5cf723f6"
+      },
+      "Verksamhetsprodukt": {
+        "id": "bd0b9205-8809-4df5-afe0-f446b3497407",
+        "rds": "-A1.E1.ED1.KE1.GPB1",
+        "name": "Cirkulationspump",
+        "previousName": "",
+        "realObjectId": "bd1879a4-d06e-484a-973b-4b9e5cf723f6"
+      }
+    }
+  },
+  {
+    "id": "ad7f6e0e-657d-499f-b92f-a384438cc117",
+    "name": "Drivning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "aabe1c02-fd88-46cb-a9b2-e79b377687f1",
+        "rds": "=A1.E1.ED1.JB1.KE1.HF1",
+        "name": "Drivning",
+        "previousName": "",
+        "realObjectId": "ad7f6e0e-657d-499f-b92f-a384438cc117"
+      }
+    }
+  },
+  {
+    "id": "6608b526-d5a4-4771-8148-a035f31a550c",
+    "name": "Pumpmotor",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "65d1cd57-ba87-48ee-80e0-b9ea55f4d4d8",
+        "rds": "=A1.E1.ED1.JB1.KE1.HF1.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "6608b526-d5a4-4771-8148-a035f31a550c"
+      },
+      "Verksamhetsprodukt": {
+        "id": "a8b52022-b50b-451d-a1b1-0086ee0ae98b",
+        "rds": "-A1.E1.ED1.KE1.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "6608b526-d5a4-4771-8148-a035f31a550c"
+      }
+    }
+  },
+  {
+    "id": "91fed52d-5acf-458a-96fe-1f726ba0e6c4",
+    "name": "Frekvensomformare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "5a6896d5-efc7-438f-ac99-cabca2ba3081",
+        "rds": "=A1.E1.ED1.JB1.KE1.HF1.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "91fed52d-5acf-458a-96fe-1f726ba0e6c4"
+      },
+      "Verksamhetsprodukt": {
+        "id": "b0ebcf49-b729-4181-9476-767f6d7fdfae",
+        "rds": "-A1.E1.ED1.KE1.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "91fed52d-5acf-458a-96fe-1f726ba0e6c4"
+      }
+    }
+  },
+  {
+    "id": "e43b18f5-3f75-4212-92f0-36d1f83fb630",
+    "name": "Drivaxel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e46f8edb-2ed8-42f6-a38a-6de66468d7ef",
+        "rds": "=A1.E1.ED1.JB1.KE1.HF1.WQA1",
+        "name": "Drivaxel",
+        "previousName": "",
+        "realObjectId": "e43b18f5-3f75-4212-92f0-36d1f83fb630"
+      }
+    }
+  },
+  {
+    "id": "9b22ec5f-eea1-44a1-8d61-415beeb70ffe",
+    "name": "Handventil",
+    "previousName": "HV14",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "59dba594-c9ee-4cd6-8bc5-b4b1c9d991f8",
+        "rds": "=A1.E1.ED1.JB1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV14",
+        "realObjectId": "9b22ec5f-eea1-44a1-8d61-415beeb70ffe"
+      },
+      "Verksamhetsprodukt": {
+        "id": "d64cb522-8794-4ee2-b43a-8c85535df8e7",
+        "rds": "-A1.E1.ED1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV14",
+        "realObjectId": "9b22ec5f-eea1-44a1-8d61-415beeb70ffe"
+      }
+    }
+  },
+  {
+    "id": "138a0bce-f535-4eab-ae58-048e5046c76b",
+    "name": "Rörsystem 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e8531cf5-f845-4115-bc09-e0998f541c5e",
+        "rds": "=A1.E1.ED1.JB2",
+        "name": "Rörsystem 2",
+        "previousName": "",
+        "realObjectId": "138a0bce-f535-4eab-ae58-048e5046c76b"
+      }
+    }
+  },
+  {
+    "id": "ea0257df-defb-43a3-9443-6bd6b12354c1",
+    "name": "Handventil",
+    "previousName": "HV13",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9d88bd40-20a1-42d8-8130-a2c035a0d93b",
+        "rds": "=A1.E1.ED1.JB2.QMA1",
+        "name": "Handventil",
+        "previousName": "HV13",
+        "realObjectId": "ea0257df-defb-43a3-9443-6bd6b12354c1"
+      },
+      "Verksamhetsprodukt": {
+        "id": "5f819550-5841-47dd-8005-616d756d9aa5",
+        "rds": "-A1.E1.ED1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV13",
+        "realObjectId": "ea0257df-defb-43a3-9443-6bd6b12354c1"
+      }
+    }
+  },
+  {
+    "id": "605b4949-5e63-47f1-ba62-c4b3e7f4b28b",
+    "name": "Avfuktar-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "04e8f612-5866-4849-9f09-703ae30ab729",
+        "rds": "=A1.E1.FB1",
+        "name": "Avfuktar-system",
+        "previousName": "",
+        "realObjectId": "605b4949-5e63-47f1-ba62-c4b3e7f4b28b"
+      },
+      "Verksamhetsprodukt": {
+        "id": "152d8547-b4e9-4826-bd5d-21f61a059efb",
+        "rds": "-A1.E1.FB1",
+        "name": "Avfuktar-system",
+        "previousName": "",
+        "realObjectId": "605b4949-5e63-47f1-ba62-c4b3e7f4b28b"
+      }
+    }
+  },
+  {
+    "id": "894e0ea9-1a11-42d7-b686-8ab839b45273",
+    "name": "Avfuktare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "c263e11c-4b3e-4032-9217-a6b02eea62db",
+        "rds": "=A1.E1.FB1.HPA1",
+        "name": "Avfuktare",
+        "previousName": "",
+        "realObjectId": "894e0ea9-1a11-42d7-b686-8ab839b45273"
+      },
+      "Verksamhetsprodukt": {
+        "id": "e74a2d2b-91ba-4b34-a43b-e0227bd48498",
+        "rds": "-A1.E1.FB1.HPA1",
+        "name": "Avfuktare",
+        "previousName": "",
+        "realObjectId": "894e0ea9-1a11-42d7-b686-8ab839b45273"
+      }
+    }
+  },
+  {
+    "id": "a58f6908-b0d7-47bc-a026-0ce89b9f860d",
+    "name": "Kraftmatning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9f6a9037-694e-4c4c-ae7e-f8dc1c7b51ac",
+        "rds": "=A1.E1.FB1.WDB1",
+        "name": "Kraftmatning",
+        "previousName": "",
+        "realObjectId": "a58f6908-b0d7-47bc-a026-0ce89b9f860d"
+      }
+    }
+  },
+  {
+    "id": "058825eb-0ece-4513-8a09-c651353db86e",
+    "name": "Säkring",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a13efc77-4989-451f-8c98-d75ba2a0ed4f",
+        "rds": "=A1.E1.FB1.WDB1.FCB1",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "058825eb-0ece-4513-8a09-c651353db86e"
+      },
+      "Verksamhetsprodukt": {
+        "id": "13b10ed5-66c1-44fe-bfa1-7e0300e19449",
+        "rds": "-A1.E1.JF1.FCB4",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "058825eb-0ece-4513-8a09-c651353db86e"
+      }
+    }
+  },
+  {
+    "id": "60aae09c-e1fe-43d5-9dd6-d72f4df5c5c2",
+    "name": "Arbetsbrytare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6dabd74b-fb65-46c4-ae71-b705643796c8",
+        "rds": "=A1.E1.FB1.WDB1.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "60aae09c-e1fe-43d5-9dd6-d72f4df5c5c2"
+      },
+      "Verksamhetsprodukt": {
+        "id": "00a162fe-753b-4535-a301-30ff72e67de5",
+        "rds": "-A1.E1.FB1.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "60aae09c-e1fe-43d5-9dd6-d72f4df5c5c2"
+      }
+    }
+  },
+  {
+    "id": "bd3f8b0f-72c9-484e-ab4f-fa13815777d8",
+    "name": "Elkabel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "86c98b47-8cda-4b04-9b28-15c060676752",
+        "rds": "=A1.E1.FB1.WDB1.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "bd3f8b0f-72c9-484e-ab4f-fa13815777d8"
+      },
+      "Verksamhetsprodukt": {
+        "id": "72cced09-410f-4992-a870-da3045635d6a",
+        "rds": "-A1.E1.FB1.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "bd3f8b0f-72c9-484e-ab4f-fa13815777d8"
+      }
+    }
+  },
+  {
+    "id": "55c92bf8-7ed2-4fbe-9e97-25fcff2c8bb9",
+    "name": "Dräneringsledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a45107fc-d9b3-4967-ad2a-a83a49d9aa80",
+        "rds": "=A1.E1.FB1.WPA1",
+        "name": "Dräneringsledning",
+        "previousName": "",
+        "realObjectId": "55c92bf8-7ed2-4fbe-9e97-25fcff2c8bb9"
+      },
+      "Verksamhetsprodukt": {
+        "id": "aa796cf7-353c-429b-a90d-c6e19b74896c",
+        "rds": "-A1.E1.FB1.WPA1",
+        "name": "Dräneringsledning",
+        "previousName": "",
+        "realObjectId": "55c92bf8-7ed2-4fbe-9e97-25fcff2c8bb9"
+      }
+    }
+  },
+  {
+    "id": "0efe22b7-7656-4739-9695-f145db413094",
+    "name": "Inkommande vattenledningssystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9c6a2623-8cf1-4a85-a233-c4d705086335",
+        "rds": "=A1.E1.JB1",
+        "name": "Inkommande vattenledningssystem",
+        "previousName": "",
+        "realObjectId": "0efe22b7-7656-4739-9695-f145db413094"
+      }
+    }
+  },
+  {
+    "id": "21eb8698-ea67-41bf-9c7e-ae27b9c6014c",
+    "name": "Flödesmätare",
+    "previousName": "MF11",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "c4d721f4-077c-4c45-b9c5-8bef9c060c64",
+        "rds": "=A1.E1.JB1.BFA1",
+        "name": "Flödesmätare",
+        "previousName": "MF11",
+        "realObjectId": "21eb8698-ea67-41bf-9c7e-ae27b9c6014c"
+      }
+    }
+  },
+  {
+    "id": "7924c642-4e65-4dfd-bcd1-dd81428b4a2c",
+    "name": "Tryckgivare",
+    "previousName": "GP41",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "8689b631-631e-4602-8565-3a69ac572b3a",
+        "rds": "=A1.E1.JB1.BPA1",
+        "name": "Tryckgivare",
+        "previousName": "GP41",
+        "realObjectId": "7924c642-4e65-4dfd-bcd1-dd81428b4a2c"
+      }
+    }
+  },
+  {
+    "id": "75318c7d-31f9-469d-8a7c-2b1ea12bd8a2",
+    "name": "Handventil",
+    "previousName": "HV01",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "cc83e5c1-4733-4e00-8cf4-5951896ce79c",
+        "rds": "=A1.E1.JB1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV01",
+        "realObjectId": "75318c7d-31f9-469d-8a7c-2b1ea12bd8a2"
+      }
+    }
+  },
+  {
+    "id": "c7d07f01-d55e-4aa1-bd51-180469d395ab",
+    "name": "Handventil",
+    "previousName": "HV24",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "1b00c219-2e4d-4722-859d-32a3fe5d7978",
+        "rds": "=A1.E1.JB1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV24",
+        "realObjectId": "c7d07f01-d55e-4aa1-bd51-180469d395ab"
+      }
+    }
+  },
+  {
+    "id": "c57c2e72-edee-43b1-ab58-aab89a47a89c",
+    "name": "Handventil",
+    "previousName": "HV16",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "7747d3cd-6138-4e0b-9a9e-3c623f5a978b",
+        "rds": "=A1.E1.JB1.QMA3",
+        "name": "Handventil",
+        "previousName": "HV16",
+        "realObjectId": "c57c2e72-edee-43b1-ab58-aab89a47a89c"
+      }
+    }
+  },
+  {
+    "id": "4dde55d6-eca9-4ffe-ac20-3ee53fc7e661",
+    "name": "Handventil",
+    "previousName": "HV21",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "72288380-8ac8-4a6a-bc99-46da91c15e1a",
+        "rds": "=A1.E1.JB1.QMA4",
+        "name": "Handventil",
+        "previousName": "HV21",
+        "realObjectId": "4dde55d6-eca9-4ffe-ac20-3ee53fc7e661"
+      }
+    }
+  },
+  {
+    "id": "40ac3226-87f0-4aa1-b14c-afd5d43db81c",
+    "name": "Skjutventil",
+    "previousName": "SV11",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6a922ec5-b181-4381-87fb-7e055eafa791",
+        "rds": "=A1.E1.JB1.QMA5",
+        "name": "Skjutventil",
+        "previousName": "SV11",
+        "realObjectId": "40ac3226-87f0-4aa1-b14c-afd5d43db81c"
+      }
+    }
+  },
+  {
+    "id": "790acd47-e3a6-4cee-9feb-113a753eaa01",
+    "name": "Backventil",
+    "previousName": "BV03",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ec93cdbd-b07c-42b7-b27c-7eb3e749c893",
+        "rds": "=A1.E1.JB1.RMA1",
+        "name": "Backventil",
+        "previousName": "BV03",
+        "realObjectId": "790acd47-e3a6-4cee-9feb-113a753eaa01"
+      }
+    }
+  },
+  {
+    "id": "55229b8d-5cd6-4d70-b420-d6e2084bea16",
+    "name": "Bypass",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ac8e6101-34cd-493c-9025-c8ee7855b0ba",
+        "rds": "=A1.E1.JB2",
+        "name": "Bypass",
+        "previousName": "",
+        "realObjectId": "55229b8d-5cd6-4d70-b420-d6e2084bea16"
+      }
+    }
+  },
+  {
+    "id": "4c8263d5-c63d-4ccf-9dc0-596555cc7c3d",
+    "name": "Ventil HV09",
+    "previousName": "HV09",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f880a5f7-72cd-4e5b-b358-ae13490b584c",
+        "rds": "=A1.E1.JB2.QMA1",
+        "name": "Ventil HV09",
+        "previousName": "HV09",
+        "realObjectId": "4c8263d5-c63d-4ccf-9dc0-596555cc7c3d"
+      }
+    }
+  },
+  {
+    "id": "80bfc059-9045-4c8c-8c44-694324ea767d",
+    "name": "Backventil",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3db4b53b-6484-4fb0-9d25-20a084d08215",
+        "rds": "=A1.E1.JB2.RMA1",
+        "name": "Backventil",
+        "previousName": "",
+        "realObjectId": "80bfc059-9045-4c8c-8c44-694324ea767d"
+      }
+    }
+  },
+  {
+    "id": "de0afdec-0f5c-4f53-a025-d7256e91a058",
+    "name": "Utgående vattenledningssystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3a459cf1-0f5d-4e61-921e-a180c73bb534",
+        "rds": "=A1.E1.JB3",
+        "name": "Utgående vattenledningssystem",
+        "previousName": "",
+        "realObjectId": "de0afdec-0f5c-4f53-a025-d7256e91a058"
+      }
+    }
+  },
+  {
+    "id": "40f60ad4-7e49-41f3-8dec-7cbee7448702",
+    "name": "Flödesmätare",
+    "previousName": "MF12",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "40f65ed4-2584-4c32-96cd-0af7f73e3ebd",
+        "rds": "=A1.E1.JB3.BFA1",
+        "name": "Flödesmätare",
+        "previousName": "MF12",
+        "realObjectId": "40f60ad4-7e49-41f3-8dec-7cbee7448702"
+      }
+    }
+  },
+  {
+    "id": "3d256fde-ced1-4f0b-8422-27afe055724c",
+    "name": "Tryckgivare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "74ee4df8-bdfe-4e77-948a-0245efe9dc89",
+        "rds": "=A1.E1.JB3.BPA1",
+        "name": "Tryckgivare",
+        "previousName": "",
+        "realObjectId": "3d256fde-ced1-4f0b-8422-27afe055724c"
+      }
+    }
+  },
+  {
+    "id": "ce1bce71-a7d9-4ae8-b539-538800dcbe0f",
+    "name": "Tryckgivare",
+    "previousName": "GP31",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d2417ce4-a6e9-46c8-a107-61e7116da608",
+        "rds": "=A1.E1.JB3.BPA2",
+        "name": "Tryckgivare",
+        "previousName": "GP31",
+        "realObjectId": "ce1bce71-a7d9-4ae8-b539-538800dcbe0f"
+      }
+    }
+  },
+  {
+    "id": "8176b2d4-255d-49d8-91db-0ec227666d20",
+    "name": "Returledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "591acc35-136e-4ce0-a5d6-02eafad18baa",
+        "rds": "=A1.E1.JB3.JB1",
+        "name": "Returledning",
+        "previousName": "",
+        "realObjectId": "8176b2d4-255d-49d8-91db-0ec227666d20"
+      }
+    }
+  },
+  {
+    "id": "06287566-7d52-4e84-8400-98391f37464c",
+    "name": "Handventil",
+    "previousName": "HV11",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "7dc2e675-b589-41d6-b6d8-ccbeca47d831",
+        "rds": "=A1.E1.JB3.JB1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV11",
+        "realObjectId": "06287566-7d52-4e84-8400-98391f37464c"
+      }
+    }
+  },
+  {
+    "id": "05210c15-9187-482e-a288-ab7c61db1238",
+    "name": "Handventil",
+    "previousName": "HV10",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "7866b41e-b558-4897-8fb8-4d9bdd639257",
+        "rds": "=A1.E1.JB3.JB1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV10",
+        "realObjectId": "05210c15-9187-482e-a288-ab7c61db1238"
+      }
+    }
+  },
+  {
+    "id": "bc75a6f0-613b-4c89-84b7-95a641877772",
+    "name": "Handventil",
+    "previousName": "HV22",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e8b136f4-d206-42f9-86fa-fd63845b64f0",
+        "rds": "=A1.E1.JB3.QMA1",
+        "name": "Handventil",
+        "previousName": "HV22",
+        "realObjectId": "bc75a6f0-613b-4c89-84b7-95a641877772"
+      }
+    }
+  },
+  {
+    "id": "378eeb07-344a-43f4-b8a8-e140bf910a6a",
+    "name": "Handventil",
+    "previousName": "HV15",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a3c9d730-ff11-409e-8e64-649ff33dec26",
+        "rds": "=A1.E1.JB3.QMA2",
+        "name": "Handventil",
+        "previousName": "HV15",
+        "realObjectId": "378eeb07-344a-43f4-b8a8-e140bf910a6a"
+      }
+    }
+  },
+  {
+    "id": "9c3b0d9f-491c-42a0-b757-0f7ba2857aa3",
+    "name": "Handventil",
+    "previousName": "HV23",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0a3d4a39-f11a-43d1-9121-61b1ff81f6e1",
+        "rds": "=A1.E1.JB3.QMA3",
+        "name": "Handventil",
+        "previousName": "HV23",
+        "realObjectId": "9c3b0d9f-491c-42a0-b757-0f7ba2857aa3"
+      }
+    }
+  },
+  {
+    "id": "9c58b992-520e-45a3-8556-ac57d4d15a3b",
+    "name": "Handventil",
+    "previousName": "HV23",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "7205557c-5998-428e-828e-46438ed62f22",
+        "rds": "=A1.E1.JB3.QMA4",
+        "name": "Handventil",
+        "previousName": "HV23",
+        "realObjectId": "9c58b992-520e-45a3-8556-ac57d4d15a3b"
+      }
+    }
+  },
+  {
+    "id": "4231d24f-5a41-4228-bdae-53ce3c818411",
+    "name": "Handventil",
+    "previousName": "HV07",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "00bc94ec-aa2d-43c2-9a89-1e9885a406a2",
+        "rds": "=A1.E1.JB3.QMA5",
+        "name": "Handventil",
+        "previousName": "HV07",
+        "realObjectId": "4231d24f-5a41-4228-bdae-53ce3c818411"
+      }
+    }
+  },
+  {
+    "id": "699d7beb-185d-4e89-91b9-e78b091cf7fa",
+    "name": "Handventil",
+    "previousName": "HV12",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a659eb0f-97fd-4c48-8a1c-fd811991d092",
+        "rds": "=A1.E1.JB3.QMA6",
+        "name": "Handventil",
+        "previousName": "HV12",
+        "realObjectId": "699d7beb-185d-4e89-91b9-e78b091cf7fa"
+      }
+    }
+  },
+  {
+    "id": "9d4e7aa4-5539-464a-84fa-d361259d384c",
+    "name": "Handventil",
+    "previousName": "HV08",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "00f0dc95-36ed-482e-bc1a-a472e15ee8b1",
+        "rds": "=A1.E1.JB3.QMA7",
+        "name": "Handventil",
+        "previousName": "HV08",
+        "realObjectId": "9d4e7aa4-5539-464a-84fa-d361259d384c"
+      }
+    }
+  },
+  {
+    "id": "4401ec7b-dd49-4f90-a0f4-09bd790fc8ba",
+    "name": "Telfer-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0ce74720-fe84-4f39-a75c-172b3a94b918",
+        "rds": "=A1.E1.JC1",
+        "name": "Telfer-system",
+        "previousName": "",
+        "realObjectId": "4401ec7b-dd49-4f90-a0f4-09bd790fc8ba"
+      }
+    }
+  },
+  {
+    "id": "ba032097-1874-49d7-8359-f1fc1c91a8f0",
+    "name": "Balksystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a7397fc6-1bee-4e1e-99bf-5a1b198359af",
+        "rds": "=A1.E1.JC1.AA1",
+        "name": "Balksystem",
+        "previousName": "",
+        "realObjectId": "ba032097-1874-49d7-8359-f1fc1c91a8f0"
+      }
+    }
+  },
+  {
+    "id": "fa4c44fc-cb9b-4485-be5a-e132eff025f8",
+    "name": "Primärbalk 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "393abc4f-c82f-419a-9b53-b127e9f9fbde",
+        "rds": "=A1.E1.JC1.AA1.ULE1",
+        "name": "Primärbalk 1",
+        "previousName": "",
+        "realObjectId": "fa4c44fc-cb9b-4485-be5a-e132eff025f8"
+      }
+    }
+  },
+  {
+    "id": "50d834ef-f3f7-4400-88ea-9270b40ca678",
+    "name": "Primärbalk 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "8f919fdb-b3a5-4f90-a8d1-e0254c6cfd39",
+        "rds": "=A1.E1.JC1.AA1.ULE2",
+        "name": "Primärbalk 2",
+        "previousName": "",
+        "realObjectId": "50d834ef-f3f7-4400-88ea-9270b40ca678"
+      }
+    }
+  },
+  {
+    "id": "680a8d9e-8a1d-4251-8443-69f6506737f8",
+    "name": "Telferbalk 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b9ca8f0d-4b66-4368-bfac-7ec9d8b11e9a",
+        "rds": "=A1.E1.JC1.AA1.ULE3",
+        "name": "Telferbalk 1",
+        "previousName": "",
+        "realObjectId": "680a8d9e-8a1d-4251-8443-69f6506737f8"
+      }
+    }
+  },
+  {
+    "id": "41de4cdc-3b9f-4757-b445-e1b10fbf2121",
+    "name": "Telferbalk 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "421612a0-80a0-461a-9fac-064f33eabe02",
+        "rds": "=A1.E1.JC1.AA1.ULE4",
+        "name": "Telferbalk 2",
+        "previousName": "",
+        "realObjectId": "41de4cdc-3b9f-4757-b445-e1b10fbf2121"
+      }
+    }
+  },
+  {
+    "id": "ccf88fd8-d0c8-4e5b-897b-3636ebe7e23f",
+    "name": "Telferbalk 3",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6a3b7679-d07c-418b-a04f-1deb27b319d9",
+        "rds": "=A1.E1.JC1.AA1.ULE5",
+        "name": "Telferbalk 3",
+        "previousName": "",
+        "realObjectId": "ccf88fd8-d0c8-4e5b-897b-3636ebe7e23f"
+      }
+    }
+  },
+  {
+    "id": "6c8a1c26-3130-4e05-b674-8e01d472e340",
+    "name": "Telfer 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f99edc2b-d3d6-4c71-a358-c6d38bcb566c",
+        "rds": "=A1.E1.JC1.GMB1",
+        "name": "Telfer 1",
+        "previousName": "",
+        "realObjectId": "6c8a1c26-3130-4e05-b674-8e01d472e340"
+      }
+    }
+  },
+  {
+    "id": "c567ed27-2317-4dcc-ba51-b5df6745f712",
+    "name": "Telfer 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "43ae7ede-0e14-483c-abfb-552f2cdc9b11",
+        "rds": "=A1.E1.JC1.GMB2",
+        "name": "Telfer 2",
+        "previousName": "",
+        "realObjectId": "c567ed27-2317-4dcc-ba51-b5df6745f712"
+      }
+    }
+  },
+  {
+    "id": "8845098a-d386-4640-bcd2-1c6376bd0d6c",
+    "name": "Telfer 3",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "36fec438-ba11-41e8-923a-20f85978d317",
+        "rds": "=A1.E1.JC1.GMB3",
+        "name": "Telfer 3",
+        "previousName": "",
+        "realObjectId": "8845098a-d386-4640-bcd2-1c6376bd0d6c"
+      }
+    }
+  },
+  {
+    "id": "0658a026-914d-42d0-b4a0-8b444b132556",
+    "name": "El-central",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d0c879fa-71e1-40a2-88c9-d40567cdeb67",
+        "rds": "=A1.E1.JF1",
+        "name": "El-central",
+        "previousName": "",
+        "realObjectId": "0658a026-914d-42d0-b4a0-8b444b132556"
+      },
+      "Verksamhetsprodukt": {
+        "id": "424dba39-a889-4f7f-919e-182931f54c44",
+        "rds": "-A1.E1.JF1",
+        "name": "JF1",
+        "previousName": "",
+        "realObjectId": "0658a026-914d-42d0-b4a0-8b444b132556"
+      }
+    }
+  },
+  {
+    "id": "874e8b5c-a814-42cf-ac23-bf9d916cc643",
+    "name": "Kapsling för elektriska komponenter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "985ce11b-5a59-4012-9d57-d2a411dd1645",
+        "rds": "=A1.E1.JF1.AD1",
+        "name": "Kapsling för elektriska komponenter",
+        "previousName": "",
+        "realObjectId": "874e8b5c-a814-42cf-ac23-bf9d916cc643"
+      }
+    }
+  },
+  {
+    "id": "a1ae1bfe-eb92-472e-a798-0c06f24899fb",
+    "name": "El-skåp",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f74cc8da-2232-4c91-8a8f-e4b8f7849513",
+        "rds": "=A1.E1.JF1.AD1.UCA1",
+        "name": "El-skåp",
+        "previousName": "",
+        "realObjectId": "a1ae1bfe-eb92-472e-a798-0c06f24899fb"
+      },
+      "Verksamhetsprodukt": {
+        "id": "a7f29f06-c824-4050-bbd2-9f603de769eb",
+        "rds": "-A1.E1.JF1.UCA1",
+        "name": "El-skåp",
+        "previousName": "",
+        "realObjectId": "a1ae1bfe-eb92-472e-a798-0c06f24899fb"
+      }
+    }
+  },
+  {
+    "id": "a347c4a5-b207-46be-90be-12b0ddf4dfa1",
+    "name": "Huvudsäkringar",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6b27c0ba-e65d-4081-ae10-43f170667ee3",
+        "rds": "=A1.E1.JF1.KA1",
+        "name": "Huvudsäkringar",
+        "previousName": "",
+        "realObjectId": "a347c4a5-b207-46be-90be-12b0ddf4dfa1"
+      }
+    }
+  },
+  {
+    "id": "b67dc6e4-f5cf-43b1-93ec-501f0d374886",
+    "name": "Huvudsäkring L1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f89b3c11-a982-4f98-8ec8-185fe52910d5",
+        "rds": "=A1.E1.JF1.KA1.FCB1",
+        "name": "Huvudsäkring L1",
+        "previousName": "",
+        "realObjectId": "b67dc6e4-f5cf-43b1-93ec-501f0d374886"
+      },
+      "Verksamhetsprodukt": {
+        "id": "f3dfc9ab-9f61-4319-bca8-bf378a083490",
+        "rds": "-A1.E1.JF1.FCB1",
+        "name": "Huvudsäkring L1",
+        "previousName": "",
+        "realObjectId": "b67dc6e4-f5cf-43b1-93ec-501f0d374886"
+      }
+    }
+  },
+  {
+    "id": "12a7ee5c-b5aa-4c7d-b994-f3b96f914efb",
+    "name": "Huvudsäkring L2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d9262c29-e06c-4636-a37e-5315289023aa",
+        "rds": "=A1.E1.JF1.KA1.FCB2",
+        "name": "Huvudsäkring L2",
+        "previousName": "",
+        "realObjectId": "12a7ee5c-b5aa-4c7d-b994-f3b96f914efb"
+      },
+      "Verksamhetsprodukt": {
+        "id": "c13a5aec-3822-4579-9775-f1a8be76cd5b",
+        "rds": "-A1.E1.JF1.FCB2",
+        "name": "Huvudsäkring L2",
+        "previousName": "",
+        "realObjectId": "12a7ee5c-b5aa-4c7d-b994-f3b96f914efb"
+      }
+    }
+  },
+  {
+    "id": "ae830d88-8e5f-406a-a639-f2200bf0af53",
+    "name": "Huvudsärking L3",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3211c7b2-273c-4cfd-84ab-12e671872278",
+        "rds": "=A1.E1.JF1.KA1.FCB3",
+        "name": "Huvudsärking L3",
+        "previousName": "",
+        "realObjectId": "ae830d88-8e5f-406a-a639-f2200bf0af53"
+      },
+      "Verksamhetsprodukt": {
+        "id": "ce233a03-5def-41b2-a7bb-e13af868fa5f",
+        "rds": "-A1.E1.JF1.FCB3",
+        "name": "Huvudsärking L3",
+        "previousName": "",
+        "realObjectId": "ae830d88-8e5f-406a-a639-f2200bf0af53"
+      }
+    }
+  },
+  {
+    "id": "4a3d7a33-d6b6-4ba8-99dd-fb90d083823e",
+    "name": "Huvudbrytare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3ce3eb99-4756-4612-bf54-71e01888be6f",
+        "rds": "=A1.E1.JF1.KA2",
+        "name": "Huvudbrytare",
+        "previousName": "",
+        "realObjectId": "4a3d7a33-d6b6-4ba8-99dd-fb90d083823e"
+      },
+      "Verksamhetsprodukt": {
+        "id": "c6d73941-3282-4818-84ef-6fa5e92d3b07",
+        "rds": "-A1.E1.JF1.KA2",
+        "name": "Huvudbrytare",
+        "previousName": "",
+        "realObjectId": "4a3d7a33-d6b6-4ba8-99dd-fb90d083823e"
+      }
+    }
+  },
+  {
+    "id": "27703b39-fce2-472a-9783-44134e25c4f4",
+    "name": "Spillvattenhantering",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6fd0ad19-95a4-441b-ae05-4c404f15be40",
+        "rds": "=A1.E1.JK1",
+        "name": "Spillvattenhantering",
+        "previousName": "",
+        "realObjectId": "27703b39-fce2-472a-9783-44134e25c4f4"
+      }
+    }
+  },
+  {
+    "id": "fbc70bc4-4201-4fde-8993-ae03241ee9c5",
+    "name": "Spillvattenledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6ff4b617-580e-4713-b618-c5d0797648ea",
+        "rds": "=A1.E1.JK1.JK1",
+        "name": "Spillvattenledning",
+        "previousName": "",
+        "realObjectId": "fbc70bc4-4201-4fde-8993-ae03241ee9c5"
+      }
+    }
+  },
+  {
+    "id": "3dc27d12-fe4e-4b74-a0d8-910c66ed7df9",
+    "name": "Pumpsystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "317838d1-1090-41b8-ab3d-c5c1ea650798",
+        "rds": "=A1.E1.JK1.KE1",
+        "name": "Pumpsystem",
+        "previousName": "",
+        "realObjectId": "3dc27d12-fe4e-4b74-a0d8-910c66ed7df9"
+      }
+    }
+  },
+  {
+    "id": "a109290f-3067-469c-8f00-f5f953989073",
+    "name": "Dränkbar pump",
+    "previousName": "PS1",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "26277550-8462-4622-9a6c-7f3beb8fa96c",
+        "rds": "=A1.E1.JK1.KE1.GPB1",
+        "name": "Dränkbar pump",
+        "previousName": "PS1",
+        "realObjectId": "a109290f-3067-469c-8f00-f5f953989073"
+      }
+    }
+  },
+  {
+    "id": "fe5d400c-1252-43ff-bdf2-23fbda8b6a39",
+    "name": "Utgående spillvattenledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6a4e667c-8ca5-45c0-ac40-2408dca1d63b",
+        "rds": "=A1.E1.JK1.KE1.JK1",
+        "name": "Utgående spillvattenledning",
+        "previousName": "",
+        "realObjectId": "fe5d400c-1252-43ff-bdf2-23fbda8b6a39"
+      }
+    }
+  },
+  {
+    "id": "71e48442-b131-4877-8f4d-0159070f7cea",
+    "name": "Pumpsumpsystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e16bdeee-4563-4d2d-8449-539501e50847",
+        "rds": "=A1.E1.JK1.QC1",
+        "name": "Pumpsumpsystem",
+        "previousName": "",
+        "realObjectId": "71e48442-b131-4877-8f4d-0159070f7cea"
+      }
+    }
+  },
+  {
+    "id": "ec0ea151-c0c3-4732-b5e0-fe7366d03143",
+    "name": "Nivågivare",
+    "previousName": "GL63",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d5e28974-aab2-4fa1-9f41-a1a91e250c08",
+        "rds": "=A1.E1.JK1.QC1.BLA1",
+        "name": "Nivågivare",
+        "previousName": "GL63",
+        "realObjectId": "ec0ea151-c0c3-4732-b5e0-fe7366d03143"
+      }
+    }
+  },
+  {
+    "id": "d4ce937d-307b-448a-b13f-1fb9d11f9f8e",
+    "name": "Pumpsump",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "171a18ea-15c8-4ad2-805e-79a9806571aa",
+        "rds": "=A1.E1.JK1.QC1.CLA1",
+        "name": "Pumpsump",
+        "previousName": "",
+        "realObjectId": "d4ce937d-307b-448a-b13f-1fb9d11f9f8e"
+      }
+    }
+  },
+  {
+    "id": "16635b40-c0b0-43b9-a4be-ae5ac3037f6b",
+    "name": "Pumpsystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "44205954-6f72-4ca5-af9d-eaad74d7f227",
+        "rds": "=A1.E1.KE1",
+        "name": "Pumpsystem",
+        "previousName": "",
+        "realObjectId": "16635b40-c0b0-43b9-a4be-ae5ac3037f6b"
+      }
+    }
+  },
+  {
+    "id": "7c5a5ae0-e95b-454b-b095-ff91b152f63c",
+    "name": "Pumpsystem 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "34af897e-f410-438e-b335-fcd13dca4823",
+        "rds": "=A1.E1.KE1.KE1",
+        "name": "Pumpsystem 2",
+        "previousName": "",
+        "realObjectId": "7c5a5ae0-e95b-454b-b095-ff91b152f63c"
+      }
+    }
+  },
+  {
+    "id": "4d5a9c76-4d9c-4e6b-b1f8-83724dc1fb3d",
+    "name": "Pumpssytem 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "34af897e-f410-438e-b335-fcd13dca4823",
+        "rds": "=A1.E1.KE1.KE1",
+        "name": "Pumpsystem 2",
+        "previousName": "",
+        "realObjectId": "4d5a9c76-4d9c-4e6b-b1f8-83724dc1fb3d"
+      },
+      "Verksamhetsprodukt": {
+        "id": "9f4b636c-00f1-41af-aa2f-3e2c75e08b90",
+        "rds": "-A1.E1.KE1",
+        "name": "Pumpssytem 2",
+        "previousName": "",
+        "realObjectId": "4d5a9c76-4d9c-4e6b-b1f8-83724dc1fb3d"
+      }
+    }
+  },
+  {
+    "id": "b1f1d835-6fc1-481e-a28a-9fff8f997875",
+    "name": "Centrifugalpump",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "bd7ceb66-decc-4d14-b43b-17d8a1e1e135",
+        "rds": "=A1.E1.KE1.KE1.GPB1",
+        "name": "Centrifugalpump",
+        "previousName": "",
+        "realObjectId": "b1f1d835-6fc1-481e-a28a-9fff8f997875"
+      },
+      "Verksamhetsprodukt": {
+        "id": "64922a07-55fb-40f0-abf5-ac95cfe84b42",
+        "rds": "-A1.E1.KE1.GPB1",
+        "name": "Centrifugalpump",
+        "previousName": "",
+        "realObjectId": "b1f1d835-6fc1-481e-a28a-9fff8f997875"
+      }
+    }
+  },
+  {
+    "id": "3a9cce66-8298-4430-bc78-f0d3fb31fd19",
+    "name": "Drivning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "4214deda-550f-48d2-b937-53ff45165312",
+        "rds": "=A1.E1.KE1.KE1.HF1",
+        "name": "Drivning",
+        "previousName": "",
+        "realObjectId": "3a9cce66-8298-4430-bc78-f0d3fb31fd19"
+      }
+    }
+  },
+  {
+    "id": "e5c55b1d-e93a-4c70-bd23-843993be51b5",
+    "name": "Pumpmotor",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "448faf65-b9f2-47d6-abd9-d56d20495c48",
+        "rds": "=A1.E1.KE1.KE1.HF1.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "e5c55b1d-e93a-4c70-bd23-843993be51b5"
+      },
+      "Verksamhetsprodukt": {
+        "id": "0f2c369e-7470-4611-899c-5f2fa6a9bb8c",
+        "rds": "-A1.E1.KE1.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "e5c55b1d-e93a-4c70-bd23-843993be51b5"
+      }
+    }
+  },
+  {
+    "id": "a50dce59-1f6b-4288-94b6-74130f432594",
+    "name": "Kraftmatning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0cb02805-9998-4d76-a513-f276d0d935d0",
+        "rds": "=A1.E1.KE1.KE1.HF1.WDB1",
+        "name": "Kraftmatning",
+        "previousName": "",
+        "realObjectId": "a50dce59-1f6b-4288-94b6-74130f432594"
+      }
+    }
+  },
+  {
+    "id": "81cb25bb-6a2a-4893-b50b-865fc42f2472",
+    "name": "Säkring",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f4e8d055-cefa-4762-bba3-df411905b3b8",
+        "rds": "=A1.E1.KE1.KE1.HF1.WDB1.FCB1",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "81cb25bb-6a2a-4893-b50b-865fc42f2472"
+      },
+      "Verksamhetsprodukt": {
+        "id": "52b05e7d-8a30-41c6-bba6-0f3de2e702f4",
+        "rds": "-A1.E1.JF1.FCB6",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "81cb25bb-6a2a-4893-b50b-865fc42f2472"
+      }
+    }
+  },
+  {
+    "id": "0cf56d16-c2f1-4a86-8929-93660bce482c",
+    "name": "Arbetsbrytare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "c0cde3e7-ec5c-400c-b2f6-1bfc5f69699f",
+        "rds": "=A1.E1.KE1.KE1.HF1.WDB1.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "0cf56d16-c2f1-4a86-8929-93660bce482c"
+      },
+      "Verksamhetsprodukt": {
+        "id": "47993cea-2f9f-4e7f-bd1f-98ef91376e1f",
+        "rds": "-A1.E1.KE1.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "0cf56d16-c2f1-4a86-8929-93660bce482c"
+      }
+    }
+  },
+  {
+    "id": "f542fead-c309-4a88-a804-9236b667d850",
+    "name": "Frekvensomformare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "8f9deec4-0e94-413a-a5c8-e9f1bbc17584",
+        "rds": "=A1.E1.KE1.KE1.HF1.WDB1.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "f542fead-c309-4a88-a804-9236b667d850"
+      },
+      "Verksamhetsprodukt": {
+        "id": "f390e8cb-751d-424f-b182-565325302ce3",
+        "rds": "-A1.E1.KE1.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "f542fead-c309-4a88-a804-9236b667d850"
+      }
+    }
+  },
+  {
+    "id": "8d412582-0faa-4c9e-a95d-4980aba9d02f",
+    "name": "Elkabel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e1bf5c97-d1cc-4f86-bbe7-14d52e174f64",
+        "rds": "=A1.E1.KE1.KE1.HF1.WDB1.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "8d412582-0faa-4c9e-a95d-4980aba9d02f"
+      },
+      "Verksamhetsprodukt": {
+        "id": "fe6a6d89-fa9d-4e7c-9af2-77d620e9838f",
+        "rds": "-A1.E1.KE1.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "8d412582-0faa-4c9e-a95d-4980aba9d02f"
+      }
+    }
+  },
+  {
+    "id": "53ec5625-0d1d-43c5-b180-2b1d4edcf5ac",
+    "name": "Drivaxel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "1f322bed-ab86-4f15-aa63-011ce3a84976",
+        "rds": "=A1.E1.KE1.KE1.HF1.WQA1",
+        "name": "Drivaxel",
+        "previousName": "",
+        "realObjectId": "53ec5625-0d1d-43c5-b180-2b1d4edcf5ac"
+      },
+      "Verksamhetsprodukt": {
+        "id": "6ccd2373-f235-4cc1-8ce5-0bc7e27440a4",
+        "rds": "-A1.E1.KE1.WQA1",
+        "name": "Drivaxel",
+        "previousName": "",
+        "realObjectId": "53ec5625-0d1d-43c5-b180-2b1d4edcf5ac"
+      }
+    }
+  },
+  {
+    "id": "d9009d5b-87fd-4d2d-a365-700d2fdfb165",
+    "name": "Rör-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "1dad18dd-2dfa-4c2f-acee-84d3700a2d14",
+        "rds": "=A1.E1.KE1.KE1.JB1",
+        "name": "Rör-system",
+        "previousName": "",
+        "realObjectId": "d9009d5b-87fd-4d2d-a365-700d2fdfb165"
+      }
+    }
+  },
+  {
+    "id": "bb70b2e9-b6a5-477b-b3be-0a3674891602",
+    "name": "Handventil",
+    "previousName": "HV03",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d41ddc27-9300-4779-beef-fe1b33066961",
+        "rds": "=A1.E1.KE1.KE1.JB1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV03",
+        "realObjectId": "bb70b2e9-b6a5-477b-b3be-0a3674891602"
+      },
+      "Verksamhetsprodukt": {
+        "id": "eadd91a8-cebc-42b5-841d-4c827eb0b99f",
+        "rds": "-A1.E1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV03",
+        "realObjectId": "bb70b2e9-b6a5-477b-b3be-0a3674891602"
+      }
+    }
+  },
+  {
+    "id": "30d676df-2fb5-4e65-a76b-24e26a8821b6",
+    "name": "Handventil",
+    "previousName": "HV17",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "471e7eb1-0ce9-4ec0-9418-a8ee53b6a815",
+        "rds": "=A1.E1.KE1.KE1.JB1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV17",
+        "realObjectId": "30d676df-2fb5-4e65-a76b-24e26a8821b6"
+      },
+      "Verksamhetsprodukt": {
+        "id": "cd0efc2b-3c74-4a6e-b8ae-63a1dc80aa29",
+        "rds": "-A1.E1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV17",
+        "realObjectId": "30d676df-2fb5-4e65-a76b-24e26a8821b6"
+      }
+    }
+  },
+  {
+    "id": "aa2b0f47-1a41-42e4-8baf-1a133cdbd7b0",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "94e2a319-165b-4b47-9f59-925eeaf38be6",
+        "rds": "=A1.E1.KE1.KE1.JB1.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "aa2b0f47-1a41-42e4-8baf-1a133cdbd7b0"
+      }
+    }
+  },
+  {
+    "id": "d33ddce8-9c2f-4f9c-ada5-4c29abb52df4",
+    "name": "Rör-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ee4d8b6d-e02b-4c70-9c79-f8ae3ad0ae53",
+        "rds": "=A1.E1.KE1.KE1.JB2",
+        "name": "Rör-system",
+        "previousName": "",
+        "realObjectId": "d33ddce8-9c2f-4f9c-ada5-4c29abb52df4"
+      }
+    }
+  },
+  {
+    "id": "1244c16b-7dc4-473b-aa3f-8e9e5e8fb46a",
+    "name": "Handventil",
+    "previousName": "HV05",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "177332bb-4182-463f-825b-83c488a32ef0",
+        "rds": "=A1.E1.KE1.KE1.JB2.QMA1",
+        "name": "Handventil",
+        "previousName": "HV05",
+        "realObjectId": "1244c16b-7dc4-473b-aa3f-8e9e5e8fb46a"
+      },
+      "Verksamhetsprodukt": {
+        "id": "7256d97e-f9da-4d51-9707-48647d8aabf3",
+        "rds": "-A1.E1.QMA3",
+        "name": "Handventil",
+        "previousName": "HV05",
+        "realObjectId": "1244c16b-7dc4-473b-aa3f-8e9e5e8fb46a"
+      }
+    }
+  },
+  {
+    "id": "885a6159-c8fc-41ac-b3ab-a53c3a025334",
+    "name": "Handventil",
+    "previousName": "HV19",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6453d2a2-2ce3-4299-a2fb-283303a319f9",
+        "rds": "=A1.E1.KE1.KE1.JB2.QMA2",
+        "name": "Handventil",
+        "previousName": "HV19",
+        "realObjectId": "885a6159-c8fc-41ac-b3ab-a53c3a025334"
+      },
+      "Verksamhetsprodukt": {
+        "id": "ad422065-eaf6-45c4-b60f-33fa95fe217f",
+        "rds": "-A1.E1.QMA4",
+        "name": "Handventil",
+        "previousName": "HV19",
+        "realObjectId": "885a6159-c8fc-41ac-b3ab-a53c3a025334"
+      }
+    }
+  },
+  {
+    "id": "ad2a7190-7748-4ebd-96b5-1e0a610e6dba",
+    "name": "Backventil",
+    "previousName": "BV01",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b5370041-f2a7-4a17-8753-cd2b233ce36a",
+        "rds": "=A1.E1.KE1.KE1.JB2.RMA1",
+        "name": "Backventil",
+        "previousName": "BV01",
+        "realObjectId": "ad2a7190-7748-4ebd-96b5-1e0a610e6dba"
+      },
+      "Verksamhetsprodukt": {
+        "id": "848b910c-d038-4b36-8bc2-48bb3d86cf4f",
+        "rds": "-A1.E1.RMA1",
+        "name": "Backventil",
+        "previousName": "BV01",
+        "realObjectId": "ad2a7190-7748-4ebd-96b5-1e0a610e6dba"
+      }
+    }
+  },
+  {
+    "id": "3170bea4-dd3c-4ea0-b13e-98fb5be1ac90",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a8821547-387f-4541-8eea-b729b6b5678b",
+        "rds": "=A1.E1.KE1.KE1.JB2.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "3170bea4-dd3c-4ea0-b13e-98fb5be1ac90"
+      }
+    }
+  },
+  {
+    "id": "5b0e23b6-bb56-4db2-931e-65365dad114c",
+    "name": "Pumpsystem 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "fc2b48fe-a243-40ad-ae6c-f77723d6fbbf",
+        "rds": "=A1.E1.KE1.KE3",
+        "name": "Pumpsystem 1",
+        "previousName": "",
+        "realObjectId": "5b0e23b6-bb56-4db2-931e-65365dad114c"
+      }
+    }
+  },
+  {
+    "id": "d80d2c4d-8ee4-4afb-8079-103048aa29c7",
+    "name": "Pumpsystem 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "fc2b48fe-a243-40ad-ae6c-f77723d6fbbf",
+        "rds": "=A1.E1.KE1.KE3",
+        "name": "Pumpsystem 1",
+        "previousName": "",
+        "realObjectId": "d80d2c4d-8ee4-4afb-8079-103048aa29c7"
+      },
+      "Verksamhetsprodukt": {
+        "id": "02f36a24-97be-4fea-9476-eb1958ed7fc4",
+        "rds": "-A1.E1.KE2",
+        "name": "Pumpsystem 1",
+        "previousName": "",
+        "realObjectId": "d80d2c4d-8ee4-4afb-8079-103048aa29c7"
+      }
+    }
+  },
+  {
+    "id": "5a3f3dc2-04a0-4cb4-ba9c-7212b5920879",
+    "name": "Centrifugalpump",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e5f3f002-e55c-4aba-847f-6882dd3099d4",
+        "rds": "=A1.E1.KE1.KE3.GPB1",
+        "name": "Centrifugalpump",
+        "previousName": "",
+        "realObjectId": "5a3f3dc2-04a0-4cb4-ba9c-7212b5920879"
+      },
+      "Verksamhetsprodukt": {
+        "id": "787a8827-62d9-48b3-a497-dacad9d2faa2",
+        "rds": "-A1.E1.KE2.GPB1",
+        "name": "Centrifugalpump",
+        "previousName": "",
+        "realObjectId": "5a3f3dc2-04a0-4cb4-ba9c-7212b5920879"
+      }
+    }
+  },
+  {
+    "id": "1fcaf753-a64d-4e61-a698-cbfff4b9a33e",
+    "name": "Drivning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "4d15f26c-33e0-4091-bb24-38f11b9c237f",
+        "rds": "=A1.E1.KE1.KE3.HF1",
+        "name": "Drivning",
+        "previousName": "",
+        "realObjectId": "1fcaf753-a64d-4e61-a698-cbfff4b9a33e"
+      }
+    }
+  },
+  {
+    "id": "fd8169f7-f409-4541-995b-781cede346ff",
+    "name": "Pumpmotor",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9aae5349-0835-407a-b5ca-ef65a3b7ef16",
+        "rds": "=A1.E1.KE1.KE3.HF1.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "fd8169f7-f409-4541-995b-781cede346ff"
+      },
+      "Verksamhetsprodukt": {
+        "id": "62b14931-0621-400b-9e09-e6a386ce5dda",
+        "rds": "-A1.E1.KE2.MAA1",
+        "name": "Pumpmotor",
+        "previousName": "",
+        "realObjectId": "fd8169f7-f409-4541-995b-781cede346ff"
+      }
+    }
+  },
+  {
+    "id": "94c37068-8280-4d55-8fda-e3cac6a16e05",
+    "name": "Kraftmatning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "75451170-8810-4543-ae0a-c7e0859ef1ea",
+        "rds": "=A1.E1.KE1.KE3.HF1.WDB1",
+        "name": "Kraftmatning",
+        "previousName": "",
+        "realObjectId": "94c37068-8280-4d55-8fda-e3cac6a16e05"
+      }
+    }
+  },
+  {
+    "id": "c9f95b7e-79a2-4dd7-85cc-19c02c6aa3b2",
+    "name": "Säkring",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "bf40ec9c-63b3-4751-960c-aad3937b8e0e",
+        "rds": "=A1.E1.KE1.KE3.HF1.WDB1.FCB1",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "c9f95b7e-79a2-4dd7-85cc-19c02c6aa3b2"
+      },
+      "Verksamhetsprodukt": {
+        "id": "d2f6ab81-014c-47d4-bdca-735eb5a72ea5",
+        "rds": "-A1.E1.JF1.FCB5",
+        "name": "Säkring",
+        "previousName": "",
+        "realObjectId": "c9f95b7e-79a2-4dd7-85cc-19c02c6aa3b2"
+      }
+    }
+  },
+  {
+    "id": "cb29f9cf-f6f2-4c0d-91dc-a3a88513b291",
+    "name": "Arbetsbrytare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "84a87006-65f9-4b67-a445-8a045af86b97",
+        "rds": "=A1.E1.KE1.KE3.HF1.WDB1.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "cb29f9cf-f6f2-4c0d-91dc-a3a88513b291"
+      },
+      "Verksamhetsprodukt": {
+        "id": "c38328ad-efac-4f4a-889b-7c719d4ab9dc",
+        "rds": "-A1.E1.KE2.QBA1",
+        "name": "Arbetsbrytare",
+        "previousName": "",
+        "realObjectId": "cb29f9cf-f6f2-4c0d-91dc-a3a88513b291"
+      }
+    }
+  },
+  {
+    "id": "4c65e41f-36d5-4add-82aa-eaa31a0df0fe",
+    "name": "Frekvensomformare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "68357c19-015f-40a6-a653-5de2a1e9c968",
+        "rds": "=A1.E1.KE1.KE3.HF1.WDB1.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "4c65e41f-36d5-4add-82aa-eaa31a0df0fe"
+      },
+      "Verksamhetsprodukt": {
+        "id": "78c1f66d-aa8c-4dc2-8910-f11fede8af85",
+        "rds": "-A1.E1.KE2.TAC1",
+        "name": "Frekvensomformare",
+        "previousName": "",
+        "realObjectId": "4c65e41f-36d5-4add-82aa-eaa31a0df0fe"
+      }
+    }
+  },
+  {
+    "id": "3f5b774f-ad8f-485f-b16c-63572f0a70c4",
+    "name": "Elkabel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "779a58c0-c6e5-4975-8814-4da3e13df64d",
+        "rds": "=A1.E1.KE1.KE3.HF1.WDB1.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "3f5b774f-ad8f-485f-b16c-63572f0a70c4"
+      },
+      "Verksamhetsprodukt": {
+        "id": "63960bb9-203e-473b-b42b-34153369a901",
+        "rds": "-A1.E1.KE2.WDB1",
+        "name": "Elkabel",
+        "previousName": "",
+        "realObjectId": "3f5b774f-ad8f-485f-b16c-63572f0a70c4"
+      }
+    }
+  },
+  {
+    "id": "5dda4ef1-ef03-4697-b075-9363595c72ad",
+    "name": "Drivaxel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "889c1a9f-019e-460c-883c-7dfd15785b41",
+        "rds": "=A1.E1.KE1.KE3.HF1.WQA1",
+        "name": "Drivaxel",
+        "previousName": "",
+        "realObjectId": "5dda4ef1-ef03-4697-b075-9363595c72ad"
+      },
+      "Verksamhetsprodukt": {
+        "id": "1d190ead-4bba-431b-ad80-7bdb871d1f31",
+        "rds": "-A1.E1.KE2.WQA1",
+        "name": "Drivaxel",
+        "previousName": "",
+        "realObjectId": "5dda4ef1-ef03-4697-b075-9363595c72ad"
+      }
+    }
+  },
+  {
+    "id": "e991a860-4118-42bb-a5f0-4764c5a7869f",
+    "name": "Rör-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "48eb98aa-2316-4ae9-ae6b-4bc21e667994",
+        "rds": "=A1.E1.KE1.KE3.JB1",
+        "name": "Rör-system",
+        "previousName": "",
+        "realObjectId": "e991a860-4118-42bb-a5f0-4764c5a7869f"
+      }
+    }
+  },
+  {
+    "id": "9f662a6d-4704-4e06-9446-f5e3e2d8554b",
+    "name": "Handventil",
+    "previousName": "HV04",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "65fbaad5-db7e-4cc1-8b8c-dc786ca58983",
+        "rds": "=A1.E1.KE1.KE3.JB1.QMA1",
+        "name": "Handventil",
+        "previousName": "HV04",
+        "realObjectId": "9f662a6d-4704-4e06-9446-f5e3e2d8554b"
+      },
+      "Verksamhetsprodukt": {
+        "id": "1eada081-cab2-48a3-949e-73696132de8b",
+        "rds": "-A1.E1.QMA5",
+        "name": "Handventil",
+        "previousName": "HV04",
+        "realObjectId": "9f662a6d-4704-4e06-9446-f5e3e2d8554b"
+      }
+    }
+  },
+  {
+    "id": "c8d7fde0-2980-4095-93f7-0f2110e1594e",
+    "name": "Handventil",
+    "previousName": "HV18",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0f8bec0e-d8b8-4a33-b16a-53d6f42d9cc6",
+        "rds": "=A1.E1.KE1.KE3.JB1.QMA2",
+        "name": "Handventil",
+        "previousName": "HV18",
+        "realObjectId": "c8d7fde0-2980-4095-93f7-0f2110e1594e"
+      },
+      "Verksamhetsprodukt": {
+        "id": "4ade3a1a-f895-492f-9a32-22ee9f8419c8",
+        "rds": "-A1.E1.QMA6",
+        "name": "Handventil",
+        "previousName": "HV18",
+        "realObjectId": "c8d7fde0-2980-4095-93f7-0f2110e1594e"
+      }
+    }
+  },
+  {
+    "id": "9519598f-813a-49d6-8f35-143919aa8791",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ae04ac3e-2afb-4f03-84dc-c61c5104eff3",
+        "rds": "=A1.E1.KE1.KE3.JB1.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "9519598f-813a-49d6-8f35-143919aa8791"
+      }
+    }
+  },
+  {
+    "id": "e6f616de-8346-440e-a589-981ebe6d2fc1",
+    "name": "Rör-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "cb1153bf-9acc-4d8b-9c37-ff4a90a564db",
+        "rds": "=A1.E1.KE1.KE3.JB2",
+        "name": "Rör-system",
+        "previousName": "",
+        "realObjectId": "e6f616de-8346-440e-a589-981ebe6d2fc1"
+      }
+    }
+  },
+  {
+    "id": "0b241901-f288-4318-86c5-a2a88b811781",
+    "name": "Handventil",
+    "previousName": "HV06",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ad7c92d7-5ae5-43b6-8678-dc2416b838dd",
+        "rds": "=A1.E1.KE1.KE3.JB2.QMA1",
+        "name": "Handventil",
+        "previousName": "HV06",
+        "realObjectId": "0b241901-f288-4318-86c5-a2a88b811781"
+      },
+      "Verksamhetsprodukt": {
+        "id": "c6d0d54c-bddb-4b7e-a0b4-6bc7fbf9c7fc",
+        "rds": "-A1.E1.QMA7",
+        "name": "Handventil",
+        "previousName": "HV06",
+        "realObjectId": "0b241901-f288-4318-86c5-a2a88b811781"
+      }
+    }
+  },
+  {
+    "id": "3bb32d32-0a4f-43e1-aeb1-a00402ba88e9",
+    "name": "Handventil",
+    "previousName": "HV20",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "758a6e98-39f7-4ecc-a039-247785274c0d",
+        "rds": "=A1.E1.KE1.KE3.JB2.QMA2",
+        "name": "Handventil",
+        "previousName": "HV20",
+        "realObjectId": "3bb32d32-0a4f-43e1-aeb1-a00402ba88e9"
+      },
+      "Verksamhetsprodukt": {
+        "id": "0872e3c5-5fe2-4159-9d8a-f0e37b9c9288",
+        "rds": "-A1.E1.QMA8",
+        "name": "Handventil",
+        "previousName": "HV20",
+        "realObjectId": "3bb32d32-0a4f-43e1-aeb1-a00402ba88e9"
+      }
+    }
+  },
+  {
+    "id": "e6e8cec6-bf71-4d67-8cc0-a16828712b6c",
+    "name": "Backventil",
+    "previousName": "BV02",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "fd1dfc89-2be7-4f6c-ad91-f82becaa3749",
+        "rds": "=A1.E1.KE1.KE3.JB2.RMA1",
+        "name": "Backventil",
+        "previousName": "BV02",
+        "realObjectId": "e6e8cec6-bf71-4d67-8cc0-a16828712b6c"
+      },
+      "Verksamhetsprodukt": {
+        "id": "fa5b798c-e09f-4bd6-9b18-3aaba005fc67",
+        "rds": "-A1.E1.RMA2",
+        "name": "Backventil",
+        "previousName": "BV02",
+        "realObjectId": "e6e8cec6-bf71-4d67-8cc0-a16828712b6c"
+      }
+    }
+  },
+  {
+    "id": "471500c8-e4a2-48be-b2ea-7db5dc56231f",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3646e9a8-c7cd-4824-a4dd-fc0a48ff67b5",
+        "rds": "=A1.E1.KE1.KE3.JB2.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "471500c8-e4a2-48be-b2ea-7db5dc56231f"
+      }
+    }
+  },
+  {
+    "id": "8fc3fd41-b536-4d85-a150-4fdb84e94df8",
+    "name": "Reservoar-tank-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "204e3109-bd19-4506-bf73-e5d76f73f296",
+        "rds": "=A1.E1.QB1",
+        "name": "Reservoar-tank-system",
+        "previousName": "",
+        "realObjectId": "8fc3fd41-b536-4d85-a150-4fdb84e94df8"
+      },
+      "Verksamhetsprodukt": {
+        "id": "cdad78ec-b268-4cbe-b1bd-78272b2ac330",
+        "rds": "-A1.E1.QB1",
+        "name": "Reservoar-tank-system",
+        "previousName": "",
+        "realObjectId": "8fc3fd41-b536-4d85-a150-4fdb84e94df8"
+      }
+    }
+  },
+  {
+    "id": "94234ba4-ee14-4635-a205-87e784560092",
+    "name": "Nivågivare",
+    "previousName": "GL62",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b18eaa3e-139b-4168-969c-ec2f05eaae4d",
+        "rds": "=A1.E1.QB1.BLA1",
+        "name": "Nivågivare",
+        "previousName": "GL62",
+        "realObjectId": "94234ba4-ee14-4635-a205-87e784560092"
+      }
+    }
+  },
+  {
+    "id": "ca6bec67-ee88-4990-8917-69f7367f9413",
+    "name": "Nivågivare",
+    "previousName": "GL31",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "112f0022-a879-456a-a14f-a5e016be1151",
+        "rds": "=A1.E1.QB1.BLA2",
+        "name": "Nivågivare",
+        "previousName": "GL31",
+        "realObjectId": "ca6bec67-ee88-4990-8917-69f7367f9413"
+      }
+    }
+  },
+  {
+    "id": "c5a52eb5-179b-47b0-84be-7ec9891a0d88",
+    "name": "Nivågivare",
+    "previousName": "GL61",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "51353002-6583-4e10-bf80-83772be5ab56",
+        "rds": "=A1.E1.QB1.BLA3",
+        "name": "Nivågivare",
+        "previousName": "GL61",
+        "realObjectId": "c5a52eb5-179b-47b0-84be-7ec9891a0d88"
+      }
+    }
+  },
+  {
+    "id": "1356f0d2-8813-4e3b-a2bc-955d8be6daa6",
+    "name": "Reservoar-tank",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "783d6af5-5d3f-46ea-b22f-e837a6c15556",
+        "rds": "=A1.E1.QB1.CMA1",
+        "name": "Reservoar-tank",
+        "previousName": "",
+        "realObjectId": "1356f0d2-8813-4e3b-a2bc-955d8be6daa6"
+      },
+      "Verksamhetsprodukt": {
+        "id": "803126ba-96ab-421a-8c48-73f273a00976",
+        "rds": "-A1.E1.QB1.CMA1",
+        "name": "Reservoar-tank",
+        "previousName": "",
+        "realObjectId": "1356f0d2-8813-4e3b-a2bc-955d8be6daa6"
+      }
+    }
+  },
+  {
+    "id": "ce9c302f-a461-4820-bd38-d25af7c48aeb",
+    "name": "Tryckreglering (Atmosfär)",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "50a7c70b-f1f5-49bd-9da8-484f6d3c1097",
+        "rds": "=A1.E1.QB1.KC1",
+        "name": "Tryckreglering (Atmosfär)",
+        "previousName": "",
+        "realObjectId": "ce9c302f-a461-4820-bd38-d25af7c48aeb"
+      }
+    }
+  },
+  {
+    "id": "9027330c-72fd-4716-ba4e-72fe69725e18",
+    "name": "Luftningskanal 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a62c881b-4043-4239-a267-1ea63a6a02d2",
+        "rds": "=A1.E1.QB1.KC1.JE1",
+        "name": "Luftningskanal 1",
+        "previousName": "",
+        "realObjectId": "9027330c-72fd-4716-ba4e-72fe69725e18"
+      }
+    }
+  },
+  {
+    "id": "1a0c5674-31fc-44e3-a0e5-54f04cf6d445",
+    "name": "Filter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "55412edb-e17c-4638-83c5-63efaad132ee",
+        "rds": "=A1.E1.QB1.KC1.JE1.HQB1",
+        "name": "Filter",
+        "previousName": "",
+        "realObjectId": "1a0c5674-31fc-44e3-a0e5-54f04cf6d445"
+      }
+    }
+  },
+  {
+    "id": "6f8eaf1d-778a-4522-b89b-df98fdccf158",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "017ad64f-5ad9-49fa-b953-bbf0a46b893b",
+        "rds": "=A1.E1.QB1.KC1.JE1.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "6f8eaf1d-778a-4522-b89b-df98fdccf158"
+      }
+    }
+  },
+  {
+    "id": "a63b97a5-61d0-4b78-8f1b-a1d828b996b9",
+    "name": "Luftningskanal 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6865b891-11cd-4cd8-b811-93e0e2feedb9",
+        "rds": "=A1.E1.QB1.KC1.JE2",
+        "name": "Luftningskanal 2",
+        "previousName": "",
+        "realObjectId": "a63b97a5-61d0-4b78-8f1b-a1d828b996b9"
+      }
+    }
+  },
+  {
+    "id": "60532ae8-89b4-47c8-bcbd-2d6b422e6291",
+    "name": "Filter",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "cff47a5f-85ed-4cc6-8675-390fd877272c",
+        "rds": "=A1.E1.QB1.KC1.JE2.HQB1",
+        "name": "Filter",
+        "previousName": "",
+        "realObjectId": "60532ae8-89b4-47c8-bcbd-2d6b422e6291"
+      }
+    }
+  },
+  {
+    "id": "779b8c99-9bf1-4233-9dcf-b011293a5d09",
+    "name": "Rör",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "83fc3c06-6f45-4f67-9b99-9521bf2f7250",
+        "rds": "=A1.E1.QB1.KC1.JE2.WPA1",
+        "name": "Rör",
+        "previousName": "",
+        "realObjectId": "779b8c99-9bf1-4233-9dcf-b011293a5d09"
+      }
+    }
+  },
+  {
+    "id": "a8af73a7-5b04-4ea1-a9f7-3682a62f5648",
+    "name": "Manslucka 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "21df52bd-67f0-467e-962c-128addc1c7f8",
+        "rds": "=A1.E1.QB1.QQD1",
+        "name": "Manslucka 1",
+        "previousName": "",
+        "realObjectId": "a8af73a7-5b04-4ea1-a9f7-3682a62f5648"
+      }
+    }
+  },
+  {
+    "id": "53788343-3b98-4cf4-988e-19bb3103912c",
+    "name": "Manslucka 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b35a7930-57b0-474b-906c-bf0037e9daff",
+        "rds": "=A1.E1.QB1.QQD2",
+        "name": "Manslucka 2",
+        "previousName": "",
+        "realObjectId": "53788343-3b98-4cf4-988e-19bb3103912c"
+      }
+    }
+  },
+  {
+    "id": "dde847f7-c2e1-422b-9985-f2ca8e780f49",
+    "name": "Distributionsnät",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a13bcaf7-9a25-47d1-9060-317e9aa84878",
+        "rds": "=A1.S1",
+        "name": "Distributionsnät",
+        "previousName": "",
+        "realObjectId": "dde847f7-c2e1-422b-9985-f2ca8e780f49"
+      }
+    }
+  },
+  {
+    "id": "30b7dee2-a604-421f-9008-0c3f9f385eee",
+    "name": "Ledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e6654b0e-d01d-4633-8b49-1840b4742ff5",
+        "rds": "=A1.S1.JB1",
+        "name": "Ledning",
+        "previousName": "",
+        "realObjectId": "30b7dee2-a604-421f-9008-0c3f9f385eee"
+      }
+    }
+  },
+  {
+    "id": "b4950113-b2a4-44ca-904b-0898cef0857d",
+    "name": "Ledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6a4ce64d-96ab-4fd5-8cac-df865978f842",
+        "rds": "=A1.S1.JB2",
+        "name": "Ledning",
+        "previousName": "",
+        "realObjectId": "b4950113-b2a4-44ca-904b-0898cef0857d"
+      }
+    }
+  },
+  {
+    "id": "2f5cb314-86ff-4e92-b52b-c7fc1123d998",
+    "name": "Matarledning vatten (1m utanför P6)",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9ca5dd91-ad19-4825-8e69-4562a38ddd54",
+        "rds": "=A1.S2",
+        "name": "Matarledning vatten (1m utanför P6)",
+        "previousName": "",
+        "realObjectId": "2f5cb314-86ff-4e92-b52b-c7fc1123d998"
+      }
+    }
+  },
+  {
+    "id": "5ec4cfe8-ad42-4c9d-ad9b-409eaa891d53",
+    "name": "Matarledning 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "65a52e5f-0df7-4017-8fe3-7f26009442de",
+        "rds": "=A1.S2.JB1",
+        "name": "Matarledning 1",
+        "previousName": "",
+        "realObjectId": "5ec4cfe8-ad42-4c9d-ad9b-409eaa891d53"
+      }
+    }
+  },
+  {
+    "id": "caf64db1-ff26-4e7a-affa-db9a19dbd92b",
+    "name": "Matarledning 2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "066d87bf-2bb5-4475-b154-6f5bf14f1ca1",
+        "rds": "=A1.S2.JB2",
+        "name": "Matarledning 2",
+        "previousName": "",
+        "realObjectId": "caf64db1-ff26-4e7a-affa-db9a19dbd92b"
+      }
+    }
+  },
+  {
+    "id": "d1cf7a19-8233-4065-b1f5-33b5f1871ab5",
+    "name": "Ro-Ro",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6254abbf-7e7a-432b-a29f-6016b99d83a1",
+        "rds": "=B1",
+        "name": "Ro-Ro",
+        "previousName": "",
+        "realObjectId": "d1cf7a19-8233-4065-b1f5-33b5f1871ab5"
+      },
+      "Verksamhetsprodukt": {
+        "id": "f16d0216-1ca8-432a-9bc0-7adb8a50c362",
+        "rds": "-B1",
+        "name": "Ro-Ro",
+        "previousName": "",
+        "realObjectId": "d1cf7a19-8233-4065-b1f5-33b5f1871ab5"
+      },
+      "Infrastrukturfunktion": {
+        "id": "54901393-3dd1-45b4-be80-9b1410e53386",
+        "rds": "==B1",
+        "name": "Ro-Ro",
+        "previousName": "",
+        "realObjectId": "d1cf7a19-8233-4065-b1f5-33b5f1871ab5"
+      }
+    }
+  },
+  {
+    "id": "595a301d-d71d-4e86-b34d-3899cbbcc0bc",
+    "name": "Kaj 5",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "89c94571-d174-4a4c-9f46-78e41eb24818",
+        "rds": "=B1.C1",
+        "name": "Kaj 5",
+        "previousName": "",
+        "realObjectId": "595a301d-d71d-4e86-b34d-3899cbbcc0bc"
+      }
+    }
+  },
+  {
+    "id": "785cde86-7146-4401-bd81-884c52e09906",
+    "name": "Kajsystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "5a97df36-e337-4702-8ccc-dcce9b03b87d",
+        "rds": "=B1.C1.AC1",
+        "name": "Kajsystem",
+        "previousName": "",
+        "realObjectId": "785cde86-7146-4401-bd81-884c52e09906"
+      }
+    }
+  },
+  {
+    "id": "7c6f54f6-ac17-4391-9340-cdc25d119b22",
+    "name": "\"Fänder\"-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "481859d5-f344-4e7c-98e7-9483d31ddc1f",
+        "rds": "=B1.C1.AC1.ULM1",
+        "name": "\"Fänder\"-system",
+        "previousName": "",
+        "realObjectId": "7c6f54f6-ac17-4391-9340-cdc25d119b22"
+      }
+    }
+  },
+  {
+    "id": "45359c19-7f2b-4b63-8ba2-41c6935f371a",
+    "name": "\"Pollare\"-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "85be8af6-b4f4-45e4-ae4b-0de2fca7007d",
+        "rds": "=B1.C1.AC1.UQB1",
+        "name": "\"Pollare\"-system",
+        "previousName": "",
+        "realObjectId": "45359c19-7f2b-4b63-8ba2-41c6935f371a"
+      }
+    }
+  },
+  {
+    "id": "55c8ce92-40b3-4c0f-90b1-c8cdc674dd78",
+    "name": "Ramp/landgågnssystem",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "ce409902-31d9-41a6-9c28-b39ab356a944",
+        "rds": "=B1.C1.JC1",
+        "name": "Ramp/landgågnssystem",
+        "previousName": "",
+        "realObjectId": "55c8ce92-40b3-4c0f-90b1-c8cdc674dd78"
+      }
+    }
+  },
+  {
+    "id": "33895e52-466d-4191-b1da-04fd349aec7b",
+    "name": "VAM-system",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "16438a68-0fe1-458e-bf2f-90fc7c93ee73",
+        "rds": "=B1.C1.JD1",
+        "name": "VAM-system",
+        "previousName": "",
+        "realObjectId": "33895e52-466d-4191-b1da-04fd349aec7b"
+      }
+    }
+  },
+  {
+    "id": "0173a79c-3958-48ff-bd73-3e0a89b2a542",
+    "name": "VAM 12",
+    "previousName": "VAM 12",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "f57f0b08-b19c-4cd1-a942-70b00d4791a0",
+        "rds": "=B1.C1.JD1.JD1",
+        "name": "VAM 12",
+        "previousName": "VAM 12",
+        "realObjectId": "0173a79c-3958-48ff-bd73-3e0a89b2a542"
+      }
+    }
+  },
+  {
+    "id": "b05b527f-e073-4f2c-a3b5-ceef6fae49d1",
+    "name": "VAM 13",
+    "previousName": "VAM 13",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "86485585-3daa-4f6e-bbfc-11c06e61de6d",
+        "rds": "=B1.C1.JD1.JD2",
+        "name": "VAM 13",
+        "previousName": "VAM 13",
+        "realObjectId": "b05b527f-e073-4f2c-a3b5-ceef6fae49d1"
+      }
+    }
+  },
+  {
+    "id": "4e1f015d-d403-4813-9518-e6e6c1bb26c4",
+    "name": "VAM 14",
+    "previousName": "VAM 14",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "1405721e-56b6-45d3-a44e-8bc7d4fba6ff",
+        "rds": "=B1.C1.JD1.JD3",
+        "name": "VAM 14",
+        "previousName": "VAM 14",
+        "realObjectId": "4e1f015d-d403-4813-9518-e6e6c1bb26c4"
+      }
+    }
+  },
+  {
+    "id": "a73601d0-2f98-4558-9b09-642eb5a8c791",
+    "name": "Grundplatta",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "22347b6d-a303-42a9-95e2-f8c06ba543ce",
+        "rds": "=B1.C1.JD1.JD3.AB1",
+        "name": "Grundplatta",
+        "previousName": "",
+        "realObjectId": "a73601d0-2f98-4558-9b09-642eb5a8c791"
+      }
+    }
+  },
+  {
+    "id": "ea8751aa-4c8e-47de-bc8a-dcfb25aa52d4",
+    "name": "Skåp",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "4538c0cf-a0e7-4bf9-9ef1-2045142eea08",
+        "rds": "=B1.C1.JD1.JD3.AD1",
+        "name": "Skåp",
+        "previousName": "",
+        "realObjectId": "ea8751aa-4c8e-47de-bc8a-dcfb25aa52d4"
+      }
+    }
+  },
+  {
+    "id": "8e77d529-2479-44d9-8746-ef9b82af3f25",
+    "name": "Inklädnad",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "020e2e1a-804f-4d9b-8a49-a11af13065a9",
+        "rds": "=B1.C1.JD1.JD3.AD1.AD1",
+        "name": "Inklädnad",
+        "previousName": "",
+        "realObjectId": "8e77d529-2479-44d9-8746-ef9b82af3f25"
+      }
+    }
+  },
+  {
+    "id": "143760f0-891b-42e9-a796-9679d5568bab",
+    "name": "Dubbeldörr",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "3e70f0d7-1cb2-4ef8-8528-b975be8457f1",
+        "rds": "=B1.C1.JD1.JD3.AD1.QQC1",
+        "name": "Dubbeldörr",
+        "previousName": "",
+        "realObjectId": "143760f0-891b-42e9-a796-9679d5568bab"
+      }
+    }
+  },
+  {
+    "id": "783b2bdf-697c-4878-b410-bc70732d200b",
+    "name": "Vatten-anslutning (VAM)",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "0ecf844e-7c59-4d7a-8e4d-072e883a3bbd",
+        "rds": "=B1.C1.JD1.JD3.HB1",
+        "name": "Vatten-anslutning (VAM)",
+        "previousName": "",
+        "realObjectId": "783b2bdf-697c-4878-b410-bc70732d200b"
+      }
+    }
+  },
+  {
+    "id": "a523580e-2e93-44d5-b8ba-ea1c1ff2ef59",
+    "name": "Rörledning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "6e26bdee-76c8-4b2a-841c-25de0ece12cd",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1",
+        "name": "Rörledning",
+        "previousName": "",
+        "realObjectId": "a523580e-2e93-44d5-b8ba-ea1c1ff2ef59"
+      }
+    }
+  },
+  {
+    "id": "55fc8954-49f1-48b2-9c8d-66e95960bc42",
+    "name": "Flödesmätare",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b95c68b6-6f5c-4f80-935f-df64997264f0",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.BFA1",
+        "name": "Flödesmätare",
+        "previousName": "",
+        "realObjectId": "55fc8954-49f1-48b2-9c8d-66e95960bc42"
+      }
+    }
+  },
+  {
+    "id": "1997c750-f474-48e8-a52b-500e5c16f205",
+    "name": "Vridspjäll",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "969e7cc6-76fc-4b6e-a87c-eb9768259a20",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.QMA1",
+        "name": "Vridspjäll",
+        "previousName": "",
+        "realObjectId": "1997c750-f474-48e8-a52b-500e5c16f205"
+      }
+    }
+  },
+  {
+    "id": "3a91a39c-936d-4aa2-9f57-28036e40afd8",
+    "name": "Luftningsventil",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "9fa95841-1f1e-4127-95c3-9d3e87c7c58e",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.QMA2",
+        "name": "Luftningsventil",
+        "previousName": "",
+        "realObjectId": "3a91a39c-936d-4aa2-9f57-28036e40afd8"
+      }
+    }
+  },
+  {
+    "id": "98c4a36e-eec6-4f29-8a79-f5f2270a4b63",
+    "name": "Kägelbackventil",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b84246cf-a84e-48dd-a759-c2b6965f4cea",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.RMA1",
+        "name": "Kägelbackventil",
+        "previousName": "",
+        "realObjectId": "98c4a36e-eec6-4f29-8a79-f5f2270a4b63"
+      }
+    }
+  },
+  {
+    "id": "16799e1c-6736-4378-a72f-411389a11d2c",
+    "name": "Rör 1",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d8545b45-15bd-4b4d-9692-a080290dfece",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.WPA1",
+        "name": "Rör 1",
+        "previousName": "",
+        "realObjectId": "16799e1c-6736-4378-a72f-411389a11d2c"
+      }
+    }
+  },
+  {
+    "id": "0ccf7e66-df0a-4fad-87a1-933f79ead660",
+    "name": "Rörböj",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "d08ed35e-0a29-4c94-b2eb-301684557aec",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.WPA2",
+        "name": "Rörböj",
+        "previousName": "",
+        "realObjectId": "0ccf7e66-df0a-4fad-87a1-933f79ead660"
+      }
+    }
+  },
+  {
+    "id": "a955c226-6bdc-4c35-bc94-7d10d13f80c3",
+    "name": "Rör2",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "dd68968e-8971-40a3-8783-2be85da9088a",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.WPA3",
+        "name": "Rör2",
+        "previousName": "",
+        "realObjectId": "a955c226-6bdc-4c35-bc94-7d10d13f80c3"
+      }
+    }
+  },
+  {
+    "id": "cee09ca0-e0fb-4b14-a5d7-b6db0bba3df4",
+    "name": "Rör3",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "517cf2d7-99b4-4dfa-a87a-06aa64326f1c",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.WPA4",
+        "name": "Rör3",
+        "previousName": "",
+        "realObjectId": "cee09ca0-e0fb-4b14-a5d7-b6db0bba3df4"
+      }
+    }
+  },
+  {
+    "id": "697f132f-d560-4adc-9935-b45ab2c45fad",
+    "name": "Storzkoppling",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "a60a9125-bbbb-462c-8ccb-fc82dd32c668",
+        "rds": "=B1.C1.JD1.JD3.HB1.JB1.XMA1",
+        "name": "Storzkoppling",
+        "previousName": "",
+        "realObjectId": "697f132f-d560-4adc-9935-b45ab2c45fad"
+      }
+    }
+  },
+  {
+    "id": "806ff046-a1d4-43c8-813e-f0addc123a6f",
+    "name": "OP-panel",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "2ac760b5-8d1b-4513-b16a-1ba39a144689",
+        "rds": "=B1.C1.JD1.JD3.HB1.SZA1",
+        "name": "OP-panel",
+        "previousName": "",
+        "realObjectId": "806ff046-a1d4-43c8-813e-f0addc123a6f"
+      }
+    }
+  },
+  {
+    "id": "e3ee0cb0-3eab-45c2-a596-e381df7c48ca",
+    "name": "Stötta",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "5d508e78-6a81-4517-983c-1db809b1e3cb",
+        "rds": "=B1.C1.JD1.JD3.HB1.UBD1",
+        "name": "Stötta",
+        "previousName": "",
+        "realObjectId": "e3ee0cb0-3eab-45c2-a596-e381df7c48ca"
+      }
+    }
+  },
+  {
+    "id": "bc53e673-a590-439a-be6b-9a084637583b",
+    "name": "Skåp med lucka",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "de7d411a-9120-44e7-b59d-0272abd257b4",
+        "rds": "=B1.C1.JD1.JD3.HB1.UCA1",
+        "name": "Skåp med lucka",
+        "previousName": "",
+        "realObjectId": "bc53e673-a590-439a-be6b-9a084637583b"
+      }
+    }
+  },
+  {
+    "id": "f2e81c6b-3003-4af2-87e4-bd8e89c296af",
+    "name": "Kraftmatning",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "98580a79-5e8b-469d-bea4-0e73f0a0dbac",
+        "rds": "=B1.C1.JD1.JD3.HF1",
+        "name": "Kraftmatning",
+        "previousName": "",
+        "realObjectId": "f2e81c6b-3003-4af2-87e4-bd8e89c296af"
+      }
+    }
+  },
+  {
+    "id": "e14b4a1f-e937-45e6-be37-7deb39eb3b29",
+    "name": "Avlopps-anslutning (VAM)",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "8811a1ef-ab45-458b-80ad-ec54f28b14b7",
+        "rds": "=B1.C1.JD1.JD3.JK1",
+        "name": "Avlopps-anslutning (VAM)",
+        "previousName": "",
+        "realObjectId": "e14b4a1f-e937-45e6-be37-7deb39eb3b29"
+      }
+    }
+  },
+  {
+    "id": "bfbc533a-dac7-4381-be40-64fe7a825188",
+    "name": "Kaj 6",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "48bc56d5-52ed-422d-a7c8-b33c86992bec",
+        "rds": "=B1.C2",
+        "name": "Kaj 6",
+        "previousName": "",
+        "realObjectId": "bfbc533a-dac7-4381-be40-64fe7a825188"
+      }
+    }
+  },
+  {
+    "id": "25c351a5-129f-4dc2-b0b2-f66f86b71481",
+    "name": "Kaj 7",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "e3e5b2a9-8b24-448a-8983-7f4b4bad5ac9",
+        "rds": "=B1.C3",
+        "name": "Kaj 7",
+        "previousName": "",
+        "realObjectId": "25c351a5-129f-4dc2-b0b2-f66f86b71481"
+      }
+    }
+  },
+  {
+    "id": "90376ba0-05d8-44f3-8c7c-82aa2359106c",
+    "name": "Kaj 8",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "87a763b2-896f-4511-95d4-5c22e4a8a81d",
+        "rds": "=B1.C4",
+        "name": "Kaj 8",
+        "previousName": "",
+        "realObjectId": "90376ba0-05d8-44f3-8c7c-82aa2359106c"
+      }
+    }
+  },
+  {
+    "id": "99531654-79d5-4f70-8c66-57869c753a69",
+    "name": "Container",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "188bd10d-7e2d-4f93-af8e-d7cd2e93dddc",
+        "rds": "=B2",
+        "name": "Container",
+        "previousName": "",
+        "realObjectId": "99531654-79d5-4f70-8c66-57869c753a69"
+      },
+      "Verksamhetsprodukt": {
+        "id": "6f45281e-f9e4-4d05-bfcd-59a88ba52d80",
+        "rds": "-B2",
+        "name": "Container",
+        "previousName": "",
+        "realObjectId": "99531654-79d5-4f70-8c66-57869c753a69"
+      },
+      "Infrastrukturfunktion": {
+        "id": "1915cf05-2b13-4cbb-94dc-17270a0bb66a",
+        "rds": "==B2",
+        "name": "Container",
+        "previousName": "",
+        "realObjectId": "99531654-79d5-4f70-8c66-57869c753a69"
+      }
+    }
+  },
+  {
+    "id": "4a24987f-d03e-4e1b-8a98-f5f7fe33f872",
+    "name": "Ställverk",
+    "previousName": "",
+    "aspects": {
+      "Verksamhetsfunktion": {
+        "id": "b5c477cc-2b0b-48a4-816f-e5d57b1e5551",
+        "rds": "=F1",
+        "name": "Ställverk",
+        "previousName": "",
+        "realObjectId": "4a24987f-d03e-4e1b-8a98-f5f7fe33f872"
+      },
+      "Verksamhetsprodukt": {
+        "id": "ae34ea3c-113a-43f6-82bc-cb245d9bd7db",
+        "rds": "-F1",
+        "name": "Ställverk",
+        "previousName": "",
+        "realObjectId": "4a24987f-d03e-4e1b-8a98-f5f7fe33f872"
+      },
+      "Infrastrukturfunktion": {
+        "id": "42914d14-e3a4-43c6-9e88-ed2e6ae81734",
+        "rds": "==F1",
+        "name": "Ställverk",
+        "previousName": "",
+        "realObjectId": "4a24987f-d03e-4e1b-8a98-f5f7fe33f872"
+      }
+    }
+  },
+  {
+    "id": "5a4cdf22-09c5-4491-931a-c2e00f1b993a",
+    "name": "Hamnområde X",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "19cdd680-74eb-4507-8ec6-60bfa9dc3106",
+        "rds": "++U1",
+        "name": "Hamnområde X",
+        "previousName": "",
+        "realObjectId": "5a4cdf22-09c5-4491-931a-c2e00f1b993a"
+      }
+    }
+  },
+  {
+    "id": "4ad183a2-fb88-4db2-b54c-08bcfd94601b",
+    "name": "Hamnområde Norvik",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "b1b73349-9008-4f27-847c-43cab92ee226",
+        "rds": "++U2",
+        "name": "Hamnområde Norvik",
+        "previousName": "",
+        "realObjectId": "4ad183a2-fb88-4db2-b54c-08bcfd94601b"
+      }
+    }
+  },
+  {
+    "id": "fc6b2695-9ca1-46e2-b8e1-df18198f0fdb",
+    "name": "Anläggningsområde (P6)",
+    "previousName": "Pumphus 6, P6",
+    "aspects": {
+      "Lokalisering": {
+        "id": "25441bf7-fdbf-421a-9cb1-baddf2ddcf3b",
+        "rds": "++U2.W1",
+        "name": "Anläggningsområde (P6)",
+        "previousName": "Pumphus 6, P6",
+        "realObjectId": "fc6b2695-9ca1-46e2-b8e1-df18198f0fdb"
+      }
+    }
+  },
+  {
+    "id": "32c0cbe6-14f6-454c-8bfe-a69cd5ab223e",
+    "name": "Anläggningsområde Kaj 5",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "403d8e48-3dac-4040-8f91-0d43d1621887",
+        "rds": "++U2.W2",
+        "name": "Anläggningsområde Kaj 5",
+        "previousName": "",
+        "realObjectId": "32c0cbe6-14f6-454c-8bfe-a69cd5ab223e"
+      }
+    }
+  },
+  {
+    "id": "3aeb5a6a-03db-4943-94d7-c5d6445ea78f",
+    "name": "Anläggningsområde Kaj 6",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "7a064529-4454-4f32-babf-2991cf953081",
+        "rds": "++U2.W3",
+        "name": "Anläggningsområde Kaj 6",
+        "previousName": "",
+        "realObjectId": "3aeb5a6a-03db-4943-94d7-c5d6445ea78f"
+      }
+    }
+  },
+  {
+    "id": "3eab725d-5d66-4bf0-8b8e-d87448481814",
+    "name": "Anläggningsområde Kaj 7",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "ceda2d34-5551-447d-ab51-0205ef2f4050",
+        "rds": "++U2.W4",
+        "name": "Anläggningsområde Kaj 7",
+        "previousName": "",
+        "realObjectId": "3eab725d-5d66-4bf0-8b8e-d87448481814"
+      }
+    }
+  },
+  {
+    "id": "4cd1efd7-eb03-4d3a-83e1-3a50b6554cb2",
+    "name": "Anläggningsområde Kaj 8",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "5b5ad1e1-1930-46b9-b729-eb5b27f86d19",
+        "rds": "++U2.W5",
+        "name": "Anläggningsområde Kaj 8",
+        "previousName": "",
+        "realObjectId": "4cd1efd7-eb03-4d3a-83e1-3a50b6554cb2"
+      }
+    }
+  },
+  {
+    "id": "1b23f1c4-f68b-4d5f-986d-f0d28500b469",
+    "name": "Byggnadsverksområde (P6)",
+    "previousName": "Pumphus 6, P6",
+    "aspects": {
+      "Lokalisering": {
+        "id": "e25607d3-303d-497f-b1c2-cfdd57d3fb90",
+        "rds": "++U2.W1.X1",
+        "name": "Byggnadsverksområde (P6)",
+        "previousName": "Pumphus 6, P6",
+        "realObjectId": "1b23f1c4-f68b-4d5f-986d-f0d28500b469"
+      }
+    }
+  },
+  {
+    "id": "03cfb53c-2e0f-4f2c-9a3b-58a5bde0e84e",
+    "name": "Källarplan",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "11973abb-e7df-4d17-b905-5cab647b2e8d",
+        "rds": "++U2.W1.X1.XA1",
+        "name": "Källarplan",
+        "previousName": "",
+        "realObjectId": "03cfb53c-2e0f-4f2c-9a3b-58a5bde0e84e"
+      }
+    }
+  },
+  {
+    "id": "0e2ce05e-e9f9-444a-971e-bcb291e8bd75",
+    "name": "Pumprum",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "0f924892-b086-4df2-a3a2-31f9168f66c4",
+        "rds": "++U2.W1.X1.XA1.XAA1",
+        "name": "Pumprum",
+        "previousName": "",
+        "realObjectId": "0e2ce05e-e9f9-444a-971e-bcb291e8bd75"
+      }
+    }
+  },
+  {
+    "id": "bce11be9-ec3a-49f0-a585-017d98e224b8",
+    "name": "Cictern",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "8309fbdf-7530-4c7e-ad25-33c347799aa6",
+        "rds": "++U2.W1.X1.XA1.XAA2",
+        "name": "Cictern",
+        "previousName": "",
+        "realObjectId": "bce11be9-ec3a-49f0-a585-017d98e224b8"
+      }
+    }
+  },
+  {
+    "id": "48c21360-1458-42dd-8997-548e74bf008a",
+    "name": "Trapphus",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "b8b1a42a-5271-4d0d-954c-37a1f06c84c8",
+        "rds": "++U2.W1.X1.XA1.XAA3",
+        "name": "Trapphus",
+        "previousName": "",
+        "realObjectId": "48c21360-1458-42dd-8997-548e74bf008a"
+      }
+    }
+  },
+  {
+    "id": "a65b3ebf-5f8d-4e27-b33c-f90f0150ed35",
+    "name": "Markplan",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "4f4c6016-d9e7-4ec1-817a-470b6781b268",
+        "rds": "++U2.W1.X1.XA2",
+        "name": "Markplan",
+        "previousName": "",
+        "realObjectId": "a65b3ebf-5f8d-4e27-b33c-f90f0150ed35"
+      }
+    }
+  },
+  {
+    "id": "be655786-476f-4232-a51c-4da27355c49c",
+    "name": "Elutrymme",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "711289e0-67e4-4f02-81b5-e9e4e68a6957",
+        "rds": "++U2.W1.X1.XA2.XAA1",
+        "name": "Elutrymme",
+        "previousName": "",
+        "realObjectId": "be655786-476f-4232-a51c-4da27355c49c"
+      }
+    }
+  },
+  {
+    "id": "57718f22-f0a3-48fe-a734-9738e60536fa",
+    "name": "Trapphus",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "b0255622-dfca-40b7-9a39-8a911f832dd6",
+        "rds": "++U2.W1.X1.XA2.XAA2",
+        "name": "Trapphus",
+        "previousName": "",
+        "realObjectId": "57718f22-f0a3-48fe-a734-9738e60536fa"
+      }
+    }
+  },
+  {
+    "id": "53b955df-fbe8-48cd-bcc3-79c1dab8fc7c",
+    "name": "Spiraltrapp",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "9d58cdb5-b893-4c59-a69f-31fdf64026da",
+        "rds": "++U2.W1.X1.XA2.XAA3",
+        "name": "Spiraltrapp",
+        "previousName": "",
+        "realObjectId": "53b955df-fbe8-48cd-bcc3-79c1dab8fc7c"
+      }
+    }
+  },
+  {
+    "id": "8c1672dc-6dcd-4bcd-99e2-3782a645bdef",
+    "name": "\"Vindsplan\"",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "997eec74-d07d-4e91-8250-05e20d7304e8",
+        "rds": "++U2.W1.X1.XA3",
+        "name": "\"Vindsplan\"",
+        "previousName": "",
+        "realObjectId": "8c1672dc-6dcd-4bcd-99e2-3782a645bdef"
+      }
+    }
+  },
+  {
+    "id": "474d4133-5d70-4420-8602-5dd004c2e432",
+    "name": "Takplan",
+    "previousName": "",
+    "aspects": {
+      "Lokalisering": {
+        "id": "d9725532-6c20-4c89-b70e-ec24b13f4519",
+        "rds": "++U2.W1.X1.XA4",
+        "name": "Takplan",
+        "previousName": "",
+        "realObjectId": "474d4133-5d70-4420-8602-5dd004c2e432"
+      }
+    }
+  },
+  {
+    "id": "594fbab3-f116-477b-b2e8-f50656cb7209",
+    "name": "Pumphus 6",
+    "previousName": "Pumphus 6, P6",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "befa4dfa-38fd-4f46-bef1-61fbe336c2e3",
+        "rds": "==A1.B1",
+        "name": "Pumphus 6",
+        "previousName": "Pumphus 6, P6",
+        "realObjectId": "594fbab3-f116-477b-b2e8-f50656cb7209"
+      }
+    },
+    "location": "++U2.W1"
+  },
+  {
+    "id": "5f3fc335-15c0-461c-88fa-6826c0866a8a",
+    "name": "Utrymmen",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "d0562798-8e03-4b50-a020-fdbef5773b46",
+        "rds": "==A1.B1.X1",
+        "name": "Utrymmen",
+        "previousName": "",
+        "realObjectId": "5f3fc335-15c0-461c-88fa-6826c0866a8a"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "91374b2a-a3af-4b50-ab8a-9abf1cf265c4",
+    "name": "Källarplan",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "f39c57dc-b6d0-4e49-a624-cee38a36b0d8",
+        "rds": "==A1.B1.X1.XA1",
+        "name": "Källarplan",
+        "previousName": "",
+        "realObjectId": "91374b2a-a3af-4b50-ab8a-9abf1cf265c4"
+      }
+    },
+    "location": "++U2.W1.X1.XA1"
+  },
+  {
+    "id": "10a17676-80bc-4767-ab3f-f95d50f751c5",
+    "name": "Cisternutrymme",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "7bacb227-3245-466f-b6d5-0213bfaef716",
+        "rds": "==A1.B1.X1.XA1.DPA1",
+        "name": "Cisternutrymme",
+        "previousName": "",
+        "realObjectId": "10a17676-80bc-4767-ab3f-f95d50f751c5"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA2"
+  },
+  {
+    "id": "ef9d71bd-bfd9-49d1-b1eb-12e69fb718c5",
+    "name": "Trapphus",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "8dfb98f7-3cda-495c-b1c1-527e6b4eeeaa",
+        "rds": "==A1.B1.X1.XA1.DEA1",
+        "name": "Trapphus",
+        "previousName": "",
+        "realObjectId": "ef9d71bd-bfd9-49d1-b1eb-12e69fb718c5"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA3"
+  },
+  {
+    "id": "900fc3dd-c642-4538-91fb-4042f7fa31a9",
+    "name": "Pumprum",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "2c5e540c-33ff-4513-aa69-4d934d233830",
+        "rds": "==A1.B1.X1.XA1.DDA2",
+        "name": "Pumprum",
+        "previousName": "",
+        "realObjectId": "900fc3dd-c642-4538-91fb-4042f7fa31a9"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "60107abb-f9bb-4f04-be1c-2baedf8b686f",
+    "name": "Markplan",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "5811162c-45fa-4d90-85bd-4507fd7b0a20",
+        "rds": "==A1.B1.X1.XA2",
+        "name": "Markplan",
+        "previousName": "",
+        "realObjectId": "60107abb-f9bb-4f04-be1c-2baedf8b686f"
+      }
+    },
+    "location": "++U2.W1.X1.XA2"
+  },
+  {
+    "id": "85b863b8-f83b-43fc-9602-ac9cc01ff0e8",
+    "name": "Spiraltrappa ute",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "79464e0b-b05d-4351-8b99-8084f7caede8",
+        "rds": "==A1.B1.X1.XA2.DEA2",
+        "name": "Spiraltrappa ute",
+        "previousName": "",
+        "realObjectId": "85b863b8-f83b-43fc-9602-ac9cc01ff0e8"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA3"
+  },
+  {
+    "id": "c429fa90-b438-4d27-8c89-3a4f8cf1479a",
+    "name": "Trapphus",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "c20f26da-0b33-45c5-b18c-f0e25f7d5f22",
+        "rds": "==A1.B1.X1.XA2.DEA1",
+        "name": "Trapphus",
+        "previousName": "",
+        "realObjectId": "c429fa90-b438-4d27-8c89-3a4f8cf1479a"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA2"
+  },
+  {
+    "id": "93873495-b98a-4cd6-a745-1551aa10ed95",
+    "name": "Elrum",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "990ab1cf-fbea-4201-bbea-88c57eb76f92",
+        "rds": "==A1.B1.X1.XA2.DDA1",
+        "name": "Elrum",
+        "previousName": "",
+        "realObjectId": "93873495-b98a-4cd6-a745-1551aa10ed95"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA1"
+  },
+  {
+    "id": "9a9eeede-6717-4459-973a-212d801138a8",
+    "name": "Tillträdessystem",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "e03c858a-50bf-4e06-96db-f87a61e0e235",
+        "rds": "==A1.B1.X1.XA2.DDA1.QQX1",
+        "name": "Tillträdessystem",
+        "previousName": "",
+        "realObjectId": "9a9eeede-6717-4459-973a-212d801138a8"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA1"
+  },
+  {
+    "id": "b6275712-b86b-4681-88ec-e0cf46a15b14",
+    "name": "Dörr",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "e3489ce4-e51b-42d8-91b9-1628841d6fc3",
+        "rds": "==A1.B1.X1.XA2.DDA1.QQX1.QQC1",
+        "name": "Dörr",
+        "previousName": "",
+        "realObjectId": "b6275712-b86b-4681-88ec-e0cf46a15b14"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA1"
+  },
+  {
+    "id": "2d67295e-ce7f-44f5-b98d-e0eff6f8717d",
+    "name": "Dörr",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "05efbeb5-4ee0-4cba-87e0-b0e50bc145b1",
+        "rds": "==A1.B1.X1.XA2.DDA1.QQX1.QQC2",
+        "name": "Dörr",
+        "previousName": "",
+        "realObjectId": "2d67295e-ce7f-44f5-b98d-e0eff6f8717d"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA1"
+  },
+  {
+    "id": "7ef65f0f-e013-40f1-b545-59f44b6cc92d",
+    "name": "Dörr",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "99d0bcd4-9be3-4aff-83be-19316f70d56d",
+        "rds": "==A1.B1.X1.XA2.DDA1.QQX1.QQC3",
+        "name": "Dörr",
+        "previousName": "",
+        "realObjectId": "7ef65f0f-e013-40f1-b545-59f44b6cc92d"
+      }
+    },
+    "location": "++U2.W1.X1.XA2.XAA1"
+  },
+  {
+    "id": "10af1ad2-39f5-4edc-8499-1c0a95b9b7c3",
+    "name": "Vindsplan",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "2e73ebc7-771e-4ae1-a415-1871fe519da3",
+        "rds": "==A1.B1.X1.XA3",
+        "name": "Vindsplan",
+        "previousName": "",
+        "realObjectId": "10af1ad2-39f5-4edc-8499-1c0a95b9b7c3"
+      }
+    },
+    "location": "++U2.W1.X1.XA3"
+  },
+  {
+    "id": "7a5c8163-d0e9-4276-9c1c-5cb2b1b655ce",
+    "name": "Takplan",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "7c49dd50-1758-4d04-80b8-37a9786f17e2",
+        "rds": "==A1.B1.X1.XA4",
+        "name": "Takplan",
+        "previousName": "",
+        "realObjectId": "7a5c8163-d0e9-4276-9c1c-5cb2b1b655ce"
+      }
+    },
+    "location": "++U2.W1.X1.XA3"
+  },
+  {
+    "id": "7509aceb-8fbb-434c-9d9c-6804dfc84fd7",
+    "name": "Cisternstomme",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "8016732d-b159-4cbc-8abe-b22ebe47f5a3",
+        "rds": "==A1.B1.C1",
+        "name": "Cisternstomme",
+        "previousName": "",
+        "realObjectId": "7509aceb-8fbb-434c-9d9c-6804dfc84fd7"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA2"
+  },
+  {
+    "id": "59e97e1e-72cc-4a77-9998-fc449ee2c5a6",
+    "name": "Byggnadsstomme",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "0732cef4-d225-4ba4-82c3-2b66cb977a62",
+        "rds": "==A1.B1.C2",
+        "name": "Byggnadsstomme",
+        "previousName": "",
+        "realObjectId": "59e97e1e-72cc-4a77-9998-fc449ee2c5a6"
+      }
+    },
+    "location": "++U2.W1"
+  },
+  {
+    "id": "b077e1fd-f1bf-4795-867d-1bbefb4f7a0b",
+    "name": "Takkonstruktion",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "fef841b6-5925-43e5-a4af-60cced3d0006",
+        "rds": "==A1.B1.D1",
+        "name": "Takkonstruktion",
+        "previousName": "",
+        "realObjectId": "b077e1fd-f1bf-4795-867d-1bbefb4f7a0b"
+      }
+    },
+    "location": "++U2.W1.X1.XA3"
+  },
+  {
+    "id": "ec84c82a-bd66-4371-be84-1877150d83e3",
+    "name": "Grundläggning",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "eb1a8966-b17a-4079-b17d-b94564a46d1a",
+        "rds": "==A1.B1.A1",
+        "name": "Grundläggning",
+        "previousName": "",
+        "realObjectId": "ec84c82a-bd66-4371-be84-1877150d83e3"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "1dbb68da-fa79-4e52-956f-08847e248512",
+    "name": "Fasad",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "be0a1194-340d-43d9-af3f-a70fa977df50",
+        "rds": "==A1.B1.B1",
+        "name": "Fasad",
+        "previousName": "",
+        "realObjectId": "1dbb68da-fa79-4e52-956f-08847e248512"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "9d0f9ed9-fd4b-47ff-a4d5-cf0986cee35d",
+    "name": "Ventilationssystem",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "ee0ae9b5-a16d-406d-b867-f799af0363af",
+        "rds": "==A1.B1.J1",
+        "name": "Ventilationssystem",
+        "previousName": "",
+        "realObjectId": "9d0f9ed9-fd4b-47ff-a4d5-cf0986cee35d"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "68b93325-e297-4784-94bc-e61084bcb108",
+    "name": "Elektriskt system",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "b01d4cfd-0196-4e15-828c-e64c558c7d33",
+        "rds": "==A1.B1.K1",
+        "name": "Elektriskt system",
+        "previousName": "",
+        "realObjectId": "68b93325-e297-4784-94bc-e61084bcb108"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "8a0eb924-d768-4500-93be-dc116e5e0893",
+    "name": "Värmesystem",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "62110494-dcd7-4051-bdd3-0aef9c278f7b",
+        "rds": "==A1.B1.H1",
+        "name": "Värmesystem",
+        "previousName": "",
+        "realObjectId": "8a0eb924-d768-4500-93be-dc116e5e0893"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "0493e337-da43-4a8b-9b62-d76d6393900f",
+    "name": "Avloppssystem",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "9df37611-8468-4465-9229-66ddf011a84e",
+        "rds": "==A1.B1.G1",
+        "name": "Avloppssystem",
+        "previousName": "",
+        "realObjectId": "0493e337-da43-4a8b-9b62-d76d6393900f"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "a0bfaa1a-4409-46cc-a6aa-3dafa457882c",
+    "name": "Färskvattensystem",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "715829c9-c922-4a5d-8ec4-7b8cdc9b4b20",
+        "rds": "==A1.B1.F1",
+        "name": "Färskvattensystem",
+        "previousName": "",
+        "realObjectId": "a0bfaa1a-4409-46cc-a6aa-3dafa457882c"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "10edbe04-62e4-4926-9cfd-8e52663cc973",
+    "name": "Distributionsledning",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "cee71a6a-3586-4b39-b71b-5e2add183929",
+        "rds": "==A1.B1.F1.HB1",
+        "name": "Distributionsledning",
+        "previousName": "",
+        "realObjectId": "10edbe04-62e4-4926-9cfd-8e52663cc973"
+      }
+    },
+    "location": "++U2.W1.X1"
+  },
+  {
+    "id": "3c292cfd-a71a-4b8d-9b5f-a0a0f99abf65",
+    "name": "Hygienstation",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "4a8c7d90-b1b6-4198-aa77-ea69f3e95bed",
+        "rds": "==A1.B1.F1.RC1",
+        "name": "Hygienstation",
+        "previousName": "",
+        "realObjectId": "3c292cfd-a71a-4b8d-9b5f-a0a0f99abf65"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "c64f0ccc-866a-4d7a-b1b9-fa397ae56e53",
+    "name": "Handfat",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "e15a713c-cabb-474b-9579-c35ee359eb6e",
+        "rds": "==A1.B1.F1.RC1.XKA1",
+        "name": "Handfat",
+        "previousName": "",
+        "realObjectId": "c64f0ccc-866a-4d7a-b1b9-fa397ae56e53"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "248481f6-0fd1-4aa2-b121-5d85b788d84c",
+    "name": "Blandare",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "aa8ca482-a174-46c1-bd69-5e1d6102db72",
+        "rds": "==A1.B1.F1.RC1.QNA1",
+        "name": "Blandare",
+        "previousName": "",
+        "realObjectId": "248481f6-0fd1-4aa2-b121-5d85b788d84c"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "2325eb1a-8e02-446b-92d9-5752bfaff663",
+    "name": "Avlopp",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "f425ad47-5958-473a-97d2-8ab0458b9f50",
+        "rds": "==A1.B1.F1.RC1.WPA1",
+        "name": "Avlopp",
+        "previousName": "",
+        "realObjectId": "2325eb1a-8e02-446b-92d9-5752bfaff663"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "5b3cc0ab-7278-496d-af56-c83c00c70590",
+    "name": "Varmvattenbererdare",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "d7254c0a-b95c-4c62-ad8e-63328d24c876",
+        "rds": "==A1.B1.F1.RC1.EBA1",
+        "name": "Varmvattenbererdare",
+        "previousName": "",
+        "realObjectId": "5b3cc0ab-7278-496d-af56-c83c00c70590"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  },
+  {
+    "id": "00961dfb-4355-4d78-a0d2-5ebdeb59c93a",
+    "name": "Tapp/Spolslang",
+    "previousName": "",
+    "aspects": {
+      "Infrastrukturfunktion": {
+        "id": "c3a916b2-223c-40d7-beb4-b8f4e9aebb78",
+        "rds": "==A1.B1.F1.HB2",
+        "name": "Tapp/Spolslang",
+        "previousName": "",
+        "realObjectId": "00961dfb-4355-4d78-a0d2-5ebdeb59c93a"
+      }
+    },
+    "location": "++U2.W1.X1.XA1.XAA1"
+  }
+]
