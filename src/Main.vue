@@ -1,11 +1,10 @@
 <template>
-  
+  <div class="filter-banner">
       <FilterDropdown
-    :dynamicOptions="dynamicOptions"
-    @filter-changed="onFilterChanged"
-  />
-    
-  
+        :dynamicOptions="dynamicOptions"
+        @filter-changed="onFilterChanged"
+      />
+  </div>
 
   <div class="main-container">
     <div class="main-trees-container">
@@ -13,6 +12,7 @@
         v-for="(tree, index) in filteredTrees"
         :key="index"
         :tree="tree"
+        :selected-node-id="selectedNodeId"
         @handle-node-click="handleNodeClick"
       />
     </div>
@@ -46,7 +46,9 @@ export default {
       selectedFilters: [],
       functionalPath: mdiHammerWrench,
       locationPath: mdiMapMarkerPath,
-      productPath: mdiCube
+      productPath: mdiCube,
+      selectedNodeId: null,
+
     };
   },
   components: {
@@ -82,11 +84,15 @@ export default {
   },
   methods: {
 
+
     
    
     
+
+
     handleNodeClick(aspect) {
       this.selectedAspect = aspect;
+      this.selectedNodeId = aspect.id;
     },
     onFilterChanged(newFilters) {
       this.selectedFilters = newFilters;
@@ -95,4 +101,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
