@@ -55,7 +55,7 @@ export default {
     FilterDropdown
   },
   async mounted() {
-    const response = await fetch('./public/raw-data-with-location.xlsx');
+    const response = await fetch('/raw-data-with-location.xlsx');
     const buffer = await response.arrayBuffer();
 
     this.trees = getParsedTreesFromBuffer(buffer);
