@@ -239,100 +239,111 @@ h1 {
 .filter-dropdown {
   display: flex;
   flex-direction: column;
-  
-  position: relative; /* Ensure positioning context for dropdown */
-  max-width: calc(100% - 345px);/* Reduce the width to make it shorter on the right side */
-} 
+  position: relative;
+  max-width: 100%;
+}
 
 .filter-top-row {
   display: flex;
-  flex-direction: row;
- 
-  margin-bottom: 10px;
-  height: 25px;
-  margin-left: 50px;
-  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 20px 10px 50px;
+  min-height: 35px;
+}
 
+.filter-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.download-excel-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-left: auto;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-excel-button:hover {
+  background-color: #45a049;
 }
 
 .filter-text {
   margin-right: 10px;
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center vertically */
+  display: flex;
+  align-items: center;
   color: white;
-  
-  background-color: var(--selected-blue); /* Add a background color */
-  padding: 5px 10px; /* Add padding for button-like appearance */
-  border-radius: 5px; /* Add rounded corners */
-  cursor: pointer; /* Change cursor to pointer for interactivity */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: background-color 0.2s; /* Smooth transition for hover effect */  
-} 
+  background-color: var(--selected-blue);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
 
 .filter-text:hover {
-  background-color: #0400ff9a; /* Darken background on hover */
-} 
+  background-color: #0400ff9a;
+}
 
 .selected-tags-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* Prevent wrapping of tags */
- 
+  flex-wrap: nowrap;
   align-items: center;
-} 
+  overflow-x: auto;
+  max-width: 100%;
+  gap: 4px;
+}
 
 .selected-tag {
-
   cursor: pointer;
-  background-color: var(--selected-blue); /* Use the selected blue color */
-  margin-right: 4px;
-  font-size: 0.8em; 
+  background-color: var(--selected-blue);
+  font-size: 0.8em;
   display: flex;
-  flex-direction: row;
   align-items: center;
   color: white;
   border-radius: 20px;
   height: 20px;
-  padding-right: 5px; 
-  padding-left: 5px;
-  padding-top: 2px; 
-  padding-bottom: 2px;
-  
+  padding: 2px 5px;
 }
 
 .selected-tag-name {
   color: white;
   margin-right: 4px;
-
-  
-
 }
 
 .icon-small {
   width: 14px;
   height: 14px;
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-top: 2px;
 }
 
 .icon-small:hover {
-  background-color: var(--accent-red); /* Change color on hover */
-  cursor: pointer; /* Change cursor to pointer for interactivity */
+  background-color: var(--accent-red);
+  cursor: pointer;
 }
 
-
-
-
 .dropdown {
-  position: absolute; /* Position on top of everything */
-  z-index: 1000; /* Ensure it appears above other elements */
+  position: absolute;
+  z-index: 1000;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   width: 170px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  top: 100%; /* Position below the filter-top-row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 100%;
   left: 0;
 }
 
@@ -357,9 +368,11 @@ input[type="checkbox"] {
 }
 
 .chevron {
-  margin-left: 5px; /* Add spacing between text and chevron */
-  font-size: smaller; /* Adjust size of the chevron */
+  margin-left: 5px;
+  font-size: smaller;
 }
+
+
 
 /**? ----------- THIS IS CURRENTLY NOT USED---------- **/
 
