@@ -1,7 +1,7 @@
 <template>
   <!-- Always display the parent node -->
   <div class="node-container" @click="toggleExpand" :style="{ marginLeft: `${depth * 20}px` }"
-    :class="{ selected: isSelected, 'is-leaf': !hasChildren }">
+    :class="{ selected: isSelected, 'is-leaf': !hasChildren, 'linked-node': isLinkedNode }">
     <svg-icon v-if="hasChildren" type="mdi" :path="toggleIcon" class="toggle-icon" />
 
     <span class="node-name">{{ node.data.name }}</span>
@@ -63,6 +63,11 @@ export default {
   computed: {
     isSelected() {
       return this.node?.id === this.selectedAspect?.id;
+    },
+
+    isLinkedNode(){
+      return this.node?.data.realObjectId === this.selectedAspect?.data.realObjectId;
+
     },
 
     hasChildren() {

@@ -193,6 +193,9 @@ h1 {
   overflow: visible;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  padding-right: 6px;
+  padding-left: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 .node-child {
@@ -202,12 +205,12 @@ h1 {
 
 
 .node-container:hover {
-  background-color: #535bf2;
+  background-color: #dcdcdc;
   cursor: pointer;
 }
 
 .node-container.selected {
-  background-color: #00008B; /* mörkare blå vid klick */
+  background-color: var(--selected-blue); /* mörkare blå vid klick */
   color: white;
 }
 
@@ -223,6 +226,10 @@ h1 {
 .node-name {
   font-weight: lighter;
   margin-right: auto; /* Pushes the element to the leftmost position */
+}
+
+.linked-node {
+ background-color: var(--accent-yellow);
 }
 
 
